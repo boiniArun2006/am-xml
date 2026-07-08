@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<!-- Nimbus SaaS promo v2 — hand-authored AM XML by Claude. Self-contained. -->
+<!-- Nimbus SaaS promo v3 — hand-authored AM XML by Claude. Self-contained. -->
 <scene title="Nimbus Promo (by Claude)" width="1080" height="1920" exportWidth="1080" exportHeight="1920" precompose="dynamicResolution" bgcolor="#ff0a0a16" totalTime="30000" fps="60" amver="1028383" am="com.alightcreative.motion/5.0.272.1028383" amplatform="android">
 <shape id="2000" startTime="0" endTime="30000" fillType="color" mediaFillMode="fill" s=".rect">
 <transform>
 <location value="540.0,960.0,0.0" />
-<scale><kf t="0.0000" v="1.0,1.0" /><kf t="1.0000" v="1.08,1.08" e="cubicBezier 0.42 0.0 0.58 1.0" /></scale>
+<scale><kf t="0.0000" v="1.0,1.0" /><kf t="1.0000" v="1.06,1.06" e="cubicBezier 0.42 0.0 0.58 1.0" /></scale>
 </transform>
 <property name="size" type="vec2" value="1080.0,1920.0" />
 <fillColor value="#ff0a0a16" />
@@ -12,23 +12,23 @@
 </shape>
 <shape id="2001" startTime="0" endTime="30000" fillType="color" mediaFillMode="fill" s=".rect" blending="screen">
 <transform>
-<location value="540.0,420.0,0.0" />
-<scale><kf t="0.0000" v="1.0,1.0" /><kf t="1.0000" v="1.3,1.3" e="cubicBezier 0.42 0.0 0.58 1.0" /></scale>
-<rotation value="25" />
-<opacity><kf t="0.0000" v="0.12" /><kf t="0.5000" v="0.22" e="cubicBezier 0.42 0.0 0.58 1.0" /><kf t="1.0000" v="0.12" e="cubicBezier 0.42 0.0 0.58 1.0" /></opacity>
+<location value="540.0,450.0,0.0" />
+<scale><kf t="0.0000" v="1.0,1.0" /><kf t="1.0000" v="1.2,1.2" e="cubicBezier 0.42 0.0 0.58 1.0" /></scale>
+<rotation value="20" />
+<opacity><kf t="0.0000" v="0.10" /><kf t="0.5000" v="0.17" e="cubicBezier 0.42 0.0 0.58 1.0" /><kf t="1.0000" v="0.10" e="cubicBezier 0.42 0.0 0.58 1.0" /></opacity>
 </transform>
-<property name="size" type="vec2" value="1400.0,1400.0" />
+<property name="size" type="vec2" value="2200.0,2200.0" />
 <fillColor value="#ff8b5cf6" />
 
 </shape>
 <shape id="2002" startTime="0" endTime="30000" fillType="color" mediaFillMode="fill" s=".rect" blending="screen">
 <transform>
 <location value="540.0,1500.0,0.0" />
-<scale><kf t="0.0000" v="1.2,1.2" /><kf t="1.0000" v="1.0,1.0" e="cubicBezier 0.42 0.0 0.58 1.0" /></scale>
-<rotation value="-20" />
-<opacity><kf t="0.0000" v="0.10" /><kf t="0.5000" v="0.20" e="cubicBezier 0.42 0.0 0.58 1.0" /><kf t="1.0000" v="0.10" e="cubicBezier 0.42 0.0 0.58 1.0" /></opacity>
+<scale><kf t="0.0000" v="1.15,1.15" /><kf t="1.0000" v="1.0,1.0" e="cubicBezier 0.42 0.0 0.58 1.0" /></scale>
+<rotation value="-18" />
+<opacity><kf t="0.0000" v="0.09" /><kf t="0.5000" v="0.15" e="cubicBezier 0.42 0.0 0.58 1.0" /><kf t="1.0000" v="0.09" e="cubicBezier 0.42 0.0 0.58 1.0" /></opacity>
 </transform>
-<property name="size" type="vec2" value="1400.0,1400.0" />
+<property name="size" type="vec2" value="2200.0,2200.0" />
 <fillColor value="#ff35e0ff" />
 
 </shape>
@@ -41,30 +41,30 @@
 <fillColor value="#ffffffff" />
 
 </shape>
-<text id="2101" startTime="300" endTime="6000" fillType="color" mediaFillMode="fill" size="82" font="googlefonts?name=Montserrat&amp;weight=900" wrapWidth="1040" align="center">
+<text id="2101" startTime="300" endTime="6000" fillType="color" mediaFillMode="fill" size="80" font="googlefonts?name=Montserrat&amp;weight=900" wrapWidth="6000" align="center">
 <transform>
-<location value="540.0,850.0,0.0" />
+<location value="540.0,820.0,0.0" />
 <scale><kf t="0.0000" v="0.6,0.6" /><kf t="0.1200" v="1.0,1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></scale>
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.0800" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
 <fillColor value="#ffffffff" />
-<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.08" /></effect>
+<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.05" /></effect>
 <content>DEPLOYING</content>
 <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true"><property name="strength" type="float" value="0.3" /><property name="oalpha" type="float" value="0.8" /><property name="lowThreshold" type="float" value="0.1" /></effect></text>
-<text id="2102" startTime="700" endTime="6000" fillType="color" mediaFillMode="fill" size="66" font="googlefonts?name=Montserrat&amp;weight=800" wrapWidth="1040" align="center">
+<text id="2102" startTime="700" endTime="6000" fillType="color" mediaFillMode="fill" size="58" font="googlefonts?name=Montserrat&amp;weight=800" wrapWidth="6000" align="center">
 <transform>
-<location value="540.0,970.0,0.0" />
+<location value="540.0,980.0,0.0" />
 <scale><kf t="0.0000" v="0.6,0.6" /><kf t="0.1400" v="1.0,1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></scale>
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.1000" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
 <fillColor value="#ff35e0ff" />
-<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.12" /></effect>
+<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.05" /></effect>
 <content>SHOULDN'T HURT</content>
 </text>
 <shape id="2103" startTime="1100" endTime="6000" fillType="color" mediaFillMode="fill" s=".rect">
 <transform>
-<location value="540.0,1050.0,0.0" />
-<scale><kf t="0.0000" v="0.0,1.0" /><kf t="0.2000" v="520.0,1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></scale>
+<location value="540.0,1080.0,0.0" />
+<scale><kf t="0.0000" v="0.0,1.0" /><kf t="0.2000" v="460.0,1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></scale>
 </transform>
 <property name="size" type="vec2" value="0.0,8.0" />
 <fillColor value="#ff8b5cf6" />
@@ -73,100 +73,100 @@
 <shape id="2200" startTime="6000" endTime="6120" fillType="color" mediaFillMode="fill" s=".rect" blending="screen">
 <transform>
 <location value="540.0,960.0,0.0" />
-<opacity><kf t="0.0000" v="0.7" /><kf t="1.0000" v="0.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
+<opacity><kf t="0.0000" v="0.6" /><kf t="1.0000" v="0.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
 <property name="size" type="vec2" value="1080.0,1920.0" />
 <fillColor value="#ff8b5cf6" />
 
 </shape>
-<text id="2201" startTime="6100" endTime="12000" fillType="color" mediaFillMode="fill" size="46" font="googlefonts?name=Montserrat&amp;weight=700" wrapWidth="1040" align="center">
+<text id="2201" startTime="6100" endTime="12000" fillType="color" mediaFillMode="fill" size="46" font="googlefonts?name=Montserrat&amp;weight=700" wrapWidth="6000" align="center">
 <transform>
-<location value="540.0,360.0,0.0" />
+<location value="540.0,430.0,0.0" />
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.0600" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
 <fillColor value="#ff9aa3b2" />
-<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.12" /></effect>
+<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.1" /></effect>
 <content>Before Nimbus</content>
 </text>
 <shape id="2210" startTime="6300" endTime="12000" fillType="color" mediaFillMode="fill" s=".rect">
 <transform>
-<location value="540.0,640.0,0.0" />
-<scale><kf t="0.0000" v="0.8,1.0" /><kf t="0.1800" v="1.0,1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></scale>
+<location value="540.0,660.0,0.0" />
+<scale><kf t="0.0000" v="0.82,1.0" /><kf t="0.1800" v="1.0,1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></scale>
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.1500" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
-<property name="size" type="vec2" value="860.0,180.0" />
-<fillColor value="#ff14162a" />
+<property name="size" type="vec2" value="880.0,180.0" />
+<fillColor value="#ff222a45" />
 
 </shape>
-<text id="2220" startTime="6360" endTime="12000" fillType="color" mediaFillMode="fill" size="50" font="googlefonts?name=Montserrat&amp;weight=700" wrapWidth="1040" align="center">
+<text id="2220" startTime="6360" endTime="12000" fillType="color" mediaFillMode="fill" size="52" font="googlefonts?name=Montserrat&amp;weight=700" wrapWidth="6000" align="left">
 <transform>
-<location value="540.0,622.0,0.0" />
+<location value="160.0,660.0,0.0" />
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.2000" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
 <fillColor value="#ffffffff" />
 <content>12 config files</content>
 </text>
-<text id="2230" startTime="6360" endTime="12000" fillType="color" mediaFillMode="fill" size="34" font="googlefonts?name=Montserrat&amp;weight=800" wrapWidth="1040" align="center">
+<text id="2230" startTime="6360" endTime="12000" fillType="color" mediaFillMode="fill" size="40" font="googlefonts?name=Montserrat&amp;weight=800" wrapWidth="6000" align="center">
 <transform>
-<location value="800.0,626.0,0.0" />
+<location value="840.0,660.0,0.0" />
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.2500" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
 <fillColor value="#ffff4d6d" />
-<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.1" /></effect>
+<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.08" /></effect>
 <content>NOPE</content>
 </text>
 <shape id="2211" startTime="6550" endTime="12000" fillType="color" mediaFillMode="fill" s=".rect">
 <transform>
-<location value="540.0,890.0,0.0" />
-<scale><kf t="0.0000" v="0.8,1.0" /><kf t="0.1800" v="1.0,1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></scale>
+<location value="540.0,900.0,0.0" />
+<scale><kf t="0.0000" v="0.82,1.0" /><kf t="0.1800" v="1.0,1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></scale>
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.1500" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
-<property name="size" type="vec2" value="860.0,180.0" />
-<fillColor value="#ff14162a" />
+<property name="size" type="vec2" value="880.0,180.0" />
+<fillColor value="#ff222a45" />
 
 </shape>
-<text id="2221" startTime="6610" endTime="12000" fillType="color" mediaFillMode="fill" size="50" font="googlefonts?name=Montserrat&amp;weight=700" wrapWidth="1040" align="center">
+<text id="2221" startTime="6610" endTime="12000" fillType="color" mediaFillMode="fill" size="52" font="googlefonts?name=Montserrat&amp;weight=700" wrapWidth="6000" align="left">
 <transform>
-<location value="540.0,872.0,0.0" />
+<location value="160.0,900.0,0.0" />
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.2000" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
 <fillColor value="#ffffffff" />
 <content>3am rollbacks</content>
 </text>
-<text id="2231" startTime="6610" endTime="12000" fillType="color" mediaFillMode="fill" size="34" font="googlefonts?name=Montserrat&amp;weight=800" wrapWidth="1040" align="center">
+<text id="2231" startTime="6610" endTime="12000" fillType="color" mediaFillMode="fill" size="40" font="googlefonts?name=Montserrat&amp;weight=800" wrapWidth="6000" align="center">
 <transform>
-<location value="800.0,876.0,0.0" />
+<location value="840.0,900.0,0.0" />
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.2500" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
 <fillColor value="#ffff4d6d" />
-<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.1" /></effect>
+<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.08" /></effect>
 <content>NOPE</content>
 </text>
 <shape id="2212" startTime="6800" endTime="12000" fillType="color" mediaFillMode="fill" s=".rect">
 <transform>
 <location value="540.0,1140.0,0.0" />
-<scale><kf t="0.0000" v="0.8,1.0" /><kf t="0.1800" v="1.0,1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></scale>
+<scale><kf t="0.0000" v="0.82,1.0" /><kf t="0.1800" v="1.0,1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></scale>
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.1500" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
-<property name="size" type="vec2" value="860.0,180.0" />
-<fillColor value="#ff14162a" />
+<property name="size" type="vec2" value="880.0,180.0" />
+<fillColor value="#ff222a45" />
 
 </shape>
-<text id="2222" startTime="6860" endTime="12000" fillType="color" mediaFillMode="fill" size="50" font="googlefonts?name=Montserrat&amp;weight=700" wrapWidth="1040" align="center">
+<text id="2222" startTime="6860" endTime="12000" fillType="color" mediaFillMode="fill" size="52" font="googlefonts?name=Montserrat&amp;weight=700" wrapWidth="6000" align="left">
 <transform>
-<location value="540.0,1122.0,0.0" />
+<location value="160.0,1140.0,0.0" />
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.2000" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
 <fillColor value="#ffffffff" />
 <content>Ship day = fear</content>
 </text>
-<text id="2232" startTime="6860" endTime="12000" fillType="color" mediaFillMode="fill" size="34" font="googlefonts?name=Montserrat&amp;weight=800" wrapWidth="1040" align="center">
+<text id="2232" startTime="6860" endTime="12000" fillType="color" mediaFillMode="fill" size="40" font="googlefonts?name=Montserrat&amp;weight=800" wrapWidth="6000" align="center">
 <transform>
-<location value="800.0,1126.0,0.0" />
+<location value="840.0,1140.0,0.0" />
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.2500" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
 <fillColor value="#ffff4d6d" />
-<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.1" /></effect>
+<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.08" /></effect>
 <content>NOPE</content>
 </text>
 <shape id="2300" startTime="12000" endTime="12140" fillType="color" mediaFillMode="fill" s=".rect">
@@ -180,113 +180,112 @@
 </shape>
 <shape id="2301" startTime="12100" endTime="22000" fillType="color" mediaFillMode="fill" s=".rect">
 <transform>
-<location value="540.0,470.0,0.0" />
+<location value="540.0,430.0,0.0" />
 <scale><kf t="0.0000" v="0.0,0.0" /><kf t="0.1500" v="1.0,1.0" e="cubicBezier 0.34 1.4 0.64 1.0" /></scale>
 <rotation value="45" />
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.1000" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
-<property name="size" type="vec2" value="240.0,240.0" />
+<property name="size" type="vec2" value="230.0,230.0" />
 <fillColor value="#ff35e0ff" />
 
 <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true"><property name="strength" type="float" value="0.5" /><property name="oalpha" type="float" value="0.8" /><property name="lowThreshold" type="float" value="0.1" /></effect></shape>
 <shape id="2302" startTime="12250" endTime="22000" fillType="color" mediaFillMode="fill" s=".rect">
 <transform>
-<location value="540.0,470.0,0.0" />
+<location value="540.0,430.0,0.0" />
 <scale><kf t="0.0000" v="0.0,0.0" /><kf t="0.2000" v="1.0,1.0" e="cubicBezier 0.34 1.4 0.64 1.0" /></scale>
 <rotation value="45" />
 </transform>
-<property name="size" type="vec2" value="130.0,130.0" />
+<property name="size" type="vec2" value="120.0,120.0" />
 <fillColor value="#ff0a0a16" />
 
 </shape>
-<text id="2303" startTime="12400" endTime="22000" fillType="color" mediaFillMode="fill" size="104" font="googlefonts?name=Montserrat&amp;weight=900" wrapWidth="1040" align="center">
+<text id="2303" startTime="12400" endTime="22000" fillType="color" mediaFillMode="fill" size="98" font="googlefonts?name=Montserrat&amp;weight=900" wrapWidth="6000" align="center">
 <transform>
-<location value="540.0,700.0,0.0" />
+<location value="540.0,730.0,0.0" />
 <scale><kf t="0.0000" v="0.7,0.7" /><kf t="0.1200" v="1.0,1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></scale>
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.1000" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
 <fillColor value="#ffffffff" />
-<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.22" /></effect>
+<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.2" /></effect>
 <content>NIMBUS</content>
 <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true"><property name="strength" type="float" value="0.35" /><property name="oalpha" type="float" value="0.8" /><property name="lowThreshold" type="float" value="0.1" /></effect></text>
-<text id="2304" startTime="12700" endTime="22000" fillType="color" mediaFillMode="fill" size="42" font="googlefonts?name=Montserrat&amp;weight=600" wrapWidth="1040" align="center">
+<text id="2304" startTime="12700" endTime="22000" fillType="color" mediaFillMode="fill" size="40" font="googlefonts?name=Montserrat&amp;weight=600" wrapWidth="6000" align="center">
 <transform>
-<location value="540.0,820.0,0.0" />
+<location value="540.0,840.0,0.0" />
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.1200" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
 <fillColor value="#ff35e0ff" />
-<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.03" /></effect>
 <content>git push. that's the deploy.</content>
 </text>
-<text id="2310" startTime="13500" endTime="22000" fillType="color" mediaFillMode="fill" size="48" font="googlefonts?name=Montserrat&amp;weight=700" wrapWidth="1040" align="center">
+<text id="2310" startTime="13500" endTime="22000" fillType="color" mediaFillMode="fill" size="46" font="googlefonts?name=Montserrat&amp;weight=700" wrapWidth="6000" align="center">
 <transform>
-<location value="540.0,1080.0,0.0" />
-<scale><kf t="0.0000" v="0.85,0.85" /><kf t="0.1600" v="1.0,1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></scale>
+<location value="540.0,1010.0,0.0" />
+<scale><kf t="0.0000" v="0.86,0.86" /><kf t="0.1600" v="1.0,1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></scale>
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.1400" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
 <fillColor value="#ffffffff" />
 <content>+  One-command deploy</content>
 </text>
-<text id="2311" startTime="13900" endTime="22000" fillType="color" mediaFillMode="fill" size="48" font="googlefonts?name=Montserrat&amp;weight=700" wrapWidth="1040" align="center">
+<text id="2311" startTime="13900" endTime="22000" fillType="color" mediaFillMode="fill" size="46" font="googlefonts?name=Montserrat&amp;weight=700" wrapWidth="6000" align="center">
 <transform>
-<location value="540.0,1240.0,0.0" />
-<scale><kf t="0.0000" v="0.85,0.85" /><kf t="0.1600" v="1.0,1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></scale>
+<location value="540.0,1125.0,0.0" />
+<scale><kf t="0.0000" v="0.86,0.86" /><kf t="0.1600" v="1.0,1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></scale>
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.1400" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
 <fillColor value="#ffffffff" />
 <content>+  Instant rollback</content>
 </text>
-<text id="2312" startTime="14300" endTime="22000" fillType="color" mediaFillMode="fill" size="48" font="googlefonts?name=Montserrat&amp;weight=700" wrapWidth="1040" align="center">
+<text id="2312" startTime="14300" endTime="22000" fillType="color" mediaFillMode="fill" size="46" font="googlefonts?name=Montserrat&amp;weight=700" wrapWidth="6000" align="center">
 <transform>
-<location value="540.0,1400.0,0.0" />
-<scale><kf t="0.0000" v="0.85,0.85" /><kf t="0.1600" v="1.0,1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></scale>
+<location value="540.0,1240.0,0.0" />
+<scale><kf t="0.0000" v="0.86,0.86" /><kf t="0.1600" v="1.0,1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></scale>
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.1400" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
 <fillColor value="#ffffffff" />
 <content>+  Zero-downtime default</content>
 </text>
-<text id="2320" startTime="18000" endTime="22000" fillType="color" mediaFillMode="fill" size="76" font="googlefonts?name=Montserrat&amp;weight=900" wrapWidth="1040" align="center">
+<text id="2320" startTime="18000" endTime="22000" fillType="color" mediaFillMode="fill" size="78" font="googlefonts?name=Montserrat&amp;weight=900" wrapWidth="6000" align="center">
 <transform>
-<location value="540.0,1660.0,0.0" />
+<location value="540.0,1450.0,0.0" />
 <scale><kf t="0.0000" v="0.5,0.5" /><kf t="0.1500" v="1.0,1.0" e="cubicBezier 0.34 1.4 0.64 1.0" /></scale>
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.1000" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
 <fillColor value="#ff8b5cf6" />
-<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.08" /></effect>
+<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.06" /></effect>
 <content>deploy in 8s</content>
 <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true"><property name="strength" type="float" value="0.4" /><property name="oalpha" type="float" value="0.8" /><property name="lowThreshold" type="float" value="0.1" /></effect></text>
 <shape id="2400" startTime="22000" endTime="22140" fillType="color" mediaFillMode="fill" s=".rect" blending="screen">
 <transform>
 <location value="540.0,960.0,0.0" />
-<opacity><kf t="0.0000" v="0.8" /><kf t="1.0000" v="0.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
+<opacity><kf t="0.0000" v="0.7" /><kf t="1.0000" v="0.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
 <property name="size" type="vec2" value="1080.0,1920.0" />
 <fillColor value="#ff35e0ff" />
 
 </shape>
-<text id="2401" startTime="22200" endTime="30000" fillType="color" mediaFillMode="fill" size="74" font="googlefonts?name=Montserrat&amp;weight=800" wrapWidth="1040" align="center">
+<text id="2401" startTime="22200" endTime="30000" fillType="color" mediaFillMode="fill" size="72" font="googlefonts?name=Montserrat&amp;weight=800" wrapWidth="6000" align="center">
 <transform>
-<location value="540.0,770.0,0.0" />
+<location value="540.0,780.0,0.0" />
 <scale><kf t="0.0000" v="0.7,0.7" /><kf t="0.1000" v="1.0,1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></scale>
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.0800" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
 <fillColor value="#ffffffff" />
-<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.06" /></effect>
+<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.04" /></effect>
 <content>Start shipping</content>
 </text>
-<text id="2402" startTime="22400" endTime="30000" fillType="color" mediaFillMode="fill" size="74" font="googlefonts?name=Montserrat&amp;weight=900" wrapWidth="1040" align="center">
+<text id="2402" startTime="22400" endTime="30000" fillType="color" mediaFillMode="fill" size="72" font="googlefonts?name=Montserrat&amp;weight=900" wrapWidth="6000" align="center">
 <transform>
-<location value="540.0,870.0,0.0" />
+<location value="540.0,910.0,0.0" />
 <scale><kf t="0.0000" v="0.7,0.7" /><kf t="0.1000" v="1.0,1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></scale>
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.1000" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
 <fillColor value="#ff35e0ff" />
-<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.06" /></effect>
+<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.04" /></effect>
 <content>like it's 2026</content>
 <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true"><property name="strength" type="float" value="0.4" /><property name="oalpha" type="float" value="0.8" /><property name="lowThreshold" type="float" value="0.1" /></effect></text>
 <shape id="2403" startTime="22800" endTime="30000" fillType="color" mediaFillMode="fill" s=".rect">
 <transform>
-<location value="540.0,1070.0,0.0" />
+<location value="540.0,1090.0,0.0" />
 <scale><kf t="0.0000" v="0.6,0.6" /><kf t="0.1400" v="1.0,1.0" e="cubicBezier 0.34 1.4 0.64 1.0" /></scale>
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.1000" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
@@ -294,28 +293,28 @@
 <fillColor value="#ff35e0ff" />
 
 <effect id="com.alightcreative.effects.deepglow2" locallyApplied="true"><property name="strength" type="float" value="0.5" /><property name="oalpha" type="float" value="0.8" /><property name="lowThreshold" type="float" value="0.1" /></effect></shape>
-<text id="2404" startTime="23000" endTime="30000" fillType="color" mediaFillMode="fill" size="58" font="googlefonts?name=Montserrat&amp;weight=900" wrapWidth="1040" align="center">
+<text id="2404" startTime="23000" endTime="30000" fillType="color" mediaFillMode="fill" size="56" font="googlefonts?name=Montserrat&amp;weight=900" wrapWidth="6000" align="center">
 <transform>
-<location value="540.0,1048.0,0.0" />
+<location value="540.0,1090.0,0.0" />
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.1500" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
 <fillColor value="#ff0a0a16" />
-<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.08" /></effect>
+<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.06" /></effect>
 <content>nimbus.dev</content>
 </text>
-<text id="2405" startTime="23200" endTime="30000" fillType="color" mediaFillMode="fill" size="42" font="googlefonts?name=Montserrat&amp;weight=600" wrapWidth="1040" align="center">
+<text id="2405" startTime="23200" endTime="30000" fillType="color" mediaFillMode="fill" size="42" font="googlefonts?name=Montserrat&amp;weight=600" wrapWidth="6000" align="center">
 <transform>
-<location value="540.0,1260.0,0.0" />
+<location value="540.0,1290.0,0.0" />
 <opacity><kf t="0.0000" v="0.0" /><kf t="0.2000" v="1.0" e="cubicBezier 0.0 0.0 0.0 1.0" /></opacity>
 </transform>
 <fillColor value="#ff9aa3b2" />
-<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.08" /></effect>
+<effect id="com.alightcreative.effects.textspacing" locallyApplied="true"><property name="letterspacing" type="float" value="0.06" /></effect>
 <content>free for 14 days</content>
 </text>
 <shape id="2406" startTime="29850" endTime="30000" fillType="color" mediaFillMode="fill" s=".rect">
 <transform>
 <location value="540.0,960.0,0.0" />
-<opacity><kf t="0.0000" v="0.0" /><kf t="1.0000" v="0.85" e="cubicBezier 0.42 0.0 0.58 1.0" /></opacity>
+<opacity><kf t="0.0000" v="0.0" /><kf t="1.0000" v="0.8" e="cubicBezier 0.42 0.0 0.58 1.0" /></opacity>
 </transform>
 <property name="size" type="vec2" value="1080.0,1920.0" />
 <fillColor value="#ffffffff" />
