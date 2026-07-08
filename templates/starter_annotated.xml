@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!-- ANNOTATED STARTER. Colors=#AARRGGBB. Scene times=ms. kf t=0..1 of layer. -->
+<scene title="My Edit" width="1080" height="1920" exportWidth="1080" exportHeight="1920"
+       fps="60" totalTime="5000" bgcolor="#ff000000" precompose="dynamicResolution"
+       am="com.alightcreative.motion/5.0.272" amplatform="android">
+
+  <!-- TEXT layer: lives 0ms..5000ms -->
+  <text id="1001" startTime="0" endTime="5000" fillType="color"
+        size="120" font="googlefonts?name=Roboto&amp;weight=900" wrapWidth="900" align="center">
+    <transform>
+      <!-- moves from y=1400 (t=0) to y=960 (t=0.3) then holds. t is normalized! -->
+      <location>
+        <kf t="0.0" v="540,1400,0" e="cubicBezier 0.0 0.0 0.0 1.0"/>
+        <kf t="0.3" v="540,960,0"/>
+      </location>
+      <!-- fade in over first 20% of the layer -->
+      <opacity>
+        <kf t="0.0" v="0"/>
+        <kf t="0.2" v="1"/>
+      </opacity>
+    </transform>
+    <fillColor value="#ffffffff"/>
+    <content>HELLO</content>
+
+    <!-- one effect: gaussian blur that resolves 12->0 across the layer -->
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+      <property name="radius"><kf t="0.0" v="12"/><kf t="0.25" v="0"/></property>
+    </effect>
+  </text>
+
+  <!-- SHAPE layer: a rectangle behind the text (earlier in doc = lower z) -->
+  <shape id="1000" startTime="0" endTime="5000" s=".rect" fillType="color">
+    <transform>
+      <location value="540,960,0"/>
+      <scale value="6,2"/>
+    </transform>
+    <fillColor value="#ffff2d55"/>
+  </shape>
+</scene>
