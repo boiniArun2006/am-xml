@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' ?><!--
+Created by Alight Motion (http://alightmotion.com)
+Exported: 2024-08-01 02:16 PM
+5.0.260.1002351 (1001615)
+d4944c5 (15 Des 2023 21.18.33)
+-->
+<scene title="Proyek Baru 10" width="1080" height="1080" exportWidth="1080" exportHeight="1080" precompose="dynamicResolution" bgcolor="#ff000000" totalTime="2432" fps="30" modifiedTime="1722496600384" amver="1001615" ffver="106" am="com.alightcreative.motion/5.0.260.1002351" amplatform="android" retime="freeze" retimeAdaptFPS="false">
+  <media uri="content://media/external/audio/media/1000982521" filename="8-bit-blast-63035.mp3" title="8-bit-blast-63035.mp3" type="audio/mpeg" duration="30168000" size="603360" infoUpdated="1722496424275" />
+  <bookmark t="416" />
+  <bookmark t="816" />
+  <bookmark t="1216" />
+  <bookmark t="1616" />
+  <text id="326" hidden="true" startTime="0" endTime="2400" fillType="color" mediaFillMode="fill" size="64.000000" font="imported?name=Wayland DEMO.ttf" wrapWidth="512" align="center">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <opacity value="0.404297" />
+    </transform>
+    <content>LOREM</content>
+  </text>
+  <embedScene id="337" label="Kelompok dan Buat Mask 1" startTime="0" endTime="2432" fillType="intrinsic" outTime="-2147483249" mediaFillMode="fill">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <pivot value="-179.199768,0.000000" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.offset" locallyApplied="true">
+      <property name="offset" type="vec2">
+        <kf t="0.335526" v="0.000000,0.000000" e="cubicBezier 0.71 0.0 0.41 1.0" />
+        <kf t="0.006579" v="0.000000,9999.000000" e="cubicBezier 0.71 0.0 0.41 1.0" />
+        <kf t="0.171053" v="0.000000,-100.000000" />
+      </property>
+      <property name="feather" type="float" value="0.000000" />
+      <property name="mask" type="bool" value="false" />
+    </effect>
+    <scene title="" width="1080" height="1080" exportWidth="1080" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2032" fps="30" modifiedTime="0" amver="1001615" ffver="106" am="com.alightcreative.motion/5.0.260.1002351" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <text id="327" label="LOREM Copy" startTime="0" endTime="2032" fillType="color" mediaFillMode="fill" size="64.000000" font="imported?name=Wayland DEMO.ttf" wrapWidth="512" align="center">
+        <transform>
+          <location value="360.800232,540.000000,0.000000" />
+        </transform>
+        <content>L</content>
+      </text>
+      <shape id="332" label="Persegi panjang 1" startTime="0" endTime="2032" fillType="color" blending="mask" mediaFillMode="fill" s=".rect">
+        <transform lockAspectRatio="false">
+          <location value="360.800232,540.000000,0.000000" />
+          <scale value="0.430000,0.830000" />
+        </transform>
+        <fillColor value="#ffe8397a" />
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+    </scene>
+  </embedScene>
+  <embedScene id="338" label="Kelompok dan Buat Mask 2" startTime="0" endTime="2432" fillType="intrinsic" outTime="-2147483249" mediaFillMode="fill">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <pivot value="-108.099731,0.000000" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.offset" locallyApplied="true">
+      <property name="offset" type="vec2">
+        <kf t="0.500000" v="0.000000,0.000000" e="cubicBezier 0.71 0.0 0.41 1.0" />
+        <kf t="0.006579" v="0.000000,-9999.000000" e="cubicBezier 0.71 0.0 0.41 1.0" />
+        <kf t="0.335526" v="0.000000,100.000000" />
+      </property>
+      <property name="feather" type="float" value="0.000000" />
+      <property name="mask" type="bool" value="false" />
+    </effect>
+    <scene title="" width="1080" height="1080" exportWidth="1080" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2032" fps="30" modifiedTime="0" amver="1001615" ffver="106" am="com.alightcreative.motion/5.0.260.1002351" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <text id="328" label="LOREM Copy 2" startTime="0" endTime="2032" fillType="color" mediaFillMode="fill" size="64.000000" font="imported?name=Wayland DEMO.ttf" wrapWidth="512" align="center">
+        <transform>
+          <location value="431.900269,540.500000,0.000000" />
+        </transform>
+        <content>O</content>
+      </text>
+      <shape id="333" label="Persegi panjang 1 Copy" startTime="0" endTime="2032" fillType="color" blending="mask" mediaFillMode="fill" s=".rect">
+        <transform lockAspectRatio="false">
+          <location value="431.900269,540.000000,0.000000" />
+          <scale value="0.430000,0.830000" />
+        </transform>
+        <fillColor value="#ffe8397a" />
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+    </scene>
+  </embedScene>
+  <embedScene id="339" label="Kelompok dan Buat Mask 3" startTime="0" endTime="2432" fillType="intrinsic" outTime="-2147483249" mediaFillMode="fill">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <pivot value="-23.999756,0.000000" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.offset" locallyApplied="true">
+      <property name="offset" type="vec2">
+        <kf t="0.664474" v="0.000000,0.000000" e="cubicBezier 0.71 0.0 0.41 1.0" />
+        <kf t="0.006579" v="0.000000,9999.000000" e="cubicBezier 0.71 0.0 0.41 1.0" />
+        <kf t="0.500000" v="0.000000,-100.000000" />
+      </property>
+      <property name="feather" type="float" value="0.000000" />
+      <property name="mask" type="bool" value="false" />
+    </effect>
+    <scene title="" width="1080" height="1080" exportWidth="1080" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2032" fps="30" modifiedTime="0" amver="1001615" ffver="106" am="com.alightcreative.motion/5.0.260.1002351" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <text id="329" label="LOREM Copy 3" startTime="0" endTime="2032" fillType="color" mediaFillMode="fill" size="64.000000" font="imported?name=Wayland DEMO.ttf" wrapWidth="512" align="center">
+        <transform>
+          <location value="516.000244,540.500000,0.000000" />
+        </transform>
+        <content>R</content>
+      </text>
+      <shape id="334" label="Persegi panjang 1 Copy 2" startTime="0" endTime="2032" fillType="color" blending="mask" mediaFillMode="fill" s=".rect">
+        <transform lockAspectRatio="false">
+          <location value="516.000244,540.000000,0.000000" />
+          <scale value="0.430000,0.830000" />
+        </transform>
+        <fillColor value="#ffe8397a" />
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+    </scene>
+  </embedScene>
+  <embedScene id="340" label="Kelompok dan Buat Mask 4" startTime="0" endTime="2432" fillType="intrinsic" outTime="-2147483249" mediaFillMode="fill">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <pivot value="52.100220,0.000000" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.offset" locallyApplied="true">
+      <property name="offset" type="vec2">
+        <kf t="0.828947" v="0.000000,0.000000" />
+        <kf t="0.006579" v="0.000000,-9999.000000" />
+        <kf t="0.664474" v="0.000000,100.000000" />
+      </property>
+      <property name="feather" type="float" value="0.000000" />
+      <property name="mask" type="bool" value="false" />
+    </effect>
+    <scene title="" width="1080" height="1080" exportWidth="1080" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2032" fps="30" modifiedTime="0" amver="1001615" ffver="106" am="com.alightcreative.motion/5.0.260.1002351" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <text id="330" label="LOREM Copy 4" startTime="0" endTime="2032" fillType="color" mediaFillMode="fill" size="64.000000" font="imported?name=Wayland DEMO.ttf" wrapWidth="512" align="center">
+        <transform>
+          <location value="592.100220,540.500000,0.000000" />
+        </transform>
+        <content>E</content>
+      </text>
+      <shape id="335" label="Persegi panjang 1 Copy 3" startTime="0" endTime="2032" fillType="color" blending="mask" mediaFillMode="fill" s=".rect">
+        <transform lockAspectRatio="false">
+          <location value="592.100220,540.000000,0.000000" />
+          <scale value="0.430000,0.830000" />
+        </transform>
+        <fillColor value="#ffe8397a" />
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+    </scene>
+  </embedScene>
+  <embedScene id="341" label="Kelompok dan Buat Mask 5" startTime="0" endTime="2432" fillType="intrinsic" outTime="2432" mediaFillMode="fill">
+    <transform>
+      <location value="540.000000,540.000000,0.000000" />
+      <pivot value="149.622314,0.000000" />
+    </transform>
+    <fillColor value="#ff000000" />
+    <effect id="com.alightcreative.effects.offset" locallyApplied="true">
+      <property name="offset" type="vec2">
+        <kf t="0.006579" v="0.000000,9999.000000" />
+        <kf t="0.993421" v="0.000000,0.000000" />
+        <kf t="0.828947" v="0.000000,-100.000000" />
+      </property>
+      <property name="feather" type="float" value="0.000000" />
+      <property name="mask" type="bool" value="false" />
+    </effect>
+    <scene title="" width="1080" height="1080" exportWidth="1080" exportHeight="1080" precompose="dynamicResolution" bgcolor="#00000000" totalTime="2032" fps="30" modifiedTime="0" amver="1001615" ffver="106" am="com.alightcreative.motion/5.0.260.1002351" amplatform="android" retime="off" retimeAdaptFPS="false">
+      <text id="331" label="LOREM Copy 5" startTime="0" endTime="2032" fillType="color" mediaFillMode="fill" size="64.000000" font="imported?name=Wayland DEMO.ttf" wrapWidth="512" align="center">
+        <transform>
+          <location value="689.622314,540.500000,0.000000" />
+        </transform>
+        <content>M</content>
+      </text>
+      <shape id="336" label="Persegi panjang 1 Copy 4" startTime="0" endTime="2032" fillType="color" blending="mask" mediaFillMode="fill" s=".rect">
+        <transform lockAspectRatio="false">
+          <location value="689.622314,540.000000,0.000000" />
+          <scale value="0.580000,0.830000" />
+        </transform>
+        <fillColor value="#ffe8397a" />
+        <property name="size" type="vec2" value="100.000000,100.000000" />
+      </shape>
+    </scene>
+  </embedScene>
+  <audio id="735" label="8-bit-blast-63035.mp3" startTime="0" endTime="2432" src="content://media/external/audio/media/1000982521" inTime="16898" outTime="19330" mediaFillMode="fill">
+    <gain>
+      <kf t="0.664474" v="1.000000" />
+      <kf t="0.993421" v="0.000000" />
+    </gain>
+  </audio>
+</scene>
