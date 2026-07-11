@@ -1,0 +1,38 @@
+package com.google.android.gms.internal.play_billing;
+
+/* JADX INFO: loaded from: /content/repo2/apk-analysis/Alight motion /classes8.dex */
+public final class zzlh extends zzhk implements zzin {
+    private static final zzlh zzb;
+    private zzho zzd = zzhk.zzs();
+
+    static {
+        zzlh zzlhVar = new zzlh();
+        zzb = zzlhVar;
+        zzhk.zzx(zzlh.class, zzlhVar);
+    }
+
+    @Override // com.google.android.gms.internal.play_billing.zzhk
+    protected final Object zzd(int i2, Object obj, Object obj2) {
+        int i3 = i2 - 1;
+        if (i3 == 0) {
+            return (byte) 1;
+        }
+        if (i3 == 2) {
+            return zzhk.zzu(zzb, "\u0004\u0001\u0000\u0000\u0001\u0001\u0001\u0000\u0001\u0000\u0001\u001b", new Object[]{"zzd", zzlf.class});
+        }
+        if (i3 == 3) {
+            return new zzlh();
+        }
+        zzlg zzlgVar = null;
+        if (i3 == 4) {
+            return new zzlc(zzlgVar);
+        }
+        if (i3 != 5) {
+            return null;
+        }
+        return zzb;
+    }
+
+    private zzlh() {
+    }
+}

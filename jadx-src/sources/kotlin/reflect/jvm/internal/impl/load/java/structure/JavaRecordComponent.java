@@ -1,0 +1,8 @@
+package kotlin.reflect.jvm.internal.impl.load.java.structure;
+
+/* JADX INFO: loaded from: /content/repo2/apk-analysis/Alight motion /classes3.dex */
+public interface JavaRecordComponent extends JavaMember {
+    JavaType getType();
+
+    boolean isVararg();
+}

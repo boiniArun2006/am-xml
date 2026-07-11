@@ -1,0 +1,21 @@
+package com.google.android.gms.internal.ads;
+
+import java.io.File;
+
+/* JADX INFO: loaded from: /content/repo2/apk-analysis/Alight motion /classes7.dex */
+public final class zzgly implements zzikg {
+    private final zzikp zza;
+
+    private zzgly(zzikp zzikpVar) {
+        this.zza = zzikpVar;
+    }
+
+    public static zzgly zza(zzikp zzikpVar) {
+        return new zzgly(zzikpVar);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzikv, com.google.android.gms.internal.ads.zziku
+    public final /* bridge */ /* synthetic */ Object zzb() {
+        return new File(new File(new File((File) this.zza.zzb(), "drgd"), "v"), "pcam.jar");
+    }
+}

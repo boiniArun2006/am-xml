@@ -1,0 +1,47 @@
+package androidx.compose.material;
+
+import androidx.compose.runtime.Composer;
+import androidx.compose.runtime.ComposerKt;
+import androidx.compose.runtime.internal.ComposableLambdaKt;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function3;
+
+/* JADX INFO: loaded from: /content/repo2/apk-analysis/Alight motion /classes4.dex */
+@Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
+public final class ComposableSingletons$SnackbarHostKt {
+
+    /* JADX INFO: renamed from: n, reason: collision with root package name */
+    public static final ComposableSingletons$SnackbarHostKt f21739n = new ComposableSingletons$SnackbarHostKt();
+    private static Function3 rl = ComposableLambdaKt.rl(996639038, false, new Function3<SnackbarData, Composer, Integer, Unit>() { // from class: androidx.compose.material.ComposableSingletons$SnackbarHostKt$lambda-1$1
+        @Override // kotlin.jvm.functions.Function3
+        public /* bridge */ /* synthetic */ Unit invoke(SnackbarData snackbarData, Composer composer, Integer num) {
+            n(snackbarData, composer, num.intValue());
+            return Unit.INSTANCE;
+        }
+
+        public final void n(SnackbarData snackbarData, Composer composer, int i2) {
+            int i3;
+            if ((i2 & 6) == 0) {
+                i3 = i2 | ((i2 & 8) == 0 ? composer.p5(snackbarData) : composer.E2(snackbarData) ? 4 : 2);
+            } else {
+                i3 = i2;
+            }
+            if (!composer.HI((i3 & 19) != 18, i3 & 1)) {
+                composer.wTp();
+                return;
+            }
+            if (ComposerKt.v()) {
+                ComposerKt.p5(996639038, i3, -1, "androidx.compose.material.ComposableSingletons$SnackbarHostKt.lambda-1.<anonymous> (SnackbarHost.kt:154)");
+            }
+            SnackbarKt.nr(snackbarData, null, false, null, 0L, 0L, 0L, 0.0f, composer, i3 & 14, 254);
+            if (ComposerKt.v()) {
+                ComposerKt.M7();
+            }
+        }
+    });
+
+    public final Function3 n() {
+        return rl;
+    }
+}

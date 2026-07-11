@@ -1,0 +1,14 @@
+package androidx.resourceinspection.annotation;
+
+import androidx.annotation.RestrictTo;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+/* JADX INFO: loaded from: /content/repo2/apk-analysis/Alight motion /classes6.dex */
+@Target({ElementType.TYPE})
+@Retention(RetentionPolicy.SOURCE)
+@RestrictTo
+public @interface AppCompatShadowedAttributes {
+}

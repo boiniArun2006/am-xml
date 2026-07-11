@@ -1,0 +1,27 @@
+package com.google.android.gms.ads.nonagon.signalgeneration;
+
+import com.google.android.gms.internal.ads.zzcmj;
+import com.google.android.gms.internal.ads.zzdye;
+import com.google.android.gms.internal.ads.zzfmk;
+import com.google.android.gms.internal.ads.zzikg;
+import com.google.android.gms.internal.ads.zzikp;
+
+/* JADX INFO: loaded from: /content/repo2/apk-analysis/Alight motion /classes6.dex */
+public final class zzr implements zzikg {
+    private final zzikp zza;
+    private final zzikp zzb;
+
+    private zzr(zzikp zzikpVar, zzikp zzikpVar2, zzikp zzikpVar3) {
+        this.zza = zzikpVar;
+        this.zzb = zzikpVar2;
+    }
+
+    public static zzr zza(zzikp zzikpVar, zzikp zzikpVar2, zzikp zzikpVar3) {
+        return new zzr(zzikpVar, zzikpVar2, zzikpVar3);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzikv, com.google.android.gms.internal.ads.zziku
+    public final /* bridge */ /* synthetic */ Object zzb() {
+        return new zzo(((zzcmj) this.zza).zza(), (zzdye) this.zzb.zzb(), zzfmk.zzc());
+    }
+}

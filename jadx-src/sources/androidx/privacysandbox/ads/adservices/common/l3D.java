@@ -1,0 +1,5 @@
+package androidx.privacysandbox.ads.adservices.common;
+
+/* JADX INFO: loaded from: /content/repo2/apk-analysis/Alight motion /classes.dex */
+public abstract /* synthetic */ class l3D {
+}

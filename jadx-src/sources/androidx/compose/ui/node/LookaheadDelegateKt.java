@@ -1,0 +1,10 @@
+package androidx.compose.ui.node;
+
+import kotlin.Metadata;
+import kotlin.jvm.internal.SourceDebugExtension;
+
+/* JADX INFO: loaded from: /content/repo2/apk-analysis/Alight motion /classes.dex */
+@Metadata(d1 = {"\u0000\u0002\n\u0000¨\u0006\u0000"}, d2 = {"ui_release"}, k = 2, mv = {1, 9, 0}, xi = 48)
+@SourceDebugExtension({"SMAP\nLookaheadDelegate.kt\nKotlin\n*S Kotlin\n*F\n+ 1 LookaheadDelegate.kt\nandroidx/compose/ui/node/LookaheadDelegateKt\n+ 2 InlineClassHelper.kt\nandroidx/compose/ui/internal/InlineClassHelperKt\n*L\n1#1,521:1\n56#2,5:522\n*S KotlinDebug\n*F\n+ 1 LookaheadDelegate.kt\nandroidx/compose/ui/node/LookaheadDelegateKt\n*L\n361#1:522,5\n*E\n"})
+public final class LookaheadDelegateKt {
+}

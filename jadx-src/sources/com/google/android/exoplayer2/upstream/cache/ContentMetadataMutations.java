@@ -1,0 +1,65 @@
+package com.google.android.exoplayer2.upstream.cache;
+
+import android.net.Uri;
+import androidx.annotation.Nullable;
+import com.google.android.exoplayer2.util.Assertions;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+/* JADX INFO: loaded from: /content/repo2/apk-analysis/Alight motion /classes7.dex */
+public class ContentMetadataMutations {
+    private final Map<String, Object> editedValues = new HashMap();
+    private final List<String> removedValues = new ArrayList();
+
+    public ContentMetadataMutations set(String str, String str2) {
+        return checkAndSet(str, str2);
+    }
+
+    private ContentMetadataMutations checkAndSet(String str, Object obj) {
+        this.editedValues.put((String) Assertions.checkNotNull(str), Assertions.checkNotNull(obj));
+        this.removedValues.remove(str);
+        return this;
+    }
+
+    public static ContentMetadataMutations setContentLength(ContentMetadataMutations contentMetadataMutations, long j2) {
+        return contentMetadataMutations.set("exo_len", j2);
+    }
+
+    public static ContentMetadataMutations setRedirectedUri(ContentMetadataMutations contentMetadataMutations, @Nullable Uri uri) {
+        return uri == null ? contentMetadataMutations.remove("exo_redir") : contentMetadataMutations.set("exo_redir", uri.toString());
+    }
+
+    public Map<String, Object> getEditedValues() {
+        HashMap map = new HashMap(this.editedValues);
+        for (Map.Entry entry : map.entrySet()) {
+            Object value = entry.getValue();
+            if (value instanceof byte[]) {
+                byte[] bArr = (byte[]) value;
+                entry.setValue(Arrays.copyOf(bArr, bArr.length));
+            }
+        }
+        return Collections.unmodifiableMap(map);
+    }
+
+    public List<String> getRemovedValues() {
+        return Collections.unmodifiableList(new ArrayList(this.removedValues));
+    }
+
+    public ContentMetadataMutations remove(String str) {
+        this.removedValues.add(str);
+        this.editedValues.remove(str);
+        return this;
+    }
+
+    public ContentMetadataMutations set(String str, long j2) {
+        return checkAndSet(str, Long.valueOf(j2));
+    }
+
+    public ContentMetadataMutations set(String str, byte[] bArr) {
+        return checkAndSet(str, Arrays.copyOf(bArr, bArr.length));
+    }
+}

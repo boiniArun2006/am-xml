@@ -1,0 +1,24 @@
+package com.google.android.gms.internal.fido;
+
+import java.util.Comparator;
+import java.util.SortedSet;
+
+/* JADX INFO: loaded from: /content/repo2/apk-analysis/Alight motion /classes3.dex */
+final class zzdb {
+    public static boolean zza(Comparator comparator, Iterable iterable) {
+        Comparator comparator2;
+        comparator.getClass();
+        iterable.getClass();
+        if (iterable instanceof SortedSet) {
+            comparator2 = ((SortedSet) iterable).comparator();
+            if (comparator2 == null) {
+                comparator2 = zzcq.zza;
+            }
+        } else if (iterable instanceof zzda) {
+            comparator2 = ((zzda) iterable).comparator();
+        } else {
+            return false;
+        }
+        return comparator.equals(comparator2);
+    }
+}

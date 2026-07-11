@@ -1,0 +1,24 @@
+package com.google.android.gms.internal.ads;
+
+import java.util.Collections;
+import java.util.Set;
+
+/* JADX INFO: loaded from: /content/repo2/apk-analysis/Alight motion /classes2.dex */
+public final class zzdlm implements zzikg {
+    private final zzikp zza;
+
+    private zzdlm(zzikp zzikpVar) {
+        this.zza = zzikpVar;
+    }
+
+    public static zzdlm zza(zzikp zzikpVar) {
+        return new zzdlm(zzikpVar);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzikv, com.google.android.gms.internal.ads.zziku
+    public final /* bridge */ /* synthetic */ Object zzb() {
+        Set setSingleton = Collections.singleton(new zzdje((zzdmf) this.zza.zzb(), zzcei.zzg));
+        zziko.zzb(setSingleton);
+        return setSingleton;
+    }
+}

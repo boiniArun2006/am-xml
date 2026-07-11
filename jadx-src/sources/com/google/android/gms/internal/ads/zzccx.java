@@ -1,0 +1,23 @@
+package com.google.android.gms.internal.ads;
+
+import android.content.Context;
+
+/* JADX INFO: loaded from: /content/repo2/apk-analysis/Alight motion /classes7.dex */
+public final class zzccx implements zzikg {
+    private final zzikp zza;
+    private final zzikp zzb;
+
+    private zzccx(zzikp zzikpVar, zzikp zzikpVar2) {
+        this.zza = zzikpVar;
+        this.zzb = zzikpVar2;
+    }
+
+    public static zzccx zza(zzikp zzikpVar, zzikp zzikpVar2) {
+        return new zzccx(zzikpVar, zzikpVar2);
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzikv, com.google.android.gms.internal.ads.zziku
+    public final /* bridge */ /* synthetic */ Object zzb() {
+        return new zzccw((Context) this.zza.zzb(), ((zzcck) this.zzb).zzb());
+    }
+}

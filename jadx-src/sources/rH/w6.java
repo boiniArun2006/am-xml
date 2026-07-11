@@ -1,0 +1,7 @@
+package rH;
+
+/* JADX INFO: loaded from: /content/repo2/apk-analysis/Alight motion /classes8.dex */
+public enum w6 {
+    ALIGN_BALLOON,
+    ALIGN_ANCHOR
+}

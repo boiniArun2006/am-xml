@@ -1,0 +1,52 @@
+package mfo.CLVG;
+
+/* JADX INFO: loaded from: /content/repo2/apk-analysis/Alight motion /classes9.dex */
+public class aNrWBQYwFf {
+    public static String BsvHapLiAwi;
+    public static String CUKAnd;
+    public static String DUy;
+    public static String DVrT;
+    public static String DZpxdwHot;
+    public static String DfgwGSjQbfeA;
+    public static String EUdrVvBC;
+    public static String GmFGMMfrS;
+    public static String HHhMdfMdG;
+    public static String HjMALo;
+    public static String HsNaHne;
+    public static String JTslJmgJNxeI;
+    public static String JYzGYknj;
+    public static String JfVzqHTfFLA;
+    public static String KvYTiWAH;
+    public static String LuTVLkN;
+    public static String MQhgF;
+    public static String MiAVvcixfWjoN;
+    public static String NhbrKCTsJ;
+    public static String QjJMAgrxVnOeNAH;
+    public static String QrYeU;
+    public static String UUvdSLrg;
+    public static String UmJ;
+    public static String YEwLfuGQFTT;
+    public static String cBsYEsPxvQ;
+    public static String cLeZVQh;
+    public static String euOZH;
+    public static String iVxIDdnNPXDqJq;
+    public static String jfaKZtzFqYgR;
+    public static String kSEMOtpXciGU;
+    public static String lgERbk;
+    public static String mToRmtv;
+    public static String mhdgOIoFX;
+    public static String nYBPqnYJfUZiygu;
+    public static String plrdJGiXnGlp;
+    public static String qMlOLZPi;
+    public static String rTyEsds;
+    public static String sjPSIUeslkc;
+    public static String sxFgrzntCgEZiPZ;
+    public static String tkECGkvxAg;
+    public static String uIodVDAm;
+    public static String wISdNjGMkHwF;
+    public static String wrPWgKohH;
+    public static String yJNw;
+    public static String yQQkwenAvegN;
+    public static String zLCgDEOyZDWW;
+    public static String zzSpkFdqSqc;
+}

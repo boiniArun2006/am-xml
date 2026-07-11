@@ -1,0 +1,71 @@
+package M;
+
+import kotlin.enums.EnumEntries;
+import kotlin.enums.EnumEntriesKt;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* JADX INFO: loaded from: /content/repo2/apk-analysis/Alight motion /classes3.dex */
+public final class Wre {
+    private static final /* synthetic */ Wre[] J2;
+
+    /* JADX INFO: renamed from: O, reason: collision with root package name */
+    public static final Wre f6382O = new Wre("CreatorProgram", 0, "creator-program");
+
+    /* JADX INFO: renamed from: r, reason: collision with root package name */
+    private static final /* synthetic */ EnumEntries f6383r;
+
+    /* JADX INFO: renamed from: t, reason: collision with root package name */
+    public static final j f6384t;
+
+    /* JADX INFO: renamed from: n, reason: collision with root package name */
+    private final String f6385n;
+
+    public static final class j {
+        public /* synthetic */ j(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private j() {
+        }
+
+        public final Wre n(String value) {
+            Intrinsics.checkNotNullParameter(value, "value");
+            for (Wre wre : Wre.values()) {
+                if (Intrinsics.areEqual(wre.rl(), value)) {
+                    return wre;
+                }
+            }
+            return null;
+        }
+    }
+
+    static {
+        Wre[] wreArrN = n();
+        J2 = wreArrN;
+        f6383r = EnumEntriesKt.enumEntries(wreArrN);
+        f6384t = new j(null);
+    }
+
+    private static final /* synthetic */ Wre[] n() {
+        return new Wre[]{f6382O};
+    }
+
+    public static Wre valueOf(String str) {
+        return (Wre) Enum.valueOf(Wre.class, str);
+    }
+
+    public static Wre[] values() {
+        return (Wre[]) J2.clone();
+    }
+
+    public final String rl() {
+        return this.f6385n;
+    }
+
+    private Wre(String str, int i2, String str2) {
+        this.f6385n = str2;
+    }
+}

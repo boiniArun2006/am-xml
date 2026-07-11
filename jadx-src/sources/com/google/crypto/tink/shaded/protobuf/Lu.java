@@ -1,0 +1,186 @@
+package com.google.crypto.tink.shaded.protobuf;
+
+import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+import kotlin.text.Typography;
+
+/* JADX INFO: loaded from: /content/repo2/apk-analysis/Alight motion /classes6.dex */
+abstract class Lu {
+
+    /* JADX INFO: renamed from: n, reason: collision with root package name */
+    private static final char[] f59883n;
+
+    static {
+        char[] cArr = new char[80];
+        f59883n = cArr;
+        Arrays.fill(cArr, ' ');
+    }
+
+    static String J2(rv6 rv6Var, String str) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("# ");
+        sb.append(str);
+        O(rv6Var, sb, 0);
+        return sb.toString();
+    }
+
+    /* JADX WARN: Removed duplicated region for block: B:64:0x0174  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+    */
+    private static void O(rv6 rv6Var, StringBuilder sb, int i2) {
+        int i3;
+        int i5;
+        Method method;
+        Method method2;
+        HashSet hashSet = new HashSet();
+        HashMap map = new HashMap();
+        TreeMap treeMap = new TreeMap();
+        Method[] declaredMethods = rv6Var.getClass().getDeclaredMethods();
+        int length = declaredMethods.length;
+        int i7 = 0;
+        while (true) {
+            i3 = 3;
+            if (i7 >= length) {
+                break;
+            }
+            Method method3 = declaredMethods[i7];
+            if (!Modifier.isStatic(method3.getModifiers()) && method3.getName().length() >= 3) {
+                if (method3.getName().startsWith("set")) {
+                    hashSet.add(method3.getName());
+                } else if (Modifier.isPublic(method3.getModifiers()) && method3.getParameterTypes().length == 0) {
+                    if (method3.getName().startsWith("has")) {
+                        map.put(method3.getName(), method3);
+                    } else if (method3.getName().startsWith("get")) {
+                        treeMap.put(method3.getName(), method3);
+                    }
+                }
+            }
+            i7++;
+        }
+        for (Map.Entry entry : treeMap.entrySet()) {
+            String strSubstring = ((String) entry.getKey()).substring(i3);
+            if (!strSubstring.endsWith("List") || strSubstring.endsWith("OrBuilderList") || strSubstring.equals("List") || (method2 = (Method) entry.getValue()) == null) {
+                i5 = i3;
+            } else {
+                i5 = i3;
+                if (method2.getReturnType().equals(List.class)) {
+                    nr(sb, i2, strSubstring.substring(0, strSubstring.length() - 4), Q.XQ(method2, rv6Var, new Object[0]));
+                }
+                i3 = i5;
+            }
+            if (!strSubstring.endsWith("Map") || strSubstring.equals("Map") || (method = (Method) entry.getValue()) == null || !method.getReturnType().equals(Map.class) || method.isAnnotationPresent(Deprecated.class) || !Modifier.isPublic(method.getModifiers())) {
+                if (hashSet.contains("set" + strSubstring)) {
+                    if (strSubstring.endsWith("Bytes")) {
+                        if (!treeMap.containsKey("get" + strSubstring.substring(0, strSubstring.length() - 5))) {
+                            Method method4 = (Method) entry.getValue();
+                            Method method5 = (Method) map.get("has" + strSubstring);
+                            if (method4 != null) {
+                                Object objXQ = Q.XQ(method4, rv6Var, new Object[0]);
+                                if (method5 == null ? !rl(objXQ) : ((Boolean) Q.XQ(method5, rv6Var, new Object[0])).booleanValue()) {
+                                    nr(sb, i2, strSubstring, objXQ);
+                                }
+                            }
+                        }
+                    }
+                }
+            } else {
+                nr(sb, i2, strSubstring.substring(0, strSubstring.length() - 3), Q.XQ(method, rv6Var, new Object[0]));
+            }
+            i3 = i5;
+        }
+        fg fgVar = ((Q) rv6Var).unknownFields;
+        if (fgVar != null) {
+            fgVar.az(sb, i2);
+        }
+    }
+
+    private static void n(int i2, StringBuilder sb) {
+        while (i2 > 0) {
+            char[] cArr = f59883n;
+            int length = i2 > cArr.length ? cArr.length : i2;
+            sb.append(cArr, 0, length);
+            i2 -= length;
+        }
+    }
+
+    static void nr(StringBuilder sb, int i2, String str, Object obj) {
+        if (obj instanceof List) {
+            Iterator it = ((List) obj).iterator();
+            while (it.hasNext()) {
+                nr(sb, i2, str, it.next());
+            }
+            return;
+        }
+        if (obj instanceof Map) {
+            Iterator it2 = ((Map) obj).entrySet().iterator();
+            while (it2.hasNext()) {
+                nr(sb, i2, str, (Map.Entry) it2.next());
+            }
+            return;
+        }
+        sb.append('\n');
+        n(i2, sb);
+        sb.append(t(str));
+        if (obj instanceof String) {
+            sb.append(": \"");
+            sb.append(LEl.t((String) obj));
+            sb.append(Typography.quote);
+            return;
+        }
+        if (obj instanceof fuX) {
+            sb.append(": \"");
+            sb.append(LEl.n((fuX) obj));
+            sb.append(Typography.quote);
+            return;
+        }
+        if (obj instanceof Q) {
+            sb.append(" {");
+            O((Q) obj, sb, i2 + 2);
+            sb.append("\n");
+            n(i2, sb);
+            sb.append("}");
+            return;
+        }
+        if (!(obj instanceof Map.Entry)) {
+            sb.append(": ");
+            sb.append(obj);
+            return;
+        }
+        sb.append(" {");
+        Map.Entry entry = (Map.Entry) obj;
+        int i3 = i2 + 2;
+        nr(sb, i3, "key", entry.getKey());
+        nr(sb, i3, "value", entry.getValue());
+        sb.append("\n");
+        n(i2, sb);
+        sb.append("}");
+    }
+
+    private static boolean rl(Object obj) {
+        return obj instanceof Boolean ? !((Boolean) obj).booleanValue() : obj instanceof Integer ? ((Integer) obj).intValue() == 0 : obj instanceof Float ? Float.floatToRawIntBits(((Float) obj).floatValue()) == 0 : obj instanceof Double ? Double.doubleToRawLongBits(((Double) obj).doubleValue()) == 0 : obj instanceof String ? obj.equals("") : obj instanceof fuX ? obj.equals(fuX.f59997t) : obj instanceof rv6 ? obj == ((rv6) obj).getDefaultInstanceForType() : (obj instanceof Enum) && ((Enum) obj).ordinal() == 0;
+    }
+
+    private static String t(String str) {
+        if (str.isEmpty()) {
+            return str;
+        }
+        StringBuilder sb = new StringBuilder();
+        sb.append(Character.toLowerCase(str.charAt(0)));
+        for (int i2 = 1; i2 < str.length(); i2++) {
+            char cCharAt = str.charAt(i2);
+            if (Character.isUpperCase(cCharAt)) {
+                sb.append("_");
+            }
+            sb.append(Character.toLowerCase(cCharAt));
+        }
+        return sb.toString();
+    }
+}

@@ -1,0 +1,393 @@
+package androidx.media3.exoplayer.hls.playlist;
+
+import android.net.Uri;
+import androidx.annotation.Nullable;
+import androidx.media3.common.DrmInitData;
+import androidx.media3.common.StreamKey;
+import androidx.media3.common.util.Assertions;
+import androidx.media3.common.util.UnstableApi;
+import com.google.common.collect.lej;
+import com.google.common.collect.nKK;
+import com.google.common.collect.u;
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+
+/* JADX INFO: loaded from: /content/repo2/apk-analysis/Alight motion /classes.dex */
+@UnstableApi
+public final class HlsMediaPlaylist extends HlsPlaylist {
+    public static final int PLAYLIST_TYPE_EVENT = 2;
+    public static final int PLAYLIST_TYPE_UNKNOWN = 0;
+    public static final int PLAYLIST_TYPE_VOD = 1;
+    public final int discontinuitySequence;
+    public final long durationUs;
+    public final boolean hasDiscontinuitySequence;
+    public final boolean hasEndTag;
+    public final boolean hasPositiveStartOffset;
+    public final boolean hasProgramDateTime;
+    public final nKK interstitials;
+    public final long mediaSequence;
+    public final long partTargetDurationUs;
+    public final int playlistType;
+    public final boolean preciseStart;
+
+    @Nullable
+    public final DrmInitData protectionSchemes;
+    public final Map<Uri, RenditionReport> renditionReports;
+    public final List<Segment> segments;
+    public final ServerControl serverControl;
+    public final long startOffsetUs;
+    public final long startTimeUs;
+    public final long targetDurationUs;
+    public final List<Part> trailingParts;
+    public final int version;
+
+    public static class ClientDefinedAttribute {
+        public static final int TYPE_DOUBLE = 2;
+        public static final int TYPE_HEX_TEXT = 1;
+        public static final int TYPE_TEXT = 0;
+        private final double doubleValue;
+        public final String name;
+
+        @Nullable
+        private final String textValue;
+        public final int type;
+
+        @Target({ElementType.TYPE_USE})
+        @Documented
+        @Retention(RetentionPolicy.SOURCE)
+        public @interface Type {
+        }
+
+        public ClientDefinedAttribute(String str, double d2) {
+            this.name = str;
+            this.type = 2;
+            this.doubleValue = d2;
+            this.textValue = null;
+        }
+
+        public boolean equals(@Nullable Object obj) {
+            if (this == obj) {
+                return true;
+            }
+            if (!(obj instanceof ClientDefinedAttribute)) {
+                return false;
+            }
+            ClientDefinedAttribute clientDefinedAttribute = (ClientDefinedAttribute) obj;
+            return this.type == clientDefinedAttribute.type && Double.compare(this.doubleValue, clientDefinedAttribute.doubleValue) == 0 && Objects.equals(this.name, clientDefinedAttribute.name) && Objects.equals(this.textValue, clientDefinedAttribute.textValue);
+        }
+
+        public double getDoubleValue() {
+            Assertions.checkState(this.type == 2);
+            return this.doubleValue;
+        }
+
+        public String getTextValue() {
+            Assertions.checkState(this.type != 2);
+            return (String) Assertions.checkNotNull(this.textValue);
+        }
+
+        public int hashCode() {
+            return Objects.hash(this.name, Integer.valueOf(this.type), Double.valueOf(this.doubleValue), this.textValue);
+        }
+
+        public ClientDefinedAttribute(String str, String str2, int i2) {
+            boolean z2 = true;
+            if (i2 == 1 && !str2.startsWith("0x") && !str2.startsWith("0X")) {
+                z2 = false;
+            }
+            Assertions.checkState(z2);
+            this.name = str;
+            this.type = i2;
+            this.textValue = str2;
+            this.doubleValue = 0.0d;
+        }
+    }
+
+    public static final class Interstitial {
+        public static final String CUE_TRIGGER_ONCE = "ONCE";
+        public static final String CUE_TRIGGER_POST = "POST";
+        public static final String CUE_TRIGGER_PRE = "PRE";
+        public static final String NAVIGATION_RESTRICTION_JUMP = "JUMP";
+        public static final String NAVIGATION_RESTRICTION_SKIP = "SKIP";
+        public static final String SNAP_TYPE_IN = "IN";
+        public static final String SNAP_TYPE_OUT = "OUT";
+
+        @Nullable
+        public final Uri assetListUri;
+
+        @Nullable
+        public final Uri assetUri;
+        public final nKK clientDefinedAttributes;
+        public final List<String> cue;
+        public final long durationUs;
+        public final long endDateUnixUs;
+        public final boolean endOnNext;
+        public final String id;
+        public final long plannedDurationUs;
+        public final long playoutLimitUs;
+        public final nKK restrictions;
+        public final long resumeOffsetUs;
+        public final nKK snapTypes;
+        public final long startDateUnixUs;
+
+        @Target({ElementType.TYPE_USE})
+        @Documented
+        @Retention(RetentionPolicy.SOURCE)
+        public @interface CueTriggerType {
+        }
+
+        @Target({ElementType.TYPE_USE})
+        @Documented
+        @Retention(RetentionPolicy.SOURCE)
+        public @interface NavigationRestriction {
+        }
+
+        @Target({ElementType.TYPE_USE})
+        @Documented
+        @Retention(RetentionPolicy.SOURCE)
+        public @interface SnapType {
+        }
+
+        public boolean equals(@Nullable Object obj) {
+            if (this == obj) {
+                return true;
+            }
+            if (!(obj instanceof Interstitial)) {
+                return false;
+            }
+            Interstitial interstitial = (Interstitial) obj;
+            return this.startDateUnixUs == interstitial.startDateUnixUs && this.endDateUnixUs == interstitial.endDateUnixUs && this.durationUs == interstitial.durationUs && this.plannedDurationUs == interstitial.plannedDurationUs && this.endOnNext == interstitial.endOnNext && this.resumeOffsetUs == interstitial.resumeOffsetUs && this.playoutLimitUs == interstitial.playoutLimitUs && Objects.equals(this.id, interstitial.id) && Objects.equals(this.assetUri, interstitial.assetUri) && Objects.equals(this.assetListUri, interstitial.assetListUri) && Objects.equals(this.cue, interstitial.cue) && Objects.equals(this.snapTypes, interstitial.snapTypes) && Objects.equals(this.restrictions, interstitial.restrictions) && Objects.equals(this.clientDefinedAttributes, interstitial.clientDefinedAttributes);
+        }
+
+        public int hashCode() {
+            return Objects.hash(this.id, this.assetUri, this.assetListUri, Long.valueOf(this.startDateUnixUs), Long.valueOf(this.endDateUnixUs), Long.valueOf(this.durationUs), Long.valueOf(this.plannedDurationUs), this.cue, Boolean.valueOf(this.endOnNext), Long.valueOf(this.resumeOffsetUs), Long.valueOf(this.playoutLimitUs), this.snapTypes, this.restrictions, this.clientDefinedAttributes);
+        }
+
+        public Interstitial(String str, @Nullable Uri uri, @Nullable Uri uri2, long j2, long j3, long j4, long j5, List<String> list, boolean z2, long j6, long j7, List<String> list2, List<String> list3, List<ClientDefinedAttribute> list4) {
+            boolean z3;
+            if ((uri != null && uri2 != null) || (uri == null && uri2 == null)) {
+                z3 = false;
+            } else {
+                z3 = true;
+            }
+            Assertions.checkArgument(z3);
+            this.id = str;
+            this.assetUri = uri;
+            this.assetListUri = uri2;
+            this.startDateUnixUs = j2;
+            this.endDateUnixUs = j3;
+            this.durationUs = j4;
+            this.plannedDurationUs = j5;
+            this.cue = list;
+            this.endOnNext = z2;
+            this.resumeOffsetUs = j6;
+            this.playoutLimitUs = j7;
+            this.snapTypes = nKK.ty(list2);
+            this.restrictions = nKK.ty(list3);
+            this.clientDefinedAttributes = nKK.ty(list4);
+        }
+    }
+
+    public static final class Part extends SegmentBase {
+        public final boolean isIndependent;
+        public final boolean isPreload;
+
+        public Part(String str, @Nullable Segment segment, long j2, int i2, long j3, @Nullable DrmInitData drmInitData, @Nullable String str2, @Nullable String str3, long j4, long j5, boolean z2, boolean z3, boolean z4) {
+            super(str, segment, j2, i2, j3, drmInitData, str2, str3, j4, j5, z2);
+            this.isIndependent = z3;
+            this.isPreload = z4;
+        }
+
+        public Part copyWith(long j2, int i2) {
+            return new Part(this.url, this.initializationSegment, this.durationUs, i2, j2, this.drmInitData, this.fullSegmentEncryptionKeyUri, this.encryptionIV, this.byteRangeOffset, this.byteRangeLength, this.hasGapTag, this.isIndependent, this.isPreload);
+        }
+    }
+
+    @Target({ElementType.TYPE_USE})
+    @Documented
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface PlaylistType {
+    }
+
+    public static final class Segment extends SegmentBase {
+        public final List<Part> parts;
+        public final String title;
+
+        public Segment(String str, long j2, long j3, @Nullable String str2, @Nullable String str3) {
+            this(str, null, "", 0L, -1, -9223372036854775807L, null, str2, str3, j2, j3, false, nKK.r());
+        }
+
+        public Segment copyWith(long j2, int i2) {
+            ArrayList arrayList = new ArrayList();
+            long j3 = j2;
+            for (int i3 = 0; i3 < this.parts.size(); i3++) {
+                Part part = this.parts.get(i3);
+                arrayList.add(part.copyWith(j3, i2));
+                j3 += part.durationUs;
+            }
+            return new Segment(this.url, this.initializationSegment, this.title, this.durationUs, i2, j2, this.drmInitData, this.fullSegmentEncryptionKeyUri, this.encryptionIV, this.byteRangeOffset, this.byteRangeLength, this.hasGapTag, arrayList);
+        }
+
+        public Segment(String str, @Nullable Segment segment, String str2, long j2, int i2, long j3, @Nullable DrmInitData drmInitData, @Nullable String str3, @Nullable String str4, long j4, long j5, boolean z2, List<Part> list) {
+            super(str, segment, j2, i2, j3, drmInitData, str3, str4, j4, j5, z2);
+            this.title = str2;
+            this.parts = nKK.ty(list);
+        }
+    }
+
+    public static class SegmentBase implements Comparable<Long> {
+        public final long byteRangeLength;
+        public final long byteRangeOffset;
+
+        @Nullable
+        public final DrmInitData drmInitData;
+        public final long durationUs;
+
+        @Nullable
+        public final String encryptionIV;
+
+        @Nullable
+        public final String fullSegmentEncryptionKeyUri;
+        public final boolean hasGapTag;
+
+        @Nullable
+        public final Segment initializationSegment;
+        public final int relativeDiscontinuitySequence;
+        public final long relativeStartTimeUs;
+        public final String url;
+
+        private SegmentBase(String str, @Nullable Segment segment, long j2, int i2, long j3, @Nullable DrmInitData drmInitData, @Nullable String str2, @Nullable String str3, long j4, long j5, boolean z2) {
+            this.url = str;
+            this.initializationSegment = segment;
+            this.durationUs = j2;
+            this.relativeDiscontinuitySequence = i2;
+            this.relativeStartTimeUs = j3;
+            this.drmInitData = drmInitData;
+            this.fullSegmentEncryptionKeyUri = str2;
+            this.encryptionIV = str3;
+            this.byteRangeOffset = j4;
+            this.byteRangeLength = j5;
+            this.hasGapTag = z2;
+        }
+
+        @Override // java.lang.Comparable
+        public int compareTo(Long l2) {
+            if (this.relativeStartTimeUs > l2.longValue()) {
+                return 1;
+            }
+            return this.relativeStartTimeUs < l2.longValue() ? -1 : 0;
+        }
+    }
+
+    public HlsMediaPlaylist(int i2, String str, List<String> list, long j2, boolean z2, long j3, boolean z3, int i3, long j4, int i5, long j5, long j6, boolean z4, boolean z5, boolean z6, @Nullable DrmInitData drmInitData, List<Segment> list2, List<Part> list3, ServerControl serverControl, Map<Uri, RenditionReport> map, List<Interstitial> list4) {
+        super(str, list, z4);
+        this.playlistType = i2;
+        this.startTimeUs = j3;
+        this.preciseStart = z2;
+        this.hasDiscontinuitySequence = z3;
+        this.discontinuitySequence = i3;
+        this.mediaSequence = j4;
+        this.version = i5;
+        this.targetDurationUs = j5;
+        this.partTargetDurationUs = j6;
+        this.hasEndTag = z5;
+        this.hasProgramDateTime = z6;
+        this.protectionSchemes = drmInitData;
+        this.segments = nKK.ty(list2);
+        this.trailingParts = nKK.ty(list3);
+        this.renditionReports = u.Uo(map);
+        this.interstitials = nKK.ty(list4);
+        if (!list3.isEmpty()) {
+            Part part = (Part) lej.nr(list3);
+            this.durationUs = part.relativeStartTimeUs + part.durationUs;
+        } else if (list2.isEmpty()) {
+            this.durationUs = 0L;
+        } else {
+            Segment segment = (Segment) lej.nr(list2);
+            this.durationUs = segment.relativeStartTimeUs + segment.durationUs;
+        }
+        this.startOffsetUs = j2 != -9223372036854775807L ? j2 >= 0 ? Math.min(this.durationUs, j2) : Math.max(0L, this.durationUs + j2) : -9223372036854775807L;
+        this.hasPositiveStartOffset = j2 >= 0;
+        this.serverControl = serverControl;
+    }
+
+    @Override // androidx.media3.exoplayer.offline.FilterableManifest
+    public HlsPlaylist copy(List<StreamKey> list) {
+        return this;
+    }
+
+    public boolean isNewerThan(@Nullable HlsMediaPlaylist hlsMediaPlaylist) {
+        if (hlsMediaPlaylist != null) {
+            long j2 = this.mediaSequence;
+            long j3 = hlsMediaPlaylist.mediaSequence;
+            if (j2 <= j3) {
+                if (j2 < j3) {
+                    return false;
+                }
+                int size = this.segments.size() - hlsMediaPlaylist.segments.size();
+                if (size != 0) {
+                    return size > 0;
+                }
+                int size2 = this.trailingParts.size();
+                int size3 = hlsMediaPlaylist.trailingParts.size();
+                if (size2 <= size3 && (size2 != size3 || !this.hasEndTag || hlsMediaPlaylist.hasEndTag)) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    public static final class RenditionReport {
+        public final long lastMediaSequence;
+        public final int lastPartIndex;
+        public final Uri playlistUri;
+
+        public RenditionReport(Uri uri, long j2, int i2) {
+            this.playlistUri = uri;
+            this.lastMediaSequence = j2;
+            this.lastPartIndex = i2;
+        }
+    }
+
+    public static final class ServerControl {
+        public final boolean canBlockReload;
+        public final boolean canSkipDateRanges;
+        public final long holdBackUs;
+        public final long partHoldBackUs;
+        public final long skipUntilUs;
+
+        public ServerControl(long j2, boolean z2, long j3, long j4, boolean z3) {
+            this.skipUntilUs = j2;
+            this.canSkipDateRanges = z2;
+            this.holdBackUs = j3;
+            this.partHoldBackUs = j4;
+            this.canBlockReload = z3;
+        }
+    }
+
+    @Override // androidx.media3.exoplayer.offline.FilterableManifest
+    /* JADX INFO: renamed from: copy, reason: avoid collision after fix types in other method */
+    public /* bridge */ /* synthetic */ HlsPlaylist copy2(List list) {
+        return copy((List<StreamKey>) list);
+    }
+
+    public HlsMediaPlaylist copyWith(long j2, int i2) {
+        return new HlsMediaPlaylist(this.playlistType, this.baseUri, this.tags, this.startOffsetUs, this.preciseStart, j2, true, i2, this.mediaSequence, this.version, this.targetDurationUs, this.partTargetDurationUs, this.hasIndependentSegments, this.hasEndTag, this.hasProgramDateTime, this.protectionSchemes, this.segments, this.trailingParts, this.serverControl, this.renditionReports, this.interstitials);
+    }
+
+    public HlsMediaPlaylist copyWithEndTag() {
+        return this.hasEndTag ? this : new HlsMediaPlaylist(this.playlistType, this.baseUri, this.tags, this.startOffsetUs, this.preciseStart, this.startTimeUs, this.hasDiscontinuitySequence, this.discontinuitySequence, this.mediaSequence, this.version, this.targetDurationUs, this.partTargetDurationUs, this.hasIndependentSegments, true, this.hasProgramDateTime, this.protectionSchemes, this.segments, this.trailingParts, this.serverControl, this.renditionReports, this.interstitials);
+    }
+
+    public long getEndTimeUs() {
+        return this.startTimeUs + this.durationUs;
+    }
+}

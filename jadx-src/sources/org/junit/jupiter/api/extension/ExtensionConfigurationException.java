@@ -1,0 +1,9 @@
+package org.junit.jupiter.api.extension;
+
+import org.apiguardian.api.API;
+import org.junit.platform.commons.JUnitException;
+
+/* JADX INFO: loaded from: /content/repo2/apk-analysis/Alight motion /classes4.dex */
+@API(since = "5.0", status = API.Status.STABLE)
+public class ExtensionConfigurationException extends JUnitException {
+}

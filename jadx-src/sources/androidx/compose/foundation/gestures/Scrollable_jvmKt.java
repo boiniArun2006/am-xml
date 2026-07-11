@@ -1,0 +1,12 @@
+package androidx.compose.foundation.gestures;
+
+import com.safedk.android.analytics.brandsafety.creatives.discoveries.c;
+import kotlin.Metadata;
+
+/* JADX INFO: loaded from: /content/repo2/apk-analysis/Alight motion /classes4.dex */
+@Metadata(d1 = {"\u0000\f\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0004\"\u001a\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00010\u00008\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0002\u0010\u0003¨\u0006\u0005"}, d2 = {"", "Ljava/lang/StackTraceElement;", c.f62177j, "[Ljava/lang/StackTraceElement;", "EmptyStackTraceElements", "foundation_release"}, k = 2, mv = {1, 9, 0}, xi = 48)
+public final class Scrollable_jvmKt {
+
+    /* JADX INFO: renamed from: n, reason: collision with root package name */
+    private static final StackTraceElement[] f17064n = new StackTraceElement[0];
+}

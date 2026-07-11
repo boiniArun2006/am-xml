@@ -1,0 +1,32 @@
+package androidx.compose.ui.platform;
+
+import android.view.View;
+import androidx.annotation.DoNotInline;
+import androidx.annotation.RequiresApi;
+import androidx.compose.runtime.internal.StabilityInferred;
+import kotlin.Metadata;
+
+/* JADX INFO: loaded from: /content/repo2/apk-analysis/Alight motion /classes4.dex */
+@StabilityInferred
+@RequiresApi
+@Metadata(d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\bÁ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u0017\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0005\u001a\u00020\u0004H\u0007¢\u0006\u0004\b\u0007\u0010\bJ\u0017\u0010\t\u001a\u00020\u00062\u0006\u0010\u0005\u001a\u00020\u0004H\u0007¢\u0006\u0004\b\t\u0010\b¨\u0006\n"}, d2 = {"Landroidx/compose/ui/platform/AndroidComposeViewTranslationCallbackS;", "", "<init>", "()V", "Landroid/view/View;", "view", "", "rl", "(Landroid/view/View;)V", com.safedk.android.analytics.brandsafety.creatives.discoveries.c.f62177j, "ui_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
+public final class AndroidComposeViewTranslationCallbackS {
+
+    /* JADX INFO: renamed from: n, reason: collision with root package name */
+    public static final AndroidComposeViewTranslationCallbackS f32784n = new AndroidComposeViewTranslationCallbackS();
+
+    @DoNotInline
+    @RequiresApi
+    public final void rl(View view) {
+        view.setViewTranslationCallback(qz.n(AndroidComposeViewTranslationCallback.f32783n));
+    }
+
+    private AndroidComposeViewTranslationCallbackS() {
+    }
+
+    @DoNotInline
+    @RequiresApi
+    public final void n(View view) {
+        view.clearViewTranslationCallback();
+    }
+}

@@ -1,0 +1,28 @@
+package com.google.android.gms.internal.base;
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
+import com.google.errorprone.annotations.ResultIgnorabilityUnspecified;
+
+/* JADX INFO: loaded from: /content/repo2/apk-analysis/Alight motion /classes5.dex */
+public final class zao extends ContextCompat {
+    @Nullable
+    @ResultIgnorabilityUnspecified
+    @Deprecated
+    public static Intent zaa(Context context, @Nullable BroadcastReceiver broadcastReceiver, IntentFilter intentFilter) {
+        int i2;
+        if (zan.zaa()) {
+            if (true != zan.zaa()) {
+                i2 = 0;
+            } else {
+                i2 = 2;
+            }
+            return context.registerReceiver(broadcastReceiver, intentFilter, i2);
+        }
+        return context.registerReceiver(broadcastReceiver, intentFilter);
+    }
+}
