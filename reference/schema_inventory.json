@@ -1,0 +1,1490 @@
+{
+  "generated_from": {
+    "real_exports": 31,
+    "parsed_exports": 31,
+    "effect_definitions": 328,
+    "parsed_effect_definitions": 315,
+    "serializer_sources": [
+      "com/alightcreative/app/motion/scene/serializer/SceneSerializerKt.java",
+      "com/alightcreative/app/motion/scene/SceneElementKt.java",
+      "com/alightcreative/app/motion/scene/KeyableSerializerKt.java",
+      "com/alightcreative/app/motion/scene/TransformKt.java",
+      "com/alightcreative/app/motion/scene/GradientFillKt.java",
+      "com/alightcreative/app/motion/scene/EdgeDecorationKt.java",
+      "com/alightcreative/app/motion/scene/visualeffect/VisualEffectKt.java",
+      "com/alightcreative/app/motion/scene/userparam/UserParameterKt.java",
+      "com/alightcreative/app/motion/scene/animators/AnimatorSerializerKt.java"
+    ]
+  },
+  "known_model": {
+    "layer_tags": [
+      "shape",
+      "drawing",
+      "embedScene",
+      "text",
+      "audio",
+      "camera",
+      "null"
+    ],
+    "transform_tags": [
+      "location",
+      "pivot",
+      "scale",
+      "rotation",
+      "opacity",
+      "skew"
+    ],
+    "transform_attributes": {
+      "transform": [
+        "lockAspectRatio",
+        "orientation",
+        "size"
+      ]
+    },
+    "easing_grammar": [
+      "linear",
+      "cubicBezier",
+      "elastic",
+      "bounce",
+      "cyclic",
+      "random",
+      "step",
+      "elasticStep",
+      "local",
+      "reverse"
+    ],
+    "property_types": [
+      "float",
+      "int",
+      "bool",
+      "color",
+      "vec2",
+      "vec3",
+      "vec4",
+      "quat",
+      "uri",
+      "string"
+    ],
+    "edge_tags": [
+      "border",
+      "shadow",
+      "glow",
+      "path-stroke"
+    ],
+    "camera_tags": [
+      "fov",
+      "focus-blur",
+      "distance",
+      "depth-of-field",
+      "strength",
+      "fog",
+      "color",
+      "near-z",
+      "far-z"
+    ],
+    "common_scene_element_fields": [
+      "type",
+      "startTime",
+      "endTime",
+      "id",
+      "label",
+      "transform",
+      "fillColor",
+      "fillImage",
+      "fillVideo",
+      "gradient",
+      "fillType",
+      "mediaFillMode",
+      "outline",
+      "src",
+      "speed",
+      "liveShape",
+      "inTime",
+      "outTime",
+      "loop",
+      "gain",
+      "text",
+      "blending",
+      "embedScene",
+      "effect",
+      "tag",
+      "drawing",
+      "user-params",
+      "stroke",
+      "border",
+      "shadow",
+      "hidden",
+      "camera",
+      "parent",
+      "clippingMask",
+      "templatePPId",
+      "presetId"
+    ]
+  },
+  "observed": {
+    "tags": {
+      "property": 15443,
+      "kf": 7357,
+      "effect": 3181,
+      "transform": 1428,
+      "location": 1410,
+      "scale": 1017,
+      "shape": 980,
+      "fillColor": 662,
+      "bookmark": 453,
+      "opacity": 281,
+      "text": 267,
+      "content": 265,
+      "rotation": 238,
+      "pivot": 203,
+      "scene": 158,
+      "media": 150,
+      "embedScene": 127,
+      "size": 108,
+      "shadow": 82,
+      "color": 67,
+      "path-stroke": 55,
+      "nullobj": 51,
+      "gradient": 45,
+      "border": 30,
+      "gain": 28,
+      "offset": 20,
+      "path": 15,
+      "audio": 13,
+      "hardness": 9,
+      "camera": 3,
+      "fov": 3,
+      "focus-blur": 3,
+      "strength": 3,
+      "depth-of-field": 3,
+      "distance": 3,
+      "fog": 3,
+      "near-z": 3,
+      "far-z": 3,
+      "skew": 1
+    },
+    "attributes": {
+      "audio": {
+        "id": 13,
+        "startTime": 13,
+        "endTime": 13,
+        "src": 13,
+        "label": 12,
+        "outTime": 12,
+        "mediaFillMode": 12,
+        "inTime": 4
+      },
+      "bookmark": {
+        "t": 453
+      },
+      "border": {
+        "direction": 30,
+        "id": 30
+      },
+      "camera": {
+        "id": 3,
+        "label": 3,
+        "startTime": 3,
+        "endTime": 3,
+        "mediaFillMode": 3,
+        "type": 3,
+        "parent": 1
+      },
+      "color": {
+        "value": 67
+      },
+      "depth-of-field": {
+        "value": 3
+      },
+      "distance": {
+        "value": 3
+      },
+      "effect": {
+        "id": 3181,
+        "locallyApplied": 3181,
+        "hidden": 215
+      },
+      "embedScene": {
+        "id": 127,
+        "label": 127,
+        "startTime": 127,
+        "endTime": 127,
+        "fillType": 127,
+        "mediaFillMode": 120,
+        "outTime": 111,
+        "parent": 71,
+        "inTime": 7,
+        "speed": 6
+      },
+      "far-z": {
+        "value": 3
+      },
+      "fillColor": {
+        "value": 656
+      },
+      "focus-blur": {
+        "enabled": 3
+      },
+      "fog": {
+        "enabled": 3
+      },
+      "fov": {
+        "value": 3
+      },
+      "gain": {
+        "value": 23
+      },
+      "gradient": {
+        "type": 45,
+        "startColor": 45,
+        "endColor": 45,
+        "start": 45,
+        "end": 45
+      },
+      "hardness": {
+        "value": 9
+      },
+      "kf": {
+        "t": 7357,
+        "v": 7357,
+        "e": 2487
+      },
+      "location": {
+        "value": 1160
+      },
+      "media": {
+        "uri": 150,
+        "type": 150,
+        "infoUpdated": 150,
+        "width": 147,
+        "height": 147,
+        "orientation": 146,
+        "size": 122,
+        "filename": 121,
+        "title": 121,
+        "duration": 100,
+        "fps": 67,
+        "sig": 36
+      },
+      "near-z": {
+        "value": 3
+      },
+      "nullobj": {
+        "id": 51,
+        "label": 51,
+        "startTime": 51,
+        "endTime": 51,
+        "mediaFillMode": 51,
+        "type": 51,
+        "speed": 19,
+        "parent": 16
+      },
+      "offset": {
+        "value": 20
+      },
+      "opacity": {
+        "value": 120
+      },
+      "path": {
+        "d": 15
+      },
+      "path-stroke": {
+        "direction": 55,
+        "end-size": 55,
+        "end": 2,
+        "enabled": 2,
+        "cap": 2
+      },
+      "pivot": {
+        "value": 202
+      },
+      "property": {
+        "name": 15443,
+        "type": 15442,
+        "value": 13361
+      },
+      "rotation": {
+        "value": 166
+      },
+      "scale": {
+        "value": 759
+      },
+      "scene": {
+        "title": 158,
+        "width": 158,
+        "height": 158,
+        "exportWidth": 158,
+        "exportHeight": 158,
+        "precompose": 158,
+        "bgcolor": 158,
+        "totalTime": 158,
+        "fps": 158,
+        "am": 158,
+        "amplatform": 158,
+        "amver": 157,
+        "modifiedTime": 156,
+        "ffver": 156,
+        "retime": 156,
+        "retimeAdaptFPS": 147,
+        "type": 6,
+        "templateLink": 1
+      },
+      "shadow": {
+        "direction": 82,
+        "enabled": 11
+      },
+      "shape": {
+        "id": 980,
+        "startTime": 980,
+        "endTime": 980,
+        "fillType": 980,
+        "s": 965,
+        "label": 907,
+        "mediaFillMode": 847,
+        "fillImage": 303,
+        "speed": 233,
+        "fillVideo": 204,
+        "blending": 138,
+        "outTime": 129,
+        "inTime": 104,
+        "parent": 82,
+        "clippingMask": 31,
+        "hidden": 10,
+        "tag": 1
+      },
+      "size": {
+        "value": 108
+      },
+      "skew": {
+        "value": 1
+      },
+      "strength": {
+        "value": 3
+      },
+      "text": {
+        "id": 267,
+        "startTime": 267,
+        "endTime": 267,
+        "fillType": 267,
+        "size": 267,
+        "font": 267,
+        "wrapWidth": 267,
+        "align": 267,
+        "mediaFillMode": 218,
+        "parent": 64,
+        "label": 40,
+        "blending": 23,
+        "clippingMask": 15,
+        "fillImage": 10,
+        "hidden": 1
+      },
+      "transform": {
+        "lockAspectRatio": 7
+      }
+    },
+    "parent_children": {
+      "audio": {
+        "gain": 6
+      },
+      "border": {
+        "size": 25,
+        "color": 9
+      },
+      "camera": {
+        "transform": 3,
+        "fov": 3,
+        "focus-blur": 3,
+        "fog": 3
+      },
+      "effect": {
+        "property": 14427
+      },
+      "embedScene": {
+        "effect": 145,
+        "transform": 127,
+        "fillColor": 127,
+        "scene": 127,
+        "shadow": 13,
+        "border": 9
+      },
+      "fillColor": {
+        "kf": 16
+      },
+      "focus-blur": {
+        "strength": 3,
+        "depth-of-field": 3,
+        "distance": 3
+      },
+      "fog": {
+        "near-z": 3,
+        "far-z": 3
+      },
+      "gain": {
+        "kf": 10
+      },
+      "location": {
+        "kf": 1098
+      },
+      "nullobj": {
+        "transform": 51,
+        "effect": 12
+      },
+      "opacity": {
+        "kf": 414
+      },
+      "path-stroke": {
+        "color": 47,
+        "size": 43
+      },
+      "pivot": {
+        "kf": 1
+      },
+      "property": {
+        "kf": 4677
+      },
+      "rotation": {
+        "kf": 169
+      },
+      "scale": {
+        "kf": 972
+      },
+      "scene": {
+        "shape": 980,
+        "bookmark": 453,
+        "text": 267,
+        "media": 150,
+        "embedScene": 127,
+        "nullobj": 51,
+        "audio": 13,
+        "camera": 3
+      },
+      "shadow": {
+        "size": 40,
+        "offset": 20,
+        "color": 11,
+        "hardness": 9,
+        "opacity": 7
+      },
+      "shape": {
+        "effect": 2776,
+        "property": 1016,
+        "transform": 980,
+        "fillColor": 421,
+        "gradient": 42,
+        "path-stroke": 42,
+        "gain": 22,
+        "shadow": 18,
+        "border": 17,
+        "path": 15
+      },
+      "text": {
+        "transform": 267,
+        "content": 265,
+        "effect": 248,
+        "fillColor": 114,
+        "shadow": 51,
+        "path-stroke": 13,
+        "border": 4,
+        "gradient": 3
+      },
+      "transform": {
+        "location": 1410,
+        "scale": 1017,
+        "opacity": 274,
+        "rotation": 238,
+        "pivot": 203,
+        "skew": 1
+      }
+    },
+    "layer_types": {
+      "shape": 980,
+      "text": 267,
+      "embedScene": 127,
+      "audio": 13,
+      "camera": 3
+    },
+    "effects": {
+      "com.alightcreative.effects.motionblur4": 320,
+      "com.alightcreative.effects.tile": 284,
+      "com.alightcreative.effects.lift": 208,
+      "com.alightcreative.effects.exposure": 178,
+      "com.alightcreative.effects.deepglow2": 148,
+      "com.alightcreative.effects.randomdisplace": 136,
+      "com.alightcreative.effects.oscillate3": 125,
+      "com.alightcreative.effects.wavewarp2": 124,
+      "com.alightcreative.effects.gaussianblur": 106,
+      "com.alightcreative.effects.pinchbulge2": 105,
+      "com.alightcreative.effects.satvib": 65,
+      "com.alightcreative.effects.shake2": 63,
+      "com.alightcreative.effects.circularripple2": 58,
+      "com.alightcreative.effects.chromakey": 57,
+      "com.alightcreative.effects.textspacing": 55,
+      "com.alightcreative.effects.mirror": 50,
+      "com.alightcreative.effects.wipe2": 47,
+      "com.alightcreative.effects.oscillate": 43,
+      "com.alightcreative.effects.brightcont2": 42,
+      "com.alightcreative.effects.fractalwarp4": 41,
+      "com.alightcreative.effects.rgbsep": 41,
+      "com.alightcreative.effects.turbulentdisplace3": 38,
+      "com.alightcreative.effects.swing": 37,
+      "com.alightcreative.effects.motionblur3": 37,
+      "com.alightcreative.internal.smoothbevel": 33,
+      "com.alightcreative.gradientoverlay2": 32,
+      "com.alightcreative.effects.hueshift": 30,
+      "com.alightcreative.effects.blink2": 30,
+      "com.alightcreative.effects.fade": 29,
+      "com.alightcreative.effects.colorhot": 28,
+      "com.alightcreative.effects.dblur": 27,
+      "com.alightcreative.effects.edgeglow": 25,
+      "com.alightcreative.effects.softglow": 25,
+      "com.alightcreative.effects.invert": 24,
+      "com.alightcreative.solidcolor": 22,
+      "com.alightcreative.effects.highlightshadow": 20,
+      "com.alightcreative.effects.vignette": 20,
+      "com.alightcreative.effects.sharpen": 20,
+      "com.alightcreative.effects.colorize": 19,
+      "com.alightcreative.effects.dropshadow": 18,
+      "com.alightcreative.effects.mosaic": 17,
+      "com.alightcreative.effects.stripes": 16,
+      "com.alightcreative.effects.extrudeflat": 16,
+      "com.alightcreative.effects.halftonelines": 15,
+      "com.alightcreative.effects.swing2": 14,
+      "com.alightcreative.spectralmap": 14,
+      "com.alightcreative.effects.shake": 13,
+      "com.alightcreative.effects.threshold": 13,
+      "com.alightcreative.effects.drawing.progress": 13,
+      "com.alightcreative.effects.colortemperature": 12,
+      "com.alightcreative.effects.texttransform": 12,
+      "com.alightcreative.effects.halftonedots": 10,
+      "com.alightcreative.effects.colortune2": 9,
+      "com.alightcreative.glow": 9,
+      "com.alightcreative.effects.transform2": 9,
+      "com.alightcreative.effects.motionblur": 8,
+      "com.alightcreative.replacecolor": 8,
+      "com.alightcreative.effects.displacemap3": 8,
+      "com.alightcreative.effects.counter": 7,
+      "com.alightcreative.effects.circularripple": 7,
+      "com.alightcreative.effects.innerblur": 7,
+      "com.alightcreative.effects.extrude": 7,
+      "com.alightcreative.effects.streaks": 7,
+      "com.alightcreative.effects.transform": 6,
+      "com.alightcreative.effects.electricedges": 6,
+      "com.alightcreative.effects.flip3": 6,
+      "com.alightcreative.effects.gradshadow": 6,
+      "com.alightcreative.effects.opticcompesation": 6,
+      "com.alightcreative.effects.stretch2": 5,
+      "com.alightcreative.effects.boxblur3": 5,
+      "com.alightcreative.effects.offset": 5,
+      "com.alightcreative.effects.bbmaker": 5,
+      "com.alightcreative.effects.oscillate2": 4,
+      "com.alightcreative.effects.partx": 4,
+      "com.alightcreative.effects.gradientflow": 4,
+      "com.alightcreative.effects.parenthelper": 4,
+      "com.alightcreative.effects.pinchbulge": 3,
+      "com.alightcreative.effects.rays": 3,
+      "com.alightcreative.effects.darkglow": 3,
+      "com.alightcreative.spotcolor2": 3,
+      "com.alightcreative.inner-glow": 3,
+      "com.alightcreative.effects.bendwarp": 2,
+      "com.alightcreative.effects.feather": 2,
+      "com.alightcreative.effects.longshadow2": 2,
+      "com.alightcreative.effects.lightglow": 2,
+      "com.alightcreative.effects.colorbalance": 2,
+      "com.alightcreative.effects.pulseopacity2": 2,
+      "com.alightcreative.effects.findedges": 2,
+      "com.alightcreative.effects.checker2": 2,
+      "com.alightcreative.effects.simplestars2": 2,
+      "com.alightcreative.effects.repeat.scatter": 2,
+      "com.alightcreative.3colorgrad": 2,
+      "com.alightcreative.effects.smoothedges": 2,
+      "com.alightcreative.effects.squeeze": 1,
+      "com.alightcreative.effects.flicker2": 1,
+      "com.alightcreative.effects.swirl4": 1,
+      "com.alightcreative.effects.displacemaprad": 1,
+      "com.alightcreative.fourcolorgradient": 1,
+      "com.alightcreative.effects.channelmap": 1,
+      "com.alightcreative.effects.roughenedges": 1,
+      "com.alightcreative.effects.pixelate2": 1,
+      "com.alightcreative.effects.spill-cleanup": 1,
+      "com.alightcreative.effects.moblurplus": 1,
+      "com.alightcreative.effects.edgeline": 1,
+      "com.alightcreative.effects.repeat.path": 1,
+      "com.alightcreative.effects.turbulence2": 1,
+      "com.alightcreative.effects.radialwipe": 1,
+      "com.alightcreative.effects.lightsweep": 1
+    },
+    "effect_properties": {
+      "com.alightcreative.3colorgrad": {
+        "color1": 2,
+        "color2": 2,
+        "color3": 2,
+        "progressa": 2,
+        "progressb": 2,
+        "offsetx": 2,
+        "scale": 2,
+        "alpha": 2,
+        "angle": 2,
+        "bright": 2,
+        "blendMode": 2,
+        "alphab": 2
+      },
+      "com.alightcreative.effects.bbmaker": {
+        "start": 5,
+        "angle": 5,
+        "colorbg": 5,
+        "startA": 5,
+        "endA": 5,
+        "angleA": 5,
+        "featherA": 5
+      },
+      "com.alightcreative.effects.bendwarp": {
+        "amount": 2
+      },
+      "com.alightcreative.effects.blink2": {
+        "freq": 30
+      },
+      "com.alightcreative.effects.boxblur3": {
+        "strength": 5
+      },
+      "com.alightcreative.effects.brightcont2": {
+        "brightness": 39,
+        "contrast": 39
+      },
+      "com.alightcreative.effects.channelmap": {
+        "blue": 1
+      },
+      "com.alightcreative.effects.checker2": {
+        "amount": 2,
+        "color": 2
+      },
+      "com.alightcreative.effects.chromakey": {
+        "threshold": 57,
+        "keyColor": 46,
+        "feather": 36,
+        "defringe": 36,
+        "invert": 36
+      },
+      "com.alightcreative.effects.circularripple": {
+        "feather": 7,
+        "frequency": 7,
+        "radius": 7,
+        "strength": 7,
+        "phase": 1
+      },
+      "com.alightcreative.effects.circularripple2": {
+        "frequency": 58,
+        "radius": 58,
+        "strength": 58,
+        "phase": 44,
+        "feather": 44,
+        "centerPoint": 1
+      },
+      "com.alightcreative.effects.colorbalance": {
+        "crLow": 2,
+        "crMid": 2,
+        "mgLow": 2,
+        "mgMid": 2
+      },
+      "com.alightcreative.effects.colorhot": {
+        "color": 27,
+        "tint": 26
+      },
+      "com.alightcreative.effects.colorize": {
+        "tint": 19
+      },
+      "com.alightcreative.effects.colortemperature": {
+        "temperature": 12,
+        "strength": 7
+      },
+      "com.alightcreative.effects.colortune2": {
+        "gamma": 9,
+        "lift": 9,
+        "gain": 7,
+        "offset": 7
+      },
+      "com.alightcreative.effects.counter": {
+        "scale": 7,
+        "offset": 6
+      },
+      "com.alightcreative.effects.dblur": {
+        "strength": 27,
+        "angle": 25
+      },
+      "com.alightcreative.effects.deepglow2": {
+        "strength": 148,
+        "oalpha": 148,
+        "lowThreshold": 148,
+        "bmode": 142,
+        "overd": 142,
+        "highThreshold": 142,
+        "feather": 142,
+        "satvib": 142,
+        "hue": 142,
+        "calpha": 142,
+        "GCE": 142,
+        "CHROM": 142,
+        "strengthhh": 142,
+        "angleee": 142,
+        "centerChannel": 142,
+        "cblend": 142,
+        "cmode": 142,
+        "colblend": 142,
+        "alpb": 142,
+        "iter": 142
+      },
+      "com.alightcreative.effects.displacemap3": {
+        "offs": 8
+      },
+      "com.alightcreative.effects.displacemaprad": {
+        "edges": 1,
+        "fromctr": 1,
+        "invert": 1,
+        "typex": 1
+      },
+      "com.alightcreative.effects.drawing.progress": {
+        "start": 13,
+        "end": 13
+      },
+      "com.alightcreative.effects.dropshadow": {
+        "colorshadow": 18,
+        "strength": 18,
+        "alpha": 18,
+        "alphac": 18,
+        "position": 10
+      },
+      "com.alightcreative.effects.edgeglow": {
+        "smoothing": 23,
+        "spread": 23,
+        "strength": 23,
+        "brightness": 22,
+        "fillColor": 21,
+        "tint": 21,
+        "tintColor": 21,
+        "threshold": 19,
+        "gamma": 18,
+        "blend": 18,
+        "invert": 17
+      },
+      "com.alightcreative.effects.edgeline": {
+        "smoothing": 1,
+        "threshold": 1,
+        "amp": 1,
+        "alpha": 1,
+        "color2": 1,
+        "color1": 1,
+        "blendMode": 1,
+        "fix": 1,
+        "newMode": 1,
+        "invert": 1
+      },
+      "com.alightcreative.effects.electricedges": {
+        "color1": 6,
+        "color2": 6,
+        "complexity": 6,
+        "disort": 6,
+        "distance": 6,
+        "evolution": 6,
+        "maskColor": 6,
+        "thickness": 6,
+        "strength": 2,
+        "alpha": 2,
+        "glowAlpha": 2,
+        "seed": 2,
+        "fill": 2,
+        "maskStrength": 2,
+        "maskEvolution": 2,
+        "maskScale": 2,
+        "maskSeed": 2,
+        "renderContours": 2,
+        "contourCount": 2,
+        "contourOffset": 2,
+        "contourAngle": 2
+      },
+      "com.alightcreative.effects.exposure": {
+        "exposure": 171,
+        "gamma": 131,
+        "offset": 97
+      },
+      "com.alightcreative.effects.extrude": {
+        "rotate": 7,
+        "widthRatio": 7,
+        "heightRatio": 7,
+        "depth": 7,
+        "strength": 7,
+        "position": 7,
+        "scale": 7,
+        "interiorColor": 7,
+        "interiorBlend": 7,
+        "fadeColor": 7,
+        "fadeBlend": 7,
+        "shadingType": 7,
+        "lightIntensity": 7,
+        "shine": 7,
+        "spec": 7,
+        "ambient": 7,
+        "lightColor": 7,
+        "lightDir": 7,
+        "lightDepth": 7,
+        "MAX_ITER": 7
+      },
+      "com.alightcreative.effects.extrudeflat": {
+        "rotate": 16,
+        "position": 16,
+        "stretch": 16,
+        "depth": 16,
+        "scale": 16,
+        "MAX_ITER": 16,
+        "inton": 16,
+        "interiorColor": 16,
+        "interiorBlend": 16,
+        "fadeColor": 16,
+        "fadeBlend": 16
+      },
+      "com.alightcreative.effects.fade": {
+        "inTime": 29,
+        "outTime": 29
+      },
+      "com.alightcreative.effects.feather": {
+        "iter": 2,
+        "strength": 2
+      },
+      "com.alightcreative.effects.flicker2": {
+        "freq": 1,
+        "mag": 1
+      },
+      "com.alightcreative.effects.flip3": {
+        "angle": 6,
+        "axis": 6,
+        "crop": 6,
+        "zdist": 6,
+        "solid": 6,
+        "solidColor": 6,
+        "thickness": 6,
+        "enableLight": 6,
+        "lightIntensity": 6,
+        "lightColor": 6,
+        "shine": 6,
+        "spec": 6,
+        "ambient": 6,
+        "lightDir": 6,
+        "lightDepth": 6
+      },
+      "com.alightcreative.effects.fractalwarp4": {
+        "mag": 40,
+        "scale": 36,
+        "offs": 33,
+        "octaves": 31,
+        "parr": 27,
+        "screenSpace": 22,
+        "intensity": 20
+      },
+      "com.alightcreative.effects.gaussianblur": {
+        "strength": 102,
+        "radius": 1
+      },
+      "com.alightcreative.effects.gradientflow": {
+        "autop": 4,
+        "PROGRESS": 4,
+        "SPEED": 4,
+        "color1": 4,
+        "color2": 4,
+        "color3": 4,
+        "color4": 4,
+        "FREQ": 4,
+        "AMP": 4,
+        "scale": 4,
+        "angle": 4,
+        "stretch": 4,
+        "alpha": 4,
+        "hardness": 4,
+        "blendMode": 4
+      },
+      "com.alightcreative.effects.gradshadow": {
+        "color": 6,
+        "start": 6,
+        "angle": 6,
+        "alphb": 6,
+        "feather": 6,
+        "end": 6,
+        "bright": 6,
+        "blendMode": 6,
+        "alphab": 6
+      },
+      "com.alightcreative.effects.halftonedots": {
+        "amount": 10,
+        "color1": 10,
+        "color2": 10,
+        "strength": 10,
+        "phase": 7,
+        "angle": 4
+      },
+      "com.alightcreative.effects.halftonelines": {
+        "amount": 14,
+        "angle": 14,
+        "color1": 14,
+        "color2": 14,
+        "phase": 14,
+        "strength": 14
+      },
+      "com.alightcreative.effects.highlightshadow": {
+        "highlights": 20,
+        "shadows": 20
+      },
+      "com.alightcreative.effects.hueshift": {
+        "hue": 28
+      },
+      "com.alightcreative.effects.innerblur": {
+        "strength": 7,
+        "iter": 6
+      },
+      "com.alightcreative.effects.invert": {
+        "invertRed": 9,
+        "invertGreen": 9,
+        "invertBlue": 9
+      },
+      "com.alightcreative.effects.lift": {
+        "fill": 105
+      },
+      "com.alightcreative.effects.lightglow": {
+        "color": 2,
+        "blend": 1,
+        "intensity": 1,
+        "strength": 1,
+        "threshold": 1,
+        "halo": 1,
+        "alpha": 1
+      },
+      "com.alightcreative.effects.lightsweep": {
+        "autop": 1,
+        "PROGRESS": 1,
+        "SPEED": 1,
+        "amount": 1,
+        "sharp": 1,
+        "scale": 1,
+        "angle": 1,
+        "stretch": 1,
+        "alpha": 1,
+        "hardness": 1,
+        "blendMode": 1,
+        "color1": 1,
+        "color2": 1
+      },
+      "com.alightcreative.effects.longshadow2": {
+        "alpha": 2,
+        "size": 2
+      },
+      "com.alightcreative.effects.mirror": {
+        "type": 50,
+        "blendMode": 50,
+        "alpha": 50,
+        "offset": 50
+      },
+      "com.alightcreative.effects.moblurplus": {
+        "tune": 1,
+        "PANGLE": 1,
+        "PSCALE": 1,
+        "usePos": 1,
+        "useScale": 1,
+        "useAngle": 1
+      },
+      "com.alightcreative.effects.mosaic": {
+        "size": 17,
+        "phase": 7
+      },
+      "com.alightcreative.effects.motionblur": {
+        "tune": 8,
+        "useScale": 2
+      },
+      "com.alightcreative.effects.motionblur3": {
+        "tune": 37,
+        "usePos": 37,
+        "useScale": 37,
+        "useAngle": 37
+      },
+      "com.alightcreative.effects.motionblur4": {
+        "tune": 311,
+        "usePos": 261,
+        "useScale": 261,
+        "useAngle": 261
+      },
+      "com.alightcreative.effects.offset": {
+        "offset": 5,
+        "feather": 5,
+        "mask": 5
+      },
+      "com.alightcreative.effects.opticcompesation": {
+        "iterations": 6,
+        "distortion": 6,
+        "strength": 6,
+        "separation": 6,
+        "blendMode": 6,
+        "scale": 6,
+        "alpha": 6,
+        "stretch": 6,
+        "hardness": 6
+      },
+      "com.alightcreative.effects.oscillate": {
+        "freq": 43,
+        "mag": 43,
+        "angle": 40,
+        "type": 37
+      },
+      "com.alightcreative.effects.oscillate2": {
+        "freq": 4,
+        "mag": 4,
+        "angle": 2
+      },
+      "com.alightcreative.effects.oscillate3": {
+        "angle": 125,
+        "freq": 125,
+        "mag": 125,
+        "phase": 61,
+        "direction": 53,
+        "type": 53
+      },
+      "com.alightcreative.effects.parenthelper": {
+        "scaleMode": 4,
+        "rotateMode": 4,
+        "scaleWeight": 4,
+        "rotateWeight": 4,
+        "autoRotate": 4,
+        "radiusAdjust": 4
+      },
+      "com.alightcreative.effects.partx": {
+        "colorfg": 4,
+        "colorbg": 4,
+        "autop": 4,
+        "EVO": 4,
+        "kStarDensity": 4,
+        "kMotionBlur": 4,
+        "kNumAngles": 4,
+        "scale": 4,
+        "stretch": 4,
+        "bright": 4,
+        "alpha": 4,
+        "angle": 4,
+        "blendMode": 4
+      },
+      "com.alightcreative.effects.pinchbulge": {
+        "radius": 3,
+        "strength": 3
+      },
+      "com.alightcreative.effects.pinchbulge2": {
+        "strength": 105,
+        "radius": 105,
+        "centerPoint": 4
+      },
+      "com.alightcreative.effects.pixelate2": {
+        "angle": 1,
+        "screenSpace": 1,
+        "size": 1,
+        "stretch": 1
+      },
+      "com.alightcreative.effects.pulseopacity2": {
+        "freq": 2,
+        "strength": 2
+      },
+      "com.alightcreative.effects.radialwipe": {
+        "progress": 1,
+        "offset": 1,
+        "feather": 1,
+        "direction": 1,
+        "repeatCount": 1
+      },
+      "com.alightcreative.effects.randomdisplace": {
+        "mag": 136,
+        "evolution": 134,
+        "scatter": 88,
+        "seed": 86
+      },
+      "com.alightcreative.effects.rays": {
+        "intensity": 3,
+        "strength": 3,
+        "blend": 1,
+        "centerPoint": 1,
+        "fillColor": 1,
+        "quality": 1,
+        "threshold": 1
+      },
+      "com.alightcreative.effects.repeat.path": {
+        "count": 1,
+        "startPos": 1,
+        "endPos": 1,
+        "pathPhase": 1,
+        "tangent": 1,
+        "angle": 1,
+        "scale": 1,
+        "alpha": 1,
+        "fillColor": 1,
+        "blend": 1,
+        "colorAltCopies": 1,
+        "start": 1,
+        "end": 1,
+        "phase": 1,
+        "easeIn": 1,
+        "easeOut": 1,
+        "overlap": 1,
+        "shape": 1,
+        "invert": 1,
+        "randomOrder": 1,
+        "seed": 1
+      },
+      "com.alightcreative.effects.repeat.scatter": {
+        "count": 2,
+        "evolution": 2,
+        "radius": 2,
+        "scatterSeed": 2
+      },
+      "com.alightcreative.effects.rgbsep": {
+        "strength": 41,
+        "centerChannel": 37,
+        "angle": 36,
+        "mode": 35
+      },
+      "com.alightcreative.effects.roughenedges": {
+        "detail": 1,
+        "evolution": 1,
+        "strength": 1
+      },
+      "com.alightcreative.effects.satvib": {
+        "saturation": 65,
+        "vib": 47
+      },
+      "com.alightcreative.effects.shake": {
+        "angle": 13,
+        "evolution": 13,
+        "mag": 13,
+        "seed": 13,
+        "slack": 13,
+        "speed": 13
+      },
+      "com.alightcreative.effects.shake2": {
+        "mag": 63,
+        "angle": 55,
+        "freq": 55,
+        "seed": 54,
+        "evolution": 53,
+        "slack": 47,
+        "zshake": 22
+      },
+      "com.alightcreative.effects.sharpen": {
+        "strength": 19,
+        "radius": 14
+      },
+      "com.alightcreative.effects.simplestars2": {
+        "blendMode": 2,
+        "color": 2,
+        "scale": 2,
+        "starCount": 2,
+        "starParallax": 2,
+        "starSize": 2
+      },
+      "com.alightcreative.effects.smoothedges": {
+        "strength": 2,
+        "maskToLayer": 2
+      },
+      "com.alightcreative.effects.softglow": {
+        "brightness": 16,
+        "contrast": 16,
+        "strength": 16,
+        "blend": 15,
+        "color": 15,
+        "highlights": 15,
+        "outsideAlpha": 15,
+        "alpha": 13
+      },
+      "com.alightcreative.effects.spill-cleanup": {
+        "strength": 1
+      },
+      "com.alightcreative.effects.squeeze": {
+        "strength": 1
+      },
+      "com.alightcreative.effects.streaks": {
+        "alpha": 7,
+        "angle": 7,
+        "strength": 7,
+        "bias": 7,
+        "rmode": 7,
+        "gmode": 7,
+        "bmode": 7,
+        "amode": 7
+      },
+      "com.alightcreative.effects.stretch2": {
+        "scale": 5,
+        "angle": 3,
+        "contentOnly": 3
+      },
+      "com.alightcreative.effects.stripes": {
+        "amount": 16,
+        "angle": 16,
+        "color": 14,
+        "phase": 14,
+        "smoothing": 14,
+        "width": 11,
+        "punchout": 11,
+        "screenSpace": 11
+      },
+      "com.alightcreative.effects.swing": {
+        "a1": 37,
+        "a2": 37,
+        "freq": 37,
+        "phase": 37,
+        "type": 37
+      },
+      "com.alightcreative.effects.swing2": {
+        "a1": 14,
+        "a2": 14,
+        "freq": 14,
+        "phase": 7,
+        "type": 7
+      },
+      "com.alightcreative.effects.swirl4": {
+        "radius": 1,
+        "strength": 1
+      },
+      "com.alightcreative.effects.textspacing": {
+        "letterspacing": 55,
+        "linespacing": 43
+      },
+      "com.alightcreative.effects.texttransform": {
+        "start": 12,
+        "end": 12,
+        "phase": 12,
+        "component": 12,
+        "anchor": 12,
+        "offset": 12,
+        "angle": 12,
+        "scale": 12,
+        "stretch": 12,
+        "alpha": 12,
+        "useFillColor": 12,
+        "fillColor": 12,
+        "easeIn": 12,
+        "easeOut": 12,
+        "overlap": 12,
+        "shape": 12,
+        "randomOrder": 12,
+        "seed": 12
+      },
+      "com.alightcreative.effects.threshold": {
+        "threshold": 13,
+        "feather": 10,
+        "invert": 10,
+        "blendMode": 9
+      },
+      "com.alightcreative.effects.tile": {
+        "mirror": 284,
+        "scale": 262,
+        "vertoffs": 251,
+        "phase": 240,
+        "angle": 240
+      },
+      "com.alightcreative.effects.transform": {
+        "scale": 6,
+        "alpha": 5,
+        "fill": 5,
+        "angle": 2,
+        "maskToLayer": 2,
+        "sample": 2
+      },
+      "com.alightcreative.effects.transform2": {
+        "posz": 9,
+        "posx": 9,
+        "posy": 9,
+        "angle": 9,
+        "zinv": 9,
+        "xinv": 9,
+        "yinv": 9,
+        "ainv": 9
+      },
+      "com.alightcreative.effects.turbulence2": {
+        "parr": 1,
+        "offs": 1,
+        "evolution": 1,
+        "scale": 1,
+        "stretch": 1,
+        "intensity": 1,
+        "seed": 1,
+        "color1": 1,
+        "color2": 1,
+        "alpha": 1,
+        "blendMode": 1,
+        "bias": 1,
+        "octaves": 1
+      },
+      "com.alightcreative.effects.turbulentdisplace3": {
+        "intensity": 38,
+        "FIXTURB": 37,
+        "direction": 34,
+        "stretch": 32,
+        "scale": 31,
+        "evolution": 23,
+        "seed": 22,
+        "screenSpace": 20,
+        "octaves": 18,
+        "offs": 18,
+        "singleAxis": 18,
+        "position": 10,
+        "parr": 9
+      },
+      "com.alightcreative.effects.vignette": {
+        "roundness": 19,
+        "feather": 18,
+        "scale": 18,
+        "tint": 18,
+        "strength": 18,
+        "overlaycolor": 16,
+        "punchout": 16
+      },
+      "com.alightcreative.effects.wavewarp2": {
+        "phase": 124,
+        "a1d": 124,
+        "m1": 124,
+        "m2": 124,
+        "a2d": 122,
+        "damping": 122,
+        "dampingSpace": 122,
+        "dampingOrigin": 122,
+        "screenSpace": 122
+      },
+      "com.alightcreative.effects.wipe2": {
+        "angle": 47,
+        "end": 47,
+        "start": 47,
+        "feather": 47
+      },
+      "com.alightcreative.fourcolorgradient": {
+        "color2": 1,
+        "color3": 1,
+        "color4": 1
+      },
+      "com.alightcreative.glow": {
+        "alpha": 9,
+        "color": 9,
+        "hardness": 9,
+        "radius": 9,
+        "blendMode": 8
+      },
+      "com.alightcreative.gradientoverlay2": {
+        "color1": 32,
+        "color2": 32,
+        "blendMode": 27,
+        "alpha": 25,
+        "angle": 20,
+        "scale": 18,
+        "gradType": 17,
+        "offset": 9
+      },
+      "com.alightcreative.inner-glow": {
+        "radius": 3,
+        "alpha": 3,
+        "hardness": 3,
+        "color": 3,
+        "blendMode": 3
+      },
+      "com.alightcreative.internal.smoothbevel": {
+        "radius": 33,
+        "angle_d": 33,
+        "angle_s": 33,
+        "color_d": 33,
+        "color_s": 33,
+        "intensity_d": 33,
+        "intensity_s": 33,
+        "elevation_d": 33,
+        "elevation_s": 33,
+        "spec": 33
+      },
+      "com.alightcreative.replacecolor": {
+        "feather": 8,
+        "newcolor": 8,
+        "oldcolor": 8,
+        "threshold": 8,
+        "alpha": 5,
+        "lockLuminance": 2
+      },
+      "com.alightcreative.solidcolor": {
+        "color": 22,
+        "blendMode": 19,
+        "alpha": 18,
+        "vib": 1
+      },
+      "com.alightcreative.spectralmap": {
+        "blueColor": 14,
+        "greenColor": 14,
+        "redColor": 14,
+        "saturation": 13,
+        "scaleBrightness": 12,
+        "phase": 10,
+        "repeat": 10,
+        "alpha": 9,
+        "squeeze": 9,
+        "reverse": 9
+      },
+      "com.alightcreative.spotcolor2": {
+        "color": 1,
+        "saturation": 1
+      }
+    },
+    "property_types": {
+      "float": 9779,
+      "bool": 2534,
+      "vec2": 1241,
+      "int": 1019,
+      "color": 717,
+      "vec3": 152,
+      "<unspecified>": 1
+    },
+    "easing_families": {
+      "cubicBezier": 2438,
+      "elastic": 38,
+      "cyclic": 8,
+      "random": 3
+    },
+    "animator_types": {},
+    "serializer_tags": {
+      "property": 4,
+      "scene": 1,
+      "media": 1,
+      "bookmark": 1,
+      "stroke": 1,
+      "kf": 1,
+      "effect": 1
+    },
+    "serializer_attributes": {
+      "type": 9,
+      "title": 2,
+      "fps": 2,
+      "value": 2,
+      "precompose": 1,
+      "bgcolor": 1,
+      "am": 1,
+      "amplatform": 1,
+      "templateLink": 1,
+      "retime": 1,
+      "uri": 1,
+      "filename": 1,
+      "sig": 1,
+      "points": 1,
+      "tag": 1,
+      "label": 1,
+      "fillType": 1,
+      "blending": 1,
+      "fillImage": 1,
+      "fillVideo": 1,
+      "mediaFillMode": 1,
+      "templatePPId": 1,
+      "presetId": 1,
+      "t": 1,
+      "v": 1,
+      "e": 1,
+      "startColor": 1,
+      "endColor": 1,
+      "direction": 1,
+      "cap": 1,
+      "join": 1,
+      "id": 1
+    }
+  },
+  "parse_errors": {},
+  "effect_parse_errors": {}
+}

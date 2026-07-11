@@ -1,12 +1,10 @@
-# am-xml
+# Alight Motion XML Research
 
-Alight Motion XML presets & projects.
+Reverse-engineered Alight Motion v5 XML format, decompiled serializers,
+real exported projects, live shapes, and bundled effect definitions.
 
-## Layout
-- `mine/` — my own exports
-- `others/` — collected from elsewhere (credit in filename)
-- `templates/` — blank/commented starting points
+Start with [Full XML Schema](reference/FULL_XML_SCHEMA.md), then use
+[Effects Catalog](reference/effects_catalog_v5.json) and
+[Schema Inventory](reference/schema_inventory.json).
 
-## Notes
-- Private repo: raw links need auth to fetch.
-- One project or effect stack per `.xml` file.
+Raw evidence remains in `others/`, `apk-analysis/`, and `jadx-src/`.
