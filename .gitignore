@@ -1,3 +1,6 @@
 
 *.apk
 *.xapk
+
+tools/preview/_contact_sheet.png
+tools/preview/_frame*.png
