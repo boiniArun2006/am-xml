@@ -22,9 +22,9 @@
     <fillColor value="#ffffffff"/>
     <content>HELLO</content>
 
-    <!-- one effect: gaussian blur that resolves 12->0 across the layer -->
+    <!-- one effect: gaussian blur that resolves 2.0->0 across the layer. param is "strength" [0..2], NOT radius -->
     <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
-      <property name="radius"><kf t="0.0" v="12"/><kf t="0.25" v="0"/></property>
+      <property name="strength" type="float"><kf t="0.0" v="2.0"/><kf t="0.25" v="0"/></property>
     </effect>
   </text>
 
