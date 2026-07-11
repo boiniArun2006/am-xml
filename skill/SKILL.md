@@ -49,16 +49,38 @@ If they won't give w×h, DEFAULT `1080×1920` and say so. **You must know w×h b
 
 ```xml
 <?xml version='1.0' encoding='UTF-8' ?>
-<scene title="TITLE" width="W" height="H" exportWidth="W" exportHeight="H"
+<scene title="TITLE" width="W" height="H" exportWidth="EW" exportHeight="EH"
        precompose="dynamicResolution" bgcolor="#ff000000" totalTime="MS" fps="30"
-       am="com.alightcreative.motion/5.0.273" amplatform="android" retime="freeze">
+       amver="1028425" ffver="106" am="com.alightcreative.motion/5.0.273.1028425"
+       amplatform="android" retime="freeze">
   <!-- <media> declarations first, then layers. FIRST layer in doc = BOTTOM of z-stack. -->
 </scene>
 ```
 
+- **`amver` + `ffver` are REQUIRED** — every real AM export writes them; omitting them = not a real export. Use
+  `ffver="106"` (AM v5 / android; v6/iOS uses `107`) and `amver="1028425"` (the v5.0.273 build code).
+- `width/height` = the **edit canvas**. `exportWidth/exportHeight` = the **rendered video resolution**
+  (see STEP 1b). Default: set EW=W and EH=H (edit and export at the same size).
 - `totalTime`, `startTime`, `endTime`, `bookmark t`, media `duration`, `inTime/outTime` = **ms**.
 - Colors are **`#AARRGGBB`** (alpha FIRST). Opaque black = `#ff000000`. `&` → `&amp;`.
 - fps 30 default; 60 for smooth motion.
+
+## STEP 1b — HOW VIDEO EXPORT WORKS (get the ratio right)
+
+The project XML is what AM *edits*; the user hits **Export** in AM to render the video. Only three
+things in the XML affect the exported video — everything else (codec, bitrate, mp4/gif, quality) is
+chosen in AM's export dialog and is NOT stored in the file:
+
+1. **`width`/`height`** — the composition canvas you lay layers out on.
+2. **`exportWidth`/`exportHeight`** — the output video resolution. AM **scales/crops the canvas to fit
+   this**. If they differ in aspect ratio, content is cropped or letterboxed.
+3. **`fps`**.
+
+**This is the "vertical ratio was ignored / content cut off" bug.** If the user wants a vertical
+9:16 video, BOTH the canvas AND the export size must be vertical: `width=1080 height=1920`
+**and** `exportWidth=1080 exportHeight=1920`. A landscape canvas (1920×1080) exported to 1080×1920
+will crop the sides off. Rule: **match canvas ratio to the target video ratio, and set
+exportWidth/Height equal to width/height** unless the user explicitly wants AM to rescale on export.
 
 ---
 
@@ -213,7 +235,9 @@ Every layer needs a **unique** integer `id` (start large, e.g. 300001, increment
 ## STEP 7 — SELF-CHECK BEFORE OUTPUT
 
 1. `<?xml ...?>` header; single root `<scene>`; well-formed, all tags closed.
-2. w×h set; every layer inside `totalTime`; `endTime > startTime`; every `id` unique.
+   Scene carries `amver`, `ffver="106"`, `am=`, `amplatform`, `retime` (real exports always do).
+2. w×h set; `exportWidth/Height` set and ratio-matched to the target video (STEP 1b); every layer
+   inside `totalTime`; `endTime > startTime`; every `id` unique.
 3. Every `<media>` referenced by a layer, and vice-versa.
 4. **Every `kf t` is 0.0–1.0**, never ms.
 5. **TEXT PASS:** for every text — `wrapWidth > line_width` (no wrap); box inside margins

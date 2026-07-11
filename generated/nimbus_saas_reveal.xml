@@ -12,7 +12,8 @@
      Fonts: Poppins (all weights 100-900, verified in AM font_catalog.json). -->
 <scene title="Nimbus SaaS Reveal" width="1080" height="1920" exportWidth="1080" exportHeight="1920"
        precompose="dynamicResolution" bgcolor="#ff05060b" totalTime="14000" fps="60"
-       am="com.alightcreative.motion/5.0.273" amplatform="android" retime="freeze">
+       amver="1028425" ffver="106" am="com.alightcreative.motion/5.0.273.1028425"
+       amplatform="android" retime="freeze">
 
   <!-- ================= BACKDROP (bottom z) ================= -->
   <shape id="300001" label="bg" startTime="0" endTime="14000" s=".rect" fillType="gradient">
