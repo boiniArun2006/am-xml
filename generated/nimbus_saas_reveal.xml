@@ -68,7 +68,7 @@
   <!-- Apple's core move: words appear ONE AT A TIME in the SAME spot (y=960). Each layer
        occupies its own time slice, so despite same y they never coexist. Blur-in + scale settle. -->
   <text id="300010" startTime="0" endTime="900" fillType="color" size="90"
-        font="googlefonts?name=Poppins&amp;weight=700" wrapWidth="960" align="center">
+        font="googlefonts?name=Poppins&amp;weight=700" wrapWidth="1040" align="center">
     <transform>
       <location value="540,960,0"/>
       <scale><kf t="0.0" v="1.14,1.14" e="cubicBezier 0.16 1 0.3 1"/><kf t="0.5" v="1,1"/></scale>
@@ -81,7 +81,7 @@
     </effect>
   </text>
   <text id="300011" startTime="900" endTime="1800" fillType="color" size="90"
-        font="googlefonts?name=Poppins&amp;weight=700" wrapWidth="960" align="center">
+        font="googlefonts?name=Poppins&amp;weight=700" wrapWidth="1040" align="center">
     <transform>
       <location value="540,960,0"/>
       <scale><kf t="0.0" v="1.14,1.14" e="cubicBezier 0.16 1 0.3 1"/><kf t="0.5" v="1,1"/></scale>
@@ -94,7 +94,7 @@
     </effect>
   </text>
   <text id="300012" startTime="1800" endTime="2900" fillType="color" size="90"
-        font="googlefonts?name=Poppins&amp;weight=700" wrapWidth="960" align="center">
+        font="googlefonts?name=Poppins&amp;weight=700" wrapWidth="1040" align="center">
     <transform>
       <location value="540,960,0"/>
       <scale><kf t="0.0" v="1.14,1.14" e="cubicBezier 0.16 1 0.3 1"/><kf t="0.5" v="1,1"/></scale>
@@ -119,7 +119,7 @@
 
   <!-- ================= SCENE B (3.0-6.6s): brand reveal ================= -->
   <text id="300020" startTime="3000" endTime="6200" fillType="color" size="120"
-        font="googlefonts?name=Poppins&amp;weight=800" wrapWidth="980" align="center">
+        font="googlefonts?name=Poppins&amp;weight=800" wrapWidth="1040" align="center">
     <transform>
       <location>
         <kf t="0.0" v="540,878,0" e="cubicBezier 0.16 1 0.3 1"/>
@@ -170,7 +170,7 @@
     <property name="size" type="vec2" value="9,9"/>
   </shape>
   <text id="300031" startTime="6200" endTime="10000" fillType="color" size="44"
-        font="googlefonts?name=Poppins&amp;weight=600" wrapWidth="760" align="left">
+        font="googlefonts?name=Poppins&amp;weight=600" wrapWidth="900" align="left">
     <transform>
       <location>
         <kf t="0.0" v="330,724,0" e="cubicBezier 0.16 1 0.3 1"/>
@@ -192,7 +192,7 @@
     <property name="size" type="vec2" value="9,9"/>
   </shape>
   <text id="300033" startTime="6440" endTime="10000" fillType="color" size="44"
-        font="googlefonts?name=Poppins&amp;weight=600" wrapWidth="760" align="left">
+        font="googlefonts?name=Poppins&amp;weight=600" wrapWidth="900" align="left">
     <transform>
       <location>
         <kf t="0.0" v="330,904,0" e="cubicBezier 0.16 1 0.3 1"/>
@@ -214,7 +214,7 @@
     <property name="size" type="vec2" value="9,9"/>
   </shape>
   <text id="300035" startTime="6680" endTime="10000" fillType="color" size="44"
-        font="googlefonts?name=Poppins&amp;weight=600" wrapWidth="760" align="left">
+        font="googlefonts?name=Poppins&amp;weight=600" wrapWidth="900" align="left">
     <transform>
       <location>
         <kf t="0.0" v="330,1084,0" e="cubicBezier 0.16 1 0.3 1"/>
@@ -228,7 +228,7 @@
 
   <!-- ================= SCENE D (10.0-14.0s): payoff + CTA ================= -->
   <text id="300040" startTime="10000" endTime="14000" fillType="color" size="76"
-        font="googlefonts?name=Poppins&amp;weight=800" wrapWidth="940" align="center">
+        font="googlefonts?name=Poppins&amp;weight=800" wrapWidth="1040" align="center">
     <transform>
       <location>
         <kf t="0.0" v="540,796,0" e="cubicBezier 0.16 1 0.3 1"/>
@@ -258,9 +258,9 @@
       <opacity><kf t="0.0" v="0"/><kf t="0.2" v="1"/><kf t="1.0" v="1"/></opacity>
     </transform>
     <fillColor value="#ff0a84ff"/>
-    <property name="size" type="vec2" value="210,58"/>
+    <property name="size" type="vec2" value="175,62"/>
   </shape>
-  <text id="300042" startTime="10620" endTime="14000" fillType="color" size="36"
+  <text id="300042" startTime="11080" endTime="14000" fillType="color" size="36"
         font="googlefonts?name=Poppins&amp;weight=700" wrapWidth="900" align="center">
     <transform>
       <location>
