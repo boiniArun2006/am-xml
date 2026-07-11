@@ -1,0 +1,6227 @@
+{
+"Roboto": {
+"weights": [
+100,
+300,
+400,
+500,
+700,
+900
+],
+"italic": true
+},
+"Open Sans": {
+"weights": [
+300,
+400,
+600,
+700,
+800
+],
+"italic": true
+},
+"Lato": {
+"weights": [
+100,
+300,
+400,
+700,
+900
+],
+"italic": true
+},
+"Montserrat": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": true
+},
+"Roboto Condensed": {
+"weights": [
+300,
+400,
+700
+],
+"italic": true
+},
+"Source Sans Pro": {
+"weights": [
+200,
+300,
+400,
+600,
+700,
+900
+],
+"italic": true
+},
+"Oswald": {
+"weights": [
+200,
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Raleway": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": true
+},
+"Slabo 27px": {
+"weights": [
+400
+],
+"italic": false
+},
+"PT Sans": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Merriweather": {
+"weights": [
+300,
+400,
+700,
+900
+],
+"italic": true
+},
+"Roboto Slab": {
+"weights": [
+100,
+300,
+400,
+700
+],
+"italic": false
+},
+"Open Sans Condensed": {
+"weights": [
+300,
+700
+],
+"italic": true
+},
+"Ubuntu": {
+"weights": [
+300,
+400,
+500,
+700
+],
+"italic": true
+},
+"Poppins": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": true
+},
+"Noto Sans": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Playfair Display": {
+"weights": [
+400,
+700,
+900
+],
+"italic": true
+},
+"Roboto Mono": {
+"weights": [
+100,
+300,
+400,
+500,
+700
+],
+"italic": true
+},
+"Lora": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"PT Serif": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Titillium Web": {
+"weights": [
+200,
+300,
+400,
+600,
+700,
+900
+],
+"italic": true
+},
+"Muli": {
+"weights": [
+200,
+300,
+400,
+600,
+700,
+800,
+900
+],
+"italic": true
+},
+"Fira Sans": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": true
+},
+"Arimo": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"PT Sans Narrow": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Nunito": {
+"weights": [
+200,
+300,
+400,
+600,
+700,
+800,
+900
+],
+"italic": true
+},
+"Nanum Gothic": {
+"weights": [
+400,
+700,
+800
+],
+"italic": false
+},
+"Noto Serif": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Mukta": {
+"weights": [
+200,
+300,
+400,
+500,
+600,
+700,
+800
+],
+"italic": false
+},
+"Dosis": {
+"weights": [
+200,
+300,
+400,
+500,
+600,
+700,
+800
+],
+"italic": false
+},
+"Inconsolata": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Indie Flower": {
+"weights": [
+400
+],
+"italic": false
+},
+"Crimson Text": {
+"weights": [
+400,
+600,
+700
+],
+"italic": true
+},
+"Work Sans": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": false
+},
+"Quicksand": {
+"weights": [
+300,
+400,
+500,
+700
+],
+"italic": false
+},
+"Bitter": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Anton": {
+"weights": [
+400
+],
+"italic": false
+},
+"Josefin Sans": {
+"weights": [
+100,
+300,
+400,
+600,
+700
+],
+"italic": true
+},
+"Oxygen": {
+"weights": [
+300,
+400,
+700
+],
+"italic": false
+},
+"Libre Baskerville": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Cabin": {
+"weights": [
+400,
+500,
+600,
+700
+],
+"italic": true
+},
+"Hind": {
+"weights": [
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Rubik": {
+"weights": [
+300,
+400,
+500,
+700,
+900
+],
+"italic": true
+},
+"Fjalla One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Arvo": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Lobster": {
+"weights": [
+400
+],
+"italic": false
+},
+"Exo 2": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": true
+},
+"Libre Franklin": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": true
+},
+"Karla": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Pacifico": {
+"weights": [
+400
+],
+"italic": false
+},
+"Abel": {
+"weights": [
+400
+],
+"italic": false
+},
+"Varela Round": {
+"weights": [
+400
+],
+"italic": false
+},
+"Yanone Kaffeesatz": {
+"weights": [
+200,
+300,
+400,
+700
+],
+"italic": false
+},
+"Nunito Sans": {
+"weights": [
+200,
+300,
+400,
+600,
+700,
+800,
+900
+],
+"italic": true
+},
+"Merriweather Sans": {
+"weights": [
+300,
+400,
+700,
+800
+],
+"italic": true
+},
+"Shadows Into Light": {
+"weights": [
+400
+],
+"italic": false
+},
+"Source Serif Pro": {
+"weights": [
+400,
+600,
+700
+],
+"italic": false
+},
+"Dancing Script": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Archivo Narrow": {
+"weights": [
+400,
+500,
+600,
+700
+],
+"italic": true
+},
+"Abril Fatface": {
+"weights": [
+400
+],
+"italic": false
+},
+"Ubuntu Condensed": {
+"weights": [
+400
+],
+"italic": false
+},
+"Asap": {
+"weights": [
+400,
+500,
+600,
+700
+],
+"italic": true
+},
+"Bree Serif": {
+"weights": [
+400
+],
+"italic": false
+},
+"Acme": {
+"weights": [
+400
+],
+"italic": false
+},
+"Encode Sans Condensed": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": false
+},
+"Source Code Pro": {
+"weights": [
+200,
+300,
+400,
+500,
+600,
+700,
+900
+],
+"italic": false
+},
+"Questrial": {
+"weights": [
+400
+],
+"italic": false
+},
+"Gloria Hallelujah": {
+"weights": [
+400
+],
+"italic": false
+},
+"PT Sans Caption": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Righteous": {
+"weights": [
+400
+],
+"italic": false
+},
+"Exo": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": true
+},
+"Comfortaa": {
+"weights": [
+300,
+400,
+700
+],
+"italic": false
+},
+"Signika": {
+"weights": [
+300,
+400,
+600,
+700
+],
+"italic": false
+},
+"Amatic SC": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Kanit": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": true
+},
+"Maven Pro": {
+"weights": [
+400,
+500,
+700,
+900
+],
+"italic": false
+},
+"Play": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"EB Garamond": {
+"weights": [
+400,
+500,
+600,
+700,
+800
+],
+"italic": true
+},
+"Cairo": {
+"weights": [
+200,
+300,
+400,
+600,
+700,
+900
+],
+"italic": false
+},
+"Crete Round": {
+"weights": [
+400
+],
+"italic": true
+},
+"Rokkitt": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": false
+},
+"Teko": {
+"weights": [
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Hind Siliguri": {
+"weights": [
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Francois One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Patua One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Cuprum": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Cinzel": {
+"weights": [
+400,
+700,
+900
+],
+"italic": false
+},
+"Vollkorn": {
+"weights": [
+400,
+600,
+700,
+900
+],
+"italic": true
+},
+"Heebo": {
+"weights": [
+100,
+300,
+400,
+500,
+700,
+800,
+900
+],
+"italic": false
+},
+"Alegreya": {
+"weights": [
+400,
+500,
+700,
+800,
+900
+],
+"italic": true
+},
+"Ropa Sans": {
+"weights": [
+400
+],
+"italic": true
+},
+"Permanent Marker": {
+"weights": [
+400
+],
+"italic": false
+},
+"Domine": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Catamaran": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": false
+},
+"Old Standard TT": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Great Vibes": {
+"weights": [
+400
+],
+"italic": false
+},
+"Courgette": {
+"weights": [
+400
+],
+"italic": false
+},
+"Noticia Text": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"ABeeZee": {
+"weights": [
+400
+],
+"italic": true
+},
+"Pathway Gothic One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Kaushan Script": {
+"weights": [
+400
+],
+"italic": false
+},
+"Quattrocento Sans": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Satisfy": {
+"weights": [
+400
+],
+"italic": false
+},
+"Rajdhani": {
+"weights": [
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Cardo": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Assistant": {
+"weights": [
+200,
+300,
+400,
+600,
+700,
+800
+],
+"italic": false
+},
+"Cookie": {
+"weights": [
+400
+],
+"italic": false
+},
+"Concert One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Fira Sans Condensed": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": true
+},
+"Alegreya Sans": {
+"weights": [
+100,
+300,
+400,
+500,
+700,
+800,
+900
+],
+"italic": true
+},
+"Orbitron": {
+"weights": [
+400,
+500,
+700,
+900
+],
+"italic": false
+},
+"Monoton": {
+"weights": [
+400
+],
+"italic": false
+},
+"Hind Madurai": {
+"weights": [
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Cormorant Garamond": {
+"weights": [
+300,
+400,
+500,
+600,
+700
+],
+"italic": true
+},
+"Istok Web": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Khand": {
+"weights": [
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Lobster Two": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Tinos": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Prompt": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": true
+},
+"News Cycle": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Poiret One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Volkhov": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Amiri": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Arapey": {
+"weights": [
+400
+],
+"italic": true
+},
+"Archivo Black": {
+"weights": [
+400
+],
+"italic": false
+},
+"Caveat": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Pontano Sans": {
+"weights": [
+400
+],
+"italic": false
+},
+"Monda": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Bangers": {
+"weights": [
+400
+],
+"italic": false
+},
+"Nanum Myeongjo": {
+"weights": [
+400,
+700,
+800
+],
+"italic": false
+},
+"Barlow": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": true
+},
+"Yantramanav": {
+"weights": [
+100,
+300,
+400,
+500,
+700,
+900
+],
+"italic": false
+},
+"Passion One": {
+"weights": [
+400,
+700,
+900
+],
+"italic": false
+},
+"Quattrocento": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Josefin Slab": {
+"weights": [
+100,
+300,
+400,
+600,
+700
+],
+"italic": true
+},
+"Kalam": {
+"weights": [
+300,
+400,
+700
+],
+"italic": false
+},
+"Sacramento": {
+"weights": [
+400
+],
+"italic": false
+},
+"Basic": {
+"weights": [
+400
+],
+"italic": false
+},
+"Fredoka One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Playfair Display SC": {
+"weights": [
+400,
+700,
+900
+],
+"italic": true
+},
+"Cantarell": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Economica": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Russo One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Luckiest Guy": {
+"weights": [
+400
+],
+"italic": false
+},
+"Alfa Slab One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Handlee": {
+"weights": [
+400
+],
+"italic": false
+},
+"Didact Gothic": {
+"weights": [
+400
+],
+"italic": false
+},
+"Tangerine": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Patrick Hand": {
+"weights": [
+400
+],
+"italic": false
+},
+"Sigmar One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Gudea": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Cabin Condensed": {
+"weights": [
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Vidaloka": {
+"weights": [
+400
+],
+"italic": false
+},
+"BenchNine": {
+"weights": [
+300,
+400,
+700
+],
+"italic": false
+},
+"Chivo": {
+"weights": [
+300,
+400,
+700,
+900
+],
+"italic": true
+},
+"Merienda": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Cabin Sketch": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"M PLUS 1p": {
+"weights": [
+100,
+300,
+400,
+500,
+700,
+800,
+900
+],
+"italic": false
+},
+"Zilla Slab": {
+"weights": [
+300,
+400,
+500,
+600,
+700
+],
+"italic": true
+},
+"Neuton": {
+"weights": [
+200,
+300,
+400,
+700,
+800
+],
+"italic": true
+},
+"Boogaloo": {
+"weights": [
+400
+],
+"italic": false
+},
+"Fira Sans Extra Condensed": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": true
+},
+"Hammersmith One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Philosopher": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Barlow Condensed": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": true
+},
+"Aldrich": {
+"weights": [
+400
+],
+"italic": false
+},
+"Sanchez": {
+"weights": [
+400
+],
+"italic": true
+},
+"Armata": {
+"weights": [
+400
+],
+"italic": false
+},
+"Amaranth": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Audiowide": {
+"weights": [
+400
+],
+"italic": false
+},
+"Glegoo": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Barlow Semi Condensed": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": true
+},
+"Sorts Mill Goudy": {
+"weights": [
+400
+],
+"italic": true
+},
+"Pragati Narrow": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Ultra": {
+"weights": [
+400
+],
+"italic": false
+},
+"Marck Script": {
+"weights": [
+400
+],
+"italic": false
+},
+"Ruda": {
+"weights": [
+400,
+700,
+900
+],
+"italic": false
+},
+"Unica One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Khula": {
+"weights": [
+300,
+400,
+600,
+700,
+800
+],
+"italic": false
+},
+"Paytone One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Prata": {
+"weights": [
+400
+],
+"italic": false
+},
+"Architects Daughter": {
+"weights": [
+400
+],
+"italic": false
+},
+"Gentium Basic": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Overpass": {
+"weights": [
+100,
+200,
+300,
+400,
+600,
+700,
+800,
+900
+],
+"italic": true
+},
+"Neucha": {
+"weights": [
+400
+],
+"italic": false
+},
+"Yrsa": {
+"weights": [
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Julius Sans One": {
+"weights": [
+400
+],
+"italic": false
+},
+"PT Mono": {
+"weights": [
+400
+],
+"italic": false
+},
+"Hind Vadodara": {
+"weights": [
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Enriqueta": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Signika Negative": {
+"weights": [
+300,
+400,
+600,
+700
+],
+"italic": false
+},
+"Bad Script": {
+"weights": [
+400
+],
+"italic": false
+},
+"Martel": {
+"weights": [
+200,
+300,
+400,
+600,
+700,
+800,
+900
+],
+"italic": false
+},
+"Kreon": {
+"weights": [
+300,
+400,
+700
+],
+"italic": false
+},
+"Changa": {
+"weights": [
+200,
+300,
+400,
+500,
+600,
+700,
+800
+],
+"italic": false
+},
+"Antic Slab": {
+"weights": [
+400
+],
+"italic": false
+},
+"Jura": {
+"weights": [
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Shadows Into Light Two": {
+"weights": [
+400
+],
+"italic": false
+},
+"Frank Ruhl Libre": {
+"weights": [
+300,
+400,
+500,
+700,
+900
+],
+"italic": false
+},
+"Oleo Script": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Alice": {
+"weights": [
+400
+],
+"italic": false
+},
+"Parisienne": {
+"weights": [
+400
+],
+"italic": false
+},
+"Sarala": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Special Elite": {
+"weights": [
+400
+],
+"italic": false
+},
+"Gentium Book Basic": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Adamina": {
+"weights": [
+400
+],
+"italic": false
+},
+"Advent Pro": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Sawarabi Mincho": {
+"weights": [
+400
+],
+"italic": false
+},
+"Arbutus Slab": {
+"weights": [
+400
+],
+"italic": false
+},
+"Covered By Your Grace": {
+"weights": [
+400
+],
+"italic": false
+},
+"Lalezar": {
+"weights": [
+400
+],
+"italic": false
+},
+"Nobile": {
+"weights": [
+400,
+500,
+700
+],
+"italic": true
+},
+"Homemade Apple": {
+"weights": [
+400
+],
+"italic": false
+},
+"Montserrat Alternates": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": true
+},
+"Ubuntu Mono": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Molengo": {
+"weights": [
+400
+],
+"italic": false
+},
+"Caveat Brush": {
+"weights": [
+400
+],
+"italic": false
+},
+"Sintony": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Varela": {
+"weights": [
+400
+],
+"italic": false
+},
+"Bevan": {
+"weights": [
+400
+],
+"italic": false
+},
+"Chewy": {
+"weights": [
+400
+],
+"italic": false
+},
+"Actor": {
+"weights": [
+400
+],
+"italic": false
+},
+"Allura": {
+"weights": [
+400
+],
+"italic": false
+},
+"Damion": {
+"weights": [
+400
+],
+"italic": false
+},
+"Allerta": {
+"weights": [
+400
+],
+"italic": false
+},
+"Playball": {
+"weights": [
+400
+],
+"italic": false
+},
+"Nothing You Could Do": {
+"weights": [
+400
+],
+"italic": false
+},
+"Press Start 2P": {
+"weights": [
+400
+],
+"italic": false
+},
+"Yellowtail": {
+"weights": [
+400
+],
+"italic": false
+},
+"Taviraj": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": true
+},
+"Alegreya Sans SC": {
+"weights": [
+100,
+300,
+400,
+500,
+700,
+800,
+900
+],
+"italic": true
+},
+"IBM Plex Sans": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700
+],
+"italic": true
+},
+"Rancho": {
+"weights": [
+400
+],
+"italic": false
+},
+"Scada": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Prosto One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Electrolize": {
+"weights": [
+400
+],
+"italic": false
+},
+"Fugaz One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Share": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Hind Guntur": {
+"weights": [
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Rock Salt": {
+"weights": [
+400
+],
+"italic": false
+},
+"Spinnaker": {
+"weights": [
+400
+],
+"italic": false
+},
+"PT Serif Caption": {
+"weights": [
+400
+],
+"italic": true
+},
+"Karma": {
+"weights": [
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Alex Brush": {
+"weights": [
+400
+],
+"italic": false
+},
+"Lusitana": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Rambla": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Hanuman": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Squada One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Gochi Hand": {
+"weights": [
+400
+],
+"italic": false
+},
+"Cantata One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Coda": {
+"weights": [
+400,
+800
+],
+"italic": false
+},
+"Carter One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Michroma": {
+"weights": [
+400
+],
+"italic": false
+},
+"Lustria": {
+"weights": [
+400
+],
+"italic": false
+},
+"Fredericka the Great": {
+"weights": [
+400
+],
+"italic": false
+},
+"Rufina": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Titan One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Eczar": {
+"weights": [
+400,
+500,
+600,
+700,
+800
+],
+"italic": false
+},
+"Leckerli One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Antic": {
+"weights": [
+400
+],
+"italic": false
+},
+"Knewave": {
+"weights": [
+400
+],
+"italic": false
+},
+"Radley": {
+"weights": [
+400
+],
+"italic": true
+},
+"Slabo 13px": {
+"weights": [
+400
+],
+"italic": false
+},
+"Jaldi": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Marcellus SC": {
+"weights": [
+400
+],
+"italic": false
+},
+"Just Another Hand": {
+"weights": [
+400
+],
+"italic": false
+},
+"Tajawal": {
+"weights": [
+200,
+300,
+400,
+500,
+700,
+800,
+900
+],
+"italic": false
+},
+"Viga": {
+"weights": [
+400
+],
+"italic": false
+},
+"Coming Soon": {
+"weights": [
+400
+],
+"italic": false
+},
+"Marcellus": {
+"weights": [
+400
+],
+"italic": false
+},
+"Overlock": {
+"weights": [
+400,
+700,
+900
+],
+"italic": true
+},
+"Magra": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Rochester": {
+"weights": [
+400
+],
+"italic": false
+},
+"Marmelad": {
+"weights": [
+400
+],
+"italic": false
+},
+"Oranienbaum": {
+"weights": [
+400
+],
+"italic": false
+},
+"Reenie Beanie": {
+"weights": [
+400
+],
+"italic": false
+},
+"Shrikhand": {
+"weights": [
+400
+],
+"italic": false
+},
+"Syncopate": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Niconne": {
+"weights": [
+400
+],
+"italic": false
+},
+"Quantico": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"El Messiri": {
+"weights": [
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Pridi": {
+"weights": [
+200,
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Kameron": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Coda Caption": {
+"weights": [
+800
+],
+"italic": false
+},
+"Halant": {
+"weights": [
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Black Ops One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Nanum Gothic Coding": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"VT323": {
+"weights": [
+400
+],
+"italic": false
+},
+"Nanum Pen Script": {
+"weights": [
+400
+],
+"italic": false
+},
+"Contrail One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Wendy One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Cormorant": {
+"weights": [
+300,
+400,
+500,
+600,
+700
+],
+"italic": true
+},
+"Carme": {
+"weights": [
+400
+],
+"italic": false
+},
+"Hanalei Fill": {
+"weights": [
+400
+],
+"italic": false
+},
+"Lekton": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Ovo": {
+"weights": [
+400
+],
+"italic": false
+},
+"Grand Hotel": {
+"weights": [
+400
+],
+"italic": false
+},
+"Archivo": {
+"weights": [
+400,
+500,
+600,
+700
+],
+"italic": true
+},
+"Mr Dafoe": {
+"weights": [
+400
+],
+"italic": false
+},
+"Rasa": {
+"weights": [
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Pinyon Script": {
+"weights": [
+400
+],
+"italic": false
+},
+"Love Ya Like A Sister": {
+"weights": [
+400
+],
+"italic": false
+},
+"Coustard": {
+"weights": [
+400,
+900
+],
+"italic": false
+},
+"Days One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Saira": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": false
+},
+"Saira Semi Condensed": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": false
+},
+"Alef": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Skranji": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Forum": {
+"weights": [
+400
+],
+"italic": false
+},
+"Corben": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Candal": {
+"weights": [
+400
+],
+"italic": false
+},
+"Marvel": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Baloo": {
+"weights": [
+400
+],
+"italic": false
+},
+"Palanquin": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Jockey One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Cousine": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Telex": {
+"weights": [
+400
+],
+"italic": false
+},
+"Berkshire Swash": {
+"weights": [
+400
+],
+"italic": false
+},
+"Changa One": {
+"weights": [
+400
+],
+"italic": true
+},
+"Rosario": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Lateef": {
+"weights": [
+400
+],
+"italic": false
+},
+"Scheherazade": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Copse": {
+"weights": [
+400
+],
+"italic": false
+},
+"Average": {
+"weights": [
+400
+],
+"italic": false
+},
+"Italianno": {
+"weights": [
+400
+],
+"italic": false
+},
+"Voltaire": {
+"weights": [
+400
+],
+"italic": false
+},
+"Reem Kufi": {
+"weights": [
+400
+],
+"italic": false
+},
+"Fauna One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Allan": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Carrois Gothic": {
+"weights": [
+400
+],
+"italic": false
+},
+"Ceviche One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Mada": {
+"weights": [
+200,
+300,
+400,
+500,
+600,
+700,
+900
+],
+"italic": false
+},
+"Allerta Stencil": {
+"weights": [
+400
+],
+"italic": false
+},
+"Space Mono": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Nanum Brush Script": {
+"weights": [
+400
+],
+"italic": false
+},
+"Averia Serif Libre": {
+"weights": [
+300,
+400,
+700
+],
+"italic": true
+},
+"Abhaya Libre": {
+"weights": [
+400,
+500,
+600,
+700,
+800
+],
+"italic": false
+},
+"Itim": {
+"weights": [
+400
+],
+"italic": false
+},
+"Anonymous Pro": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Mitr": {
+"weights": [
+200,
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Freckle Face": {
+"weights": [
+400
+],
+"italic": false
+},
+"Spectral": {
+"weights": [
+200,
+300,
+400,
+500,
+600,
+700,
+800
+],
+"italic": true
+},
+"Arsenal": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Unna": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Martel Sans": {
+"weights": [
+200,
+300,
+400,
+600,
+700,
+800,
+900
+],
+"italic": false
+},
+"Nixie One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Saira Condensed": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": false
+},
+"Tenor Sans": {
+"weights": [
+400
+],
+"italic": false
+},
+"Limelight": {
+"weights": [
+400
+],
+"italic": false
+},
+"Cinzel Decorative": {
+"weights": [
+400,
+700,
+900
+],
+"italic": false
+},
+"Kurale": {
+"weights": [
+400
+],
+"italic": false
+},
+"Goudy Bookletter 1911": {
+"weights": [
+400
+],
+"italic": false
+},
+"Alegreya SC": {
+"weights": [
+400,
+500,
+700,
+800,
+900
+],
+"italic": true
+},
+"Share Tech Mono": {
+"weights": [
+400
+],
+"italic": false
+},
+"Calligraffitti": {
+"weights": [
+400
+],
+"italic": false
+},
+"Arima Madurai": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+700,
+800,
+900
+],
+"italic": false
+},
+"Bungee Inline": {
+"weights": [
+400
+],
+"italic": false
+},
+"Aclonica": {
+"weights": [
+400
+],
+"italic": false
+},
+"Convergence": {
+"weights": [
+400
+],
+"italic": false
+},
+"Annie Use Your Telescope": {
+"weights": [
+400
+],
+"italic": false
+},
+"Metrophobic": {
+"weights": [
+400
+],
+"italic": false
+},
+"Buenard": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Average Sans": {
+"weights": [
+400
+],
+"italic": false
+},
+"Doppio One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Judson": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Bowlby One SC": {
+"weights": [
+400
+],
+"italic": false
+},
+"GFS Didot": {
+"weights": [
+400
+],
+"italic": false
+},
+"Pangolin": {
+"weights": [
+400
+],
+"italic": false
+},
+"Caudex": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Bungee": {
+"weights": [
+400
+],
+"italic": false
+},
+"Homenaje": {
+"weights": [
+400
+],
+"italic": false
+},
+"Yeseva One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Andada": {
+"weights": [
+400
+],
+"italic": false
+},
+"Tauri": {
+"weights": [
+400
+],
+"italic": false
+},
+"Miriam Libre": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Cutive": {
+"weights": [
+400
+],
+"italic": false
+},
+"Biryani": {
+"weights": [
+200,
+300,
+400,
+600,
+700,
+800,
+900
+],
+"italic": false
+},
+"Racing Sans One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Spirax": {
+"weights": [
+400
+],
+"italic": false
+},
+"Yesteryear": {
+"weights": [
+400
+],
+"italic": false
+},
+"Puritan": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Gilda Display": {
+"weights": [
+400
+],
+"italic": false
+},
+"Kelly Slab": {
+"weights": [
+400
+],
+"italic": false
+},
+"Lilita One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Norican": {
+"weights": [
+400
+],
+"italic": false
+},
+"Asap Condensed": {
+"weights": [
+400,
+500,
+600,
+700
+],
+"italic": true
+},
+"Faster One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Petit Formal Script": {
+"weights": [
+400
+],
+"italic": false
+},
+"Mirza": {
+"weights": [
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Balthazar": {
+"weights": [
+400
+],
+"italic": false
+},
+"Fanwood Text": {
+"weights": [
+400
+],
+"italic": true
+},
+"Saira Extra Condensed": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": false
+},
+"Gruppo": {
+"weights": [
+400
+],
+"italic": false
+},
+"Bubblegum Sans": {
+"weights": [
+400
+],
+"italic": false
+},
+"Fira Mono": {
+"weights": [
+400,
+500,
+700
+],
+"italic": false
+},
+"Cambo": {
+"weights": [
+400
+],
+"italic": false
+},
+"Mukta Vaani": {
+"weights": [
+200,
+300,
+400,
+500,
+600,
+700,
+800
+],
+"italic": false
+},
+"Duru Sans": {
+"weights": [
+400
+],
+"italic": false
+},
+"Yatra One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Schoolbell": {
+"weights": [
+400
+],
+"italic": false
+},
+"Inder": {
+"weights": [
+400
+],
+"italic": false
+},
+"Delius": {
+"weights": [
+400
+],
+"italic": false
+},
+"Six Caps": {
+"weights": [
+400
+],
+"italic": false
+},
+"Sue Ellen Francisco": {
+"weights": [
+400
+],
+"italic": false
+},
+"Shojumaru": {
+"weights": [
+400
+],
+"italic": false
+},
+"Herr Von Muellerhoff": {
+"weights": [
+400
+],
+"italic": false
+},
+"Raleway Dots": {
+"weights": [
+400
+],
+"italic": false
+},
+"Baloo Paaji": {
+"weights": [
+400
+],
+"italic": false
+},
+"Graduate": {
+"weights": [
+400
+],
+"italic": false
+},
+"Montez": {
+"weights": [
+400
+],
+"italic": false
+},
+"Give You Glory": {
+"weights": [
+400
+],
+"italic": false
+},
+"Sawarabi Gothic": {
+"weights": [
+400
+],
+"italic": false
+},
+"Aladin": {
+"weights": [
+400
+],
+"italic": false
+},
+"Belleza": {
+"weights": [
+400
+],
+"italic": false
+},
+"Londrina Solid": {
+"weights": [
+100,
+300,
+400,
+900
+],
+"italic": false
+},
+"Mr De Haviland": {
+"weights": [
+400
+],
+"italic": false
+},
+"IM Fell Double Pica": {
+"weights": [
+400
+],
+"italic": true
+},
+"Capriola": {
+"weights": [
+400
+],
+"italic": false
+},
+"Pompiere": {
+"weights": [
+400
+],
+"italic": false
+},
+"Chelsea Market": {
+"weights": [
+400
+],
+"italic": false
+},
+"Cutive Mono": {
+"weights": [
+400
+],
+"italic": false
+},
+"Trocchi": {
+"weights": [
+400
+],
+"italic": false
+},
+"Pattaya": {
+"weights": [
+400
+],
+"italic": false
+},
+"Gravitas One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Cormorant SC": {
+"weights": [
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Trirong": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": true
+},
+"Happy Monkey": {
+"weights": [
+400
+],
+"italic": false
+},
+"Quando": {
+"weights": [
+400
+],
+"italic": false
+},
+"Rammetto One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Maitree": {
+"weights": [
+200,
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Merienda One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Megrim": {
+"weights": [
+400
+],
+"italic": false
+},
+"Proza Libre": {
+"weights": [
+400,
+500,
+600,
+700,
+800
+],
+"italic": true
+},
+"Alike": {
+"weights": [
+400
+],
+"italic": false
+},
+"Elsie": {
+"weights": [
+400,
+900
+],
+"italic": false
+},
+"Oxygen Mono": {
+"weights": [
+400
+],
+"italic": false
+},
+"Mate": {
+"weights": [
+400
+],
+"italic": true
+},
+"Poly": {
+"weights": [
+400
+],
+"italic": true
+},
+"Kristi": {
+"weights": [
+400
+],
+"italic": false
+},
+"Laila": {
+"weights": [
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Zeyada": {
+"weights": [
+400
+],
+"italic": false
+},
+"Bentham": {
+"weights": [
+400
+],
+"italic": false
+},
+"Strait": {
+"weights": [
+400
+],
+"italic": false
+},
+"Palanquin Dark": {
+"weights": [
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Krona One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Gabriela": {
+"weights": [
+400
+],
+"italic": false
+},
+"Andika": {
+"weights": [
+400
+],
+"italic": false
+},
+"The Girl Next Door": {
+"weights": [
+400
+],
+"italic": false
+},
+"Frijole": {
+"weights": [
+400
+],
+"italic": false
+},
+"Encode Sans": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": false
+},
+"Oregano": {
+"weights": [
+400
+],
+"italic": true
+},
+"Arizonia": {
+"weights": [
+400
+],
+"italic": false
+},
+"Carrois Gothic SC": {
+"weights": [
+400
+],
+"italic": false
+},
+"Federo": {
+"weights": [
+400
+],
+"italic": false
+},
+"Secular One": {
+"weights": [
+400
+],
+"italic": false
+},
+"IM Fell English": {
+"weights": [
+400
+],
+"italic": true
+},
+"Anaheim": {
+"weights": [
+400
+],
+"italic": false
+},
+"Baloo Chettan": {
+"weights": [
+400
+],
+"italic": false
+},
+"Mako": {
+"weights": [
+400
+],
+"italic": false
+},
+"Short Stack": {
+"weights": [
+400
+],
+"italic": false
+},
+"Wire One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Vesper Libre": {
+"weights": [
+400,
+500,
+700,
+900
+],
+"italic": false
+},
+"Baumans": {
+"weights": [
+400
+],
+"italic": false
+},
+"Rozha One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Mouse Memoirs": {
+"weights": [
+400
+],
+"italic": false
+},
+"Gurajada": {
+"weights": [
+400
+],
+"italic": false
+},
+"Holtwood One SC": {
+"weights": [
+400
+],
+"italic": false
+},
+"Markazi Text": {
+"weights": [
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Vast Shadow": {
+"weights": [
+400
+],
+"italic": false
+},
+"Imprima": {
+"weights": [
+400
+],
+"italic": false
+},
+"Fontdiner Swanky": {
+"weights": [
+400
+],
+"italic": false
+},
+"Cambay": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Qwigley": {
+"weights": [
+400
+],
+"italic": false
+},
+"Seaweed Script": {
+"weights": [
+400
+],
+"italic": false
+},
+"Waiting for the Sunrise": {
+"weights": [
+400
+],
+"italic": false
+},
+"Crafty Girls": {
+"weights": [
+400
+],
+"italic": false
+},
+"Delius Swash Caps": {
+"weights": [
+400
+],
+"italic": false
+},
+"Prociono": {
+"weights": [
+400
+],
+"italic": false
+},
+"Unkempt": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Lemonada": {
+"weights": [
+300,
+400,
+600,
+700
+],
+"italic": false
+},
+"Brawler": {
+"weights": [
+400
+],
+"italic": false
+},
+"Bowlby One": {
+"weights": [
+400
+],
+"italic": false
+},
+"IM Fell DW Pica": {
+"weights": [
+400
+],
+"italic": true
+},
+"Metamorphous": {
+"weights": [
+400
+],
+"italic": false
+},
+"Expletus Sans": {
+"weights": [
+400,
+500,
+600,
+700
+],
+"italic": true
+},
+"Rouge Script": {
+"weights": [
+400
+],
+"italic": false
+},
+"Baloo Bhaina": {
+"weights": [
+400
+],
+"italic": false
+},
+"Dorsa": {
+"weights": [
+400
+],
+"italic": false
+},
+"Fondamento": {
+"weights": [
+400
+],
+"italic": true
+},
+"Meddon": {
+"weights": [
+400
+],
+"italic": false
+},
+"Suez One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Clicker Script": {
+"weights": [
+400
+],
+"italic": false
+},
+"Walter Turncoat": {
+"weights": [
+400
+],
+"italic": false
+},
+"Sansita": {
+"weights": [
+400,
+700,
+800,
+900
+],
+"italic": true
+},
+"Bilbo Swash Caps": {
+"weights": [
+400
+],
+"italic": false
+},
+"Loved by the King": {
+"weights": [
+400
+],
+"italic": false
+},
+"Cherry Swash": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"La Belle Aurore": {
+"weights": [
+400
+],
+"italic": false
+},
+"UnifrakturMaguntia": {
+"weights": [
+400
+],
+"italic": false
+},
+"Lily Script One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Uncial Antiqua": {
+"weights": [
+400
+],
+"italic": false
+},
+"Amiko": {
+"weights": [
+400,
+600,
+700
+],
+"italic": false
+},
+"Podkova": {
+"weights": [
+400,
+500,
+600,
+700,
+800
+],
+"italic": false
+},
+"Patrick Hand SC": {
+"weights": [
+400
+],
+"italic": false
+},
+"Sofia": {
+"weights": [
+400
+],
+"italic": false
+},
+"Orienta": {
+"weights": [
+400
+],
+"italic": false
+},
+"Gafata": {
+"weights": [
+400
+],
+"italic": false
+},
+"Rye": {
+"weights": [
+400
+],
+"italic": false
+},
+"Fjord One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Emilys Candy": {
+"weights": [
+400
+],
+"italic": false
+},
+"Just Me Again Down Here": {
+"weights": [
+400
+],
+"italic": false
+},
+"Harmattan": {
+"weights": [
+400
+],
+"italic": false
+},
+"Lemon": {
+"weights": [
+400
+],
+"italic": false
+},
+"Vampiro One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Salsa": {
+"weights": [
+400
+],
+"italic": false
+},
+"Artifika": {
+"weights": [
+400
+],
+"italic": false
+},
+"Iceland": {
+"weights": [
+400
+],
+"italic": false
+},
+"Cantora One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Cedarville Cursive": {
+"weights": [
+400
+],
+"italic": false
+},
+"Nova Mono": {
+"weights": [
+400
+],
+"italic": false
+},
+"Sura": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Suranna": {
+"weights": [
+400
+],
+"italic": false
+},
+"Stardos Stencil": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Sriracha": {
+"weights": [
+400
+],
+"italic": false
+},
+"Oleo Script Swash Caps": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"David Libre": {
+"weights": [
+400,
+500,
+700
+],
+"italic": false
+},
+"NTR": {
+"weights": [
+400
+],
+"italic": false
+},
+"Vibur": {
+"weights": [
+400
+],
+"italic": false
+},
+"Nova Square": {
+"weights": [
+400
+],
+"italic": false
+},
+"Voces": {
+"weights": [
+400
+],
+"italic": false
+},
+"Faustina": {
+"weights": [
+400,
+500,
+600,
+700
+],
+"italic": true
+},
+"Engagement": {
+"weights": [
+400
+],
+"italic": false
+},
+"Athiti": {
+"weights": [
+200,
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Sunflower": {
+"weights": [
+300,
+500,
+700
+],
+"italic": false
+},
+"Crushed": {
+"weights": [
+400
+],
+"italic": false
+},
+"Codystar": {
+"weights": [
+300,
+400
+],
+"italic": false
+},
+"Sniglet": {
+"weights": [
+400,
+800
+],
+"italic": false
+},
+"Tienne": {
+"weights": [
+400,
+700,
+900
+],
+"italic": false
+},
+"Bungee Shade": {
+"weights": [
+400
+],
+"italic": false
+},
+"Dawning of a New Day": {
+"weights": [
+400
+],
+"italic": false
+},
+"Life Savers": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Denk One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Finger Paint": {
+"weights": [
+400
+],
+"italic": false
+},
+"Euphoria Script": {
+"weights": [
+400
+],
+"italic": false
+},
+"Belgrano": {
+"weights": [
+400
+],
+"italic": false
+},
+"Montserrat Subrayada": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Aguafina Script": {
+"weights": [
+400
+],
+"italic": false
+},
+"Cherry Cream Soda": {
+"weights": [
+400
+],
+"italic": false
+},
+"Gothic A1": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": false
+},
+"Creepster": {
+"weights": [
+400
+],
+"italic": false
+},
+"Port Lligat Slab": {
+"weights": [
+400
+],
+"italic": false
+},
+"Ledger": {
+"weights": [
+400
+],
+"italic": false
+},
+"Condiment": {
+"weights": [
+400
+],
+"italic": false
+},
+"IBM Plex Serif": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700
+],
+"italic": true
+},
+"Mukta Malar": {
+"weights": [
+200,
+300,
+400,
+500,
+600,
+700,
+800
+],
+"italic": false
+},
+"Medula One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Sumana": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Sarpanch": {
+"weights": [
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": false
+},
+"McLaren": {
+"weights": [
+400
+],
+"italic": false
+},
+"Nova Round": {
+"weights": [
+400
+],
+"italic": false
+},
+"Rubik Mono One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Over the Rainbow": {
+"weights": [
+400
+],
+"italic": false
+},
+"Headland One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Share Tech": {
+"weights": [
+400
+],
+"italic": false
+},
+"Cormorant Infant": {
+"weights": [
+300,
+400,
+500,
+600,
+700
+],
+"italic": true
+},
+"Amethysta": {
+"weights": [
+400
+],
+"italic": false
+},
+"Alike Angular": {
+"weights": [
+400
+],
+"italic": false
+},
+"Slackey": {
+"weights": [
+400
+],
+"italic": false
+},
+"Shanti": {
+"weights": [
+400
+],
+"italic": false
+},
+"Wallpoet": {
+"weights": [
+400
+],
+"italic": false
+},
+"IM Fell English SC": {
+"weights": [
+400
+],
+"italic": false
+},
+"Bellefair": {
+"weights": [
+400
+],
+"italic": false
+},
+"Jua": {
+"weights": [
+400
+],
+"italic": false
+},
+"Ramabhadra": {
+"weights": [
+400
+],
+"italic": false
+},
+"Chonburi": {
+"weights": [
+400
+],
+"italic": false
+},
+"Battambang": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Chango": {
+"weights": [
+400
+],
+"italic": false
+},
+"Amita": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Timmana": {
+"weights": [
+400
+],
+"italic": false
+},
+"Geo": {
+"weights": [
+400
+],
+"italic": true
+},
+"Habibi": {
+"weights": [
+400
+],
+"italic": false
+},
+"Germania One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Nova Slim": {
+"weights": [
+400
+],
+"italic": false
+},
+"Stint Ultra Expanded": {
+"weights": [
+400
+],
+"italic": false
+},
+"Averia Sans Libre": {
+"weights": [
+300,
+400,
+700
+],
+"italic": true
+},
+"Rakkas": {
+"weights": [
+400
+],
+"italic": false
+},
+"Rationale": {
+"weights": [
+400
+],
+"italic": false
+},
+"Quintessential": {
+"weights": [
+400
+],
+"italic": false
+},
+"Kranky": {
+"weights": [
+400
+],
+"italic": false
+},
+"Mallanna": {
+"weights": [
+400
+],
+"italic": false
+},
+"Aref Ruqaa": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Chau Philomene One": {
+"weights": [
+400
+],
+"italic": true
+},
+"Kotta One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Dekko": {
+"weights": [
+400
+],
+"italic": false
+},
+"Milonga": {
+"weights": [
+400
+],
+"italic": false
+},
+"Londrina Outline": {
+"weights": [
+400
+],
+"italic": false
+},
+"Delius Unicase": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Atma": {
+"weights": [
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Nosifer": {
+"weights": [
+400
+],
+"italic": false
+},
+"Sail": {
+"weights": [
+400
+],
+"italic": false
+},
+"Tulpen One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Fenix": {
+"weights": [
+400
+],
+"italic": false
+},
+"Dynalight": {
+"weights": [
+400
+],
+"italic": false
+},
+"Flamenco": {
+"weights": [
+300,
+400
+],
+"italic": false
+},
+"Numans": {
+"weights": [
+400
+],
+"italic": false
+},
+"Scope One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Katibeh": {
+"weights": [
+400
+],
+"italic": false
+},
+"Mate SC": {
+"weights": [
+400
+],
+"italic": false
+},
+"Galada": {
+"weights": [
+400
+],
+"italic": false
+},
+"Spectral SC": {
+"weights": [
+200,
+300,
+400,
+500,
+600,
+700,
+800
+],
+"italic": true
+},
+"Sarina": {
+"weights": [
+400
+],
+"italic": false
+},
+"Do Hyeon": {
+"weights": [
+400
+],
+"italic": false
+},
+"Mogra": {
+"weights": [
+400
+],
+"italic": false
+},
+"Simonetta": {
+"weights": [
+400,
+900
+],
+"italic": true
+},
+"Mrs Saint Delafield": {
+"weights": [
+400
+],
+"italic": false
+},
+"Eater": {
+"weights": [
+400
+],
+"italic": false
+},
+"Rosarivo": {
+"weights": [
+400
+],
+"italic": true
+},
+"Song Myung": {
+"weights": [
+400
+],
+"italic": false
+},
+"Cormorant Upright": {
+"weights": [
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Miniver": {
+"weights": [
+400
+],
+"italic": false
+},
+"Overpass Mono": {
+"weights": [
+300,
+400,
+600,
+700
+],
+"italic": false
+},
+"League Script": {
+"weights": [
+400
+],
+"italic": false
+},
+"Maiden Orange": {
+"weights": [
+400
+],
+"italic": false
+},
+"Baloo Bhaijaan": {
+"weights": [
+400
+],
+"italic": false
+},
+"Encode Sans Semi Expanded": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": false
+},
+"Pavanam": {
+"weights": [
+400
+],
+"italic": false
+},
+"Chela One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Cagliostro": {
+"weights": [
+400
+],
+"italic": false
+},
+"Galindo": {
+"weights": [
+400
+],
+"italic": false
+},
+"Donegal One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Amarante": {
+"weights": [
+400
+],
+"italic": false
+},
+"Antic Didone": {
+"weights": [
+400
+],
+"italic": false
+},
+"Khmer": {
+"weights": [
+400
+],
+"italic": false
+},
+"Jim Nightshade": {
+"weights": [
+400
+],
+"italic": false
+},
+"Stint Ultra Condensed": {
+"weights": [
+400
+],
+"italic": false
+},
+"Paprika": {
+"weights": [
+400
+],
+"italic": false
+},
+"Mountains of Christmas": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Averia Libre": {
+"weights": [
+300,
+400,
+700
+],
+"italic": true
+},
+"Mandali": {
+"weights": [
+400
+],
+"italic": false
+},
+"Kadwa": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Stoke": {
+"weights": [
+300,
+400
+],
+"italic": false
+},
+"IBM Plex Mono": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700
+],
+"italic": true
+},
+"Almendra": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Koulen": {
+"weights": [
+400
+],
+"italic": false
+},
+"Poller One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Mystery Quest": {
+"weights": [
+400
+],
+"italic": false
+},
+"Coiny": {
+"weights": [
+400
+],
+"italic": false
+},
+"Junge": {
+"weights": [
+400
+],
+"italic": false
+},
+"Swanky and Moo Moo": {
+"weights": [
+400
+],
+"italic": false
+},
+"Ruslan Display": {
+"weights": [
+400
+],
+"italic": false
+},
+"Baloo Tamma": {
+"weights": [
+400
+],
+"italic": false
+},
+"Esteban": {
+"weights": [
+400
+],
+"italic": false
+},
+"Akronim": {
+"weights": [
+400
+],
+"italic": false
+},
+"Pirata One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Asul": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"IM Fell French Canon": {
+"weights": [
+400
+],
+"italic": true
+},
+"Redressed": {
+"weights": [
+400
+],
+"italic": false
+},
+"Arya": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"IBM Plex Sans Condensed": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700
+],
+"italic": true
+},
+"Overlock SC": {
+"weights": [
+400
+],
+"italic": false
+},
+"Ranchers": {
+"weights": [
+400
+],
+"italic": false
+},
+"Peralta": {
+"weights": [
+400
+],
+"italic": false
+},
+"Sonsie One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Farsan": {
+"weights": [
+400
+],
+"italic": false
+},
+"Port Lligat Sans": {
+"weights": [
+400
+],
+"italic": false
+},
+"Bubbler One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Sancreek": {
+"weights": [
+400
+],
+"italic": false
+},
+"Kite One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Ruluko": {
+"weights": [
+400
+],
+"italic": false
+},
+"Buda": {
+"weights": [
+300
+],
+"italic": false
+},
+"Sedgwick Ave": {
+"weights": [
+400
+],
+"italic": false
+},
+"Angkor": {
+"weights": [
+400
+],
+"italic": false
+},
+"Englebert": {
+"weights": [
+400
+],
+"italic": false
+},
+"Text Me One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Trade Winds": {
+"weights": [
+400
+],
+"italic": false
+},
+"Bilbo": {
+"weights": [
+400
+],
+"italic": false
+},
+"Ribeye": {
+"weights": [
+400
+],
+"italic": false
+},
+"Plaster": {
+"weights": [
+400
+],
+"italic": false
+},
+"Mukta Mahee": {
+"weights": [
+200,
+300,
+400,
+500,
+600,
+700,
+800
+],
+"italic": false
+},
+"Averia Gruesa Libre": {
+"weights": [
+400
+],
+"italic": false
+},
+"Croissant One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Princess Sofia": {
+"weights": [
+400
+],
+"italic": false
+},
+"Padauk": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Encode Sans Semi Condensed": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": false
+},
+"Encode Sans Expanded": {
+"weights": [
+100,
+200,
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": false
+},
+"Content": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Irish Grover": {
+"weights": [
+400
+],
+"italic": false
+},
+"Linden Hill": {
+"weights": [
+400
+],
+"italic": true
+},
+"Inika": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Baloo Bhai": {
+"weights": [
+400
+],
+"italic": false
+},
+"Smythe": {
+"weights": [
+400
+],
+"italic": false
+},
+"Black Han Sans": {
+"weights": [
+400
+],
+"italic": false
+},
+"Rhodium Libre": {
+"weights": [
+400
+],
+"italic": false
+},
+"Stalemate": {
+"weights": [
+400
+],
+"italic": false
+},
+"Kavoon": {
+"weights": [
+400
+],
+"italic": false
+},
+"M PLUS Rounded 1c": {
+"weights": [
+100,
+300,
+400,
+500,
+700,
+800,
+900
+],
+"italic": false
+},
+"IM Fell Great Primer": {
+"weights": [
+400
+],
+"italic": true
+},
+"Nokora": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"MedievalSharp": {
+"weights": [
+400
+],
+"italic": false
+},
+"Joti One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Baloo Thambi": {
+"weights": [
+400
+],
+"italic": false
+},
+"Revalia": {
+"weights": [
+400
+],
+"italic": false
+},
+"Lovers Quarrel": {
+"weights": [
+400
+],
+"italic": false
+},
+"Italiana": {
+"weights": [
+400
+],
+"italic": false
+},
+"Fresca": {
+"weights": [
+400
+],
+"italic": false
+},
+"Nova Flat": {
+"weights": [
+400
+],
+"italic": false
+},
+"Julee": {
+"weights": [
+400
+],
+"italic": false
+},
+"BioRhyme": {
+"weights": [
+200,
+300,
+400,
+700,
+800
+],
+"italic": false
+},
+"IM Fell DW Pica SC": {
+"weights": [
+400
+],
+"italic": false
+},
+"Offside": {
+"weights": [
+400
+],
+"italic": false
+},
+"Metal Mania": {
+"weights": [
+400
+],
+"italic": false
+},
+"Flavors": {
+"weights": [
+400
+],
+"italic": false
+},
+"Monofett": {
+"weights": [
+400
+],
+"italic": false
+},
+"Diplomata SC": {
+"weights": [
+400
+],
+"italic": false
+},
+"Zilla Slab Highlight": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"UnifrakturCook": {
+"weights": [
+700
+],
+"italic": false
+},
+"Glass Antiqua": {
+"weights": [
+400
+],
+"italic": false
+},
+"Marko One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Kirang Haerang": {
+"weights": [
+400
+],
+"italic": false
+},
+"Della Respira": {
+"weights": [
+400
+],
+"italic": false
+},
+"Inknut Antiqua": {
+"weights": [
+300,
+400,
+500,
+600,
+700,
+800,
+900
+],
+"italic": false
+},
+"Purple Purse": {
+"weights": [
+400
+],
+"italic": false
+},
+"Wellfleet": {
+"weights": [
+400
+],
+"italic": false
+},
+"Miltonian Tattoo": {
+"weights": [
+400
+],
+"italic": false
+},
+"Ruthie": {
+"weights": [
+400
+],
+"italic": false
+},
+"Galdeano": {
+"weights": [
+400
+],
+"italic": false
+},
+"Eagle Lake": {
+"weights": [
+400
+],
+"italic": false
+},
+"Henny Penny": {
+"weights": [
+400
+],
+"italic": false
+},
+"Monsieur La Doulaise": {
+"weights": [
+400
+],
+"italic": false
+},
+"Autour One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Mina": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Petrona": {
+"weights": [
+400
+],
+"italic": false
+},
+"Asset": {
+"weights": [
+400
+],
+"italic": false
+},
+"Spicy Rice": {
+"weights": [
+400
+],
+"italic": false
+},
+"Hi Melody": {
+"weights": [
+400
+],
+"italic": false
+},
+"Cormorant Unicase": {
+"weights": [
+300,
+400,
+500,
+600,
+700
+],
+"italic": false
+},
+"Griffy": {
+"weights": [
+400
+],
+"italic": false
+},
+"Chicle": {
+"weights": [
+400
+],
+"italic": false
+},
+"Bigshot One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Baloo Tammudu": {
+"weights": [
+400
+],
+"italic": false
+},
+"Jomhuria": {
+"weights": [
+400
+],
+"italic": false
+},
+"Ewert": {
+"weights": [
+400
+],
+"italic": false
+},
+"Snippet": {
+"weights": [
+400
+],
+"italic": false
+},
+"Trykker": {
+"weights": [
+400
+],
+"italic": false
+},
+"Gugi": {
+"weights": [
+400
+],
+"italic": false
+},
+"Manuale": {
+"weights": [
+400,
+500,
+600,
+700
+],
+"italic": true
+},
+"IM Fell French Canon SC": {
+"weights": [
+400
+],
+"italic": false
+},
+"Oldenburg": {
+"weights": [
+400
+],
+"italic": false
+},
+"Meera Inimai": {
+"weights": [
+400
+],
+"italic": false
+},
+"Sree Krushnadevaraya": {
+"weights": [
+400
+],
+"italic": false
+},
+"Rum Raisin": {
+"weights": [
+400
+],
+"italic": false
+},
+"Snowburst One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Elsie Swash Caps": {
+"weights": [
+400,
+900
+],
+"italic": false
+},
+"Fascinate Inline": {
+"weights": [
+400
+],
+"italic": false
+},
+"Iceberg": {
+"weights": [
+400
+],
+"italic": false
+},
+"Lancelot": {
+"weights": [
+400
+],
+"italic": false
+},
+"Goblin One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Macondo": {
+"weights": [
+400
+],
+"italic": false
+},
+"New Rocker": {
+"weights": [
+400
+],
+"italic": false
+},
+"IM Fell Double Pica SC": {
+"weights": [
+400
+],
+"italic": false
+},
+"Jacques Francois Shadow": {
+"weights": [
+400
+],
+"italic": false
+},
+"Tillana": {
+"weights": [
+400,
+500,
+600,
+700,
+800
+],
+"italic": false
+},
+"IM Fell Great Primer SC": {
+"weights": [
+400
+],
+"italic": false
+},
+"Original Surfer": {
+"weights": [
+400
+],
+"italic": false
+},
+"Sahitya": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Montaga": {
+"weights": [
+400
+],
+"italic": false
+},
+"Astloch": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Barrio": {
+"weights": [
+400
+],
+"italic": false
+},
+"Sunshiney": {
+"weights": [
+400
+],
+"italic": false
+},
+"Kumar One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Siemreap": {
+"weights": [
+400
+],
+"italic": false
+},
+"Ranga": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Lakki Reddy": {
+"weights": [
+400
+],
+"italic": false
+},
+"Modak": {
+"weights": [
+400
+],
+"italic": false
+},
+"Keania One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Modern Antiqua": {
+"weights": [
+400
+],
+"italic": false
+},
+"Kenia": {
+"weights": [
+400
+],
+"italic": false
+},
+"Odor Mean Chey": {
+"weights": [
+400
+],
+"italic": false
+},
+"Ribeye Marrow": {
+"weights": [
+400
+],
+"italic": false
+},
+"Kavivanar": {
+"weights": [
+400
+],
+"italic": false
+},
+"Diplomata": {
+"weights": [
+400
+],
+"italic": false
+},
+"Molle": {
+"weights": [],
+"italic": true
+},
+"Asar": {
+"weights": [
+400
+],
+"italic": false
+},
+"Suwannaphum": {
+"weights": [
+400
+],
+"italic": false
+},
+"Underdog": {
+"weights": [
+400
+],
+"italic": false
+},
+"Ramaraja": {
+"weights": [
+400
+],
+"italic": false
+},
+"Mrs Sheppards": {
+"weights": [
+400
+],
+"italic": false
+},
+"Margarine": {
+"weights": [
+400
+],
+"italic": false
+},
+"Devonshire": {
+"weights": [
+400
+],
+"italic": false
+},
+"Caesar Dressing": {
+"weights": [
+400
+],
+"italic": false
+},
+"Gaegu": {
+"weights": [
+300,
+400,
+700
+],
+"italic": false
+},
+"Nova Cut": {
+"weights": [
+400
+],
+"italic": false
+},
+"Piedra": {
+"weights": [
+400
+],
+"italic": false
+},
+"Nova Oval": {
+"weights": [
+400
+],
+"italic": false
+},
+"Ruge Boogie": {
+"weights": [
+400
+],
+"italic": false
+},
+"Bungee Outline": {
+"weights": [
+400
+],
+"italic": false
+},
+"Meie Script": {
+"weights": [
+400
+],
+"italic": false
+},
+"Smokum": {
+"weights": [
+400
+],
+"italic": false
+},
+"GFS Neohellenic": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Chathura": {
+"weights": [
+100,
+300,
+400,
+700,
+800
+],
+"italic": false
+},
+"Bokor": {
+"weights": [
+400
+],
+"italic": false
+},
+"Jacques Francois": {
+"weights": [
+400
+],
+"italic": false
+},
+"Dr Sugiyama": {
+"weights": [
+400
+],
+"italic": false
+},
+"Felipa": {
+"weights": [
+400
+],
+"italic": false
+},
+"Bayon": {
+"weights": [
+400
+],
+"italic": false
+},
+"Kantumruy": {
+"weights": [
+300,
+400,
+700
+],
+"italic": false
+},
+"Dangrek": {
+"weights": [
+400
+],
+"italic": false
+},
+"Arbutus": {
+"weights": [
+400
+],
+"italic": false
+},
+"Nova Script": {
+"weights": [
+400
+],
+"italic": false
+},
+"Moul": {
+"weights": [
+400
+],
+"italic": false
+},
+"Seymour One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Gamja Flower": {
+"weights": [
+400
+],
+"italic": false
+},
+"Ravi Prakash": {
+"weights": [
+400
+],
+"italic": false
+},
+"Miltonian": {
+"weights": [
+400
+],
+"italic": false
+},
+"Freehand": {
+"weights": [
+400
+],
+"italic": false
+},
+"Jolly Lodger": {
+"weights": [
+400
+],
+"italic": false
+},
+"Fruktur": {
+"weights": [
+400
+],
+"italic": false
+},
+"Londrina Shadow": {
+"weights": [
+400
+],
+"italic": false
+},
+"Geostar Fill": {
+"weights": [
+400
+],
+"italic": false
+},
+"Sirin Stencil": {
+"weights": [
+400
+],
+"italic": false
+},
+"Almendra Display": {
+"weights": [
+400
+],
+"italic": false
+},
+"Bahiana": {
+"weights": [
+400
+],
+"italic": false
+},
+"Romanesco": {
+"weights": [
+400
+],
+"italic": false
+},
+"Almendra SC": {
+"weights": [
+400
+],
+"italic": false
+},
+"Atomic Age": {
+"weights": [
+400
+],
+"italic": false
+},
+"Unlock": {
+"weights": [
+400
+],
+"italic": false
+},
+"Trochut": {
+"weights": [
+400,
+700
+],
+"italic": true
+},
+"Vollkorn SC": {
+"weights": [
+400,
+600,
+700,
+900
+],
+"italic": false
+},
+"Baloo Da": {
+"weights": [
+400
+],
+"italic": false
+},
+"Geostar": {
+"weights": [
+400
+],
+"italic": false
+},
+"Risque": {
+"weights": [
+400
+],
+"italic": false
+},
+"Bigelow Rules": {
+"weights": [
+400
+],
+"italic": false
+},
+"Combo": {
+"weights": [
+400
+],
+"italic": false
+},
+"Passero One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Sedgwick Ave Display": {
+"weights": [
+400
+],
+"italic": false
+},
+"Metal": {
+"weights": [
+400
+],
+"italic": false
+},
+"Tenali Ramakrishna": {
+"weights": [
+400
+],
+"italic": false
+},
+"Fascinate": {
+"weights": [
+400
+],
+"italic": false
+},
+"Taprom": {
+"weights": [
+400
+],
+"italic": false
+},
+"Erica One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Supermercado One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Butterfly Kids": {
+"weights": [
+400
+],
+"italic": false
+},
+"Stalinist One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Warnes": {
+"weights": [
+400
+],
+"italic": false
+},
+"Bonbon": {
+"weights": [
+400
+],
+"italic": false
+},
+"Bungee Hairline": {
+"weights": [
+400
+],
+"italic": false
+},
+"Gorditas": {
+"weights": [
+400,
+700
+],
+"italic": false
+},
+"Sofadi One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Miss Fajardose": {
+"weights": [
+400
+],
+"italic": false
+},
+"Sevillana": {
+"weights": [
+400
+],
+"italic": false
+},
+"Macondo Swash Caps": {
+"weights": [
+400
+],
+"italic": false
+},
+"Aubrey": {
+"weights": [
+400
+],
+"italic": false
+},
+"Butcherman": {
+"weights": [
+400
+],
+"italic": false
+},
+"Londrina Sketch": {
+"weights": [
+400
+],
+"italic": false
+},
+"Federant": {
+"weights": [
+400
+],
+"italic": false
+},
+"Peddana": {
+"weights": [
+400
+],
+"italic": false
+},
+"Libre Barcode 39 Extended Text": {
+"weights": [
+400
+],
+"italic": false
+},
+"Kosugi": {
+"weights": [
+400
+],
+"italic": false
+},
+"Mr Bedfort": {
+"weights": [
+400
+],
+"italic": false
+},
+"Chenla": {
+"weights": [
+400
+],
+"italic": false
+},
+"Gidugu": {
+"weights": [
+400
+],
+"italic": false
+},
+"Preahvihear": {
+"weights": [
+400
+],
+"italic": false
+},
+"Emblema One": {
+"weights": [
+400
+],
+"italic": false
+},
+"Libre Barcode 128": {
+"weights": [
+400
+],
+"italic": false
+},
+"Suravaram": {
+"weights": [
+400
+],
+"italic": false
+},
+"Kdam Thmor": {
+"weights": [
+400
+],
+"italic": false
+},
+"Libre Barcode 39 Text": {
+"weights": [
+400
+],
+"italic": false
+},
+"Libre Barcode 39 Extended": {
+"weights": [
+400
+],
+"italic": false
+},
+"Dhurjati": {
+"weights": [
+400
+],
+"italic": false
+},
+"Moulpali": {
+"weights": [
+400
+],
+"italic": false
+},
+"Kosugi Maru": {
+"weights": [
+400
+],
+"italic": false
+},
+"Cute Font": {
+"weights": [
+400
+],
+"italic": false
+},
+"Hanalei": {
+"weights": [
+400
+],
+"italic": false
+},
+"East Sea Dokdo": {
+"weights": [
+400
+],
+"italic": false
+},
+"Fasthand": {
+"weights": [
+400
+],
+"italic": false
+},
+"Libre Barcode 39": {
+"weights": [
+400
+],
+"italic": false
+},
+"Yeon Sung": {
+"weights": [
+400
+],
+"italic": false
+},
+"Poor Story": {
+"weights": [
+400
+],
+"italic": false
+},
+"Stylish": {
+"weights": [
+400
+],
+"italic": false
+},
+"BioRhyme Expanded": {
+"weights": [
+200,
+300,
+400,
+700,
+800
+],
+"italic": false
+},
+"Libre Barcode 128 Text": {
+"weights": [
+400
+],
+"italic": false
+},
+"Kumar One Outline": {
+"weights": [
+400
+],
+"italic": false
+},
+"Dokdo": {
+"weights": [
+400
+],
+"italic": false
+},
+"Black And White Picture": {
+"weights": [
+400
+],
+"italic": false
+}
+}

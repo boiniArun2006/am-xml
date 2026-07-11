@@ -93,8 +93,23 @@ Coordinate origin is top-left. `location value="x,y,z"` in **pixels**. Center = 
   box by keeping wrapWidth symmetric.
 - `scale` is a unitless multiplier `x,y` (`1,1` = 100%). `pivot`/`rotation` rotate about pivot.
 
-Before finalizing: mentally render each text layer's box and confirm (a) it fits inside the
-canvas and (b) it does not intersect any other layer's box.
+**CRITICAL — text.y is the VERTICAL CENTER, and it overlaps by default.** The #1 real bug:
+giving two layers `y` values whose boxes intersect. `location.y` is the box's center; the box
+spans roughly `y ± (block_height/2)`. To guarantee no overlap, BUILD A LAYOUT TABLE FIRST,
+before writing any layer:
+
+1. List every simultaneously-visible text/shape layer in one scene (layers that share any time).
+2. For each, compute `block_height = lines × (size × scale × 1.3)`.
+3. Assign non-overlapping `y` bands top→bottom: `y[n] = y[n-1] + block_height[n-1]/2 +
+   gap(≥48px) + block_height[n]/2`.
+4. Two layers that are visible at the same time must NEVER share a y band. If they animate y,
+   both the START and END y must stay in their band (an entry that slides from y+40→y must keep
+   y+40 clear of the layer above).
+5. Layers in DIFFERENT scenes (non-overlapping time) may reuse the same y — that's fine and
+   preferred for a centered keynote look. Overlap is only a bug when layers are on screen together.
+
+Before finalizing: for each moment in time, list which layers are visible and confirm none of
+their y-bands intersect. This check is mandatory, not optional.
 
 ---
 
@@ -124,8 +139,18 @@ never reuse an id). All need `startTime`/`endTime` (ms, within `totalTime`).
   <content>YOUR TEXT</content>
 </text>
 ```
-- Font: `googlefonts?name=NAME&amp;weight=900&amp;italic=1` (escape `&` as `&amp;`) OR
-  `imported?name=File.otf`. `align`: left/center/right.
+- Font string: `googlefonts?name=NAME&amp;weight=W&amp;italic=1` (escape `&` as `&amp;`) OR
+  `imported?name=File.otf` (only if the USER supplies that file — never invent imported names).
+- **CRITICAL — fonts must exist in AM's catalog.** AM bundles a fixed list of **884 Google
+  font families** (`reference/font_catalog.json`), each with ONLY specific weights. A name or
+  weight not in that file renders as fallback/blank = the "missing font" bug. Rules:
+  - Only use a `name=` that is a key in `reference/font_catalog.json`, and a `weight=` in that
+    family's allowed list. `italic=1` only if that family's `"italic": true`.
+  - **"Inter" is NOT in the catalog** — do not use it. If the user names an uncatalogued font,
+    pick the closest catalogued family and say so.
+  - Safe defaults (all weights 100–900): **Poppins, Montserrat, Raleway, Work Sans, Nunito**.
+    General default: **Roboto** (100,300,400,500,700,900).
+  - `align`: left/center/right.
 
 ### Media (uploaded image/video) — declare + reference
 Declare once at top of scene, then a shape references it:

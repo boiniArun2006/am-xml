@@ -1,35 +1,44 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<!-- Nimbus — SaaS reveal, Apple/Google keynote style. 1080x1920, 12s, 60fps.
-     Grounded in skill/SKILL.md. kf t = 0..1 of each layer's own lifetime. -->
-<scene title="Nimbus SaaS Reveal" width="1080" height="1920" exportWidth="1080" exportHeight="1920"
-       precompose="dynamicResolution" bgcolor="#ff07070c" totalTime="12000" fps="60"
-       am="com.alightcreative.motion/5.0.272" amplatform="android" retime="freeze">
+<!-- Nimbus — keynote-style product film (Apple/Google language). 1080x1920, 14s, 60fps.
+     Techniques: RSVP word flashes (single fixed spot), staged one-idea builds, layered
+     move+scale+blur transforms, cinematic spring easing. kf t = 0..1 of each layer's life.
 
-  <!-- ============ BACKDROP (bottom of z-stack) ============ -->
-  <!-- full-canvas radial gradient. size = half-canvas logical pts (540,960 => 1080x1920) -->
-  <shape id="200001" label="bg" startTime="0" endTime="12000" s=".rect" fillType="gradient">
-    <transform>
-      <location value="540,960,0"/>
-      <scale value="1,1"/>
-    </transform>
-    <gradient type="radial" startColor="#ff14142a" endColor="#ff07070c"
-              start="0.5,0.42" end="1.0,1.05"/>
+     LAYOUT TABLE (no two simultaneously-visible layers share a y-band):
+       Backdrop/glow: full canvas, opacity <=0.6, never competes with text.
+       RSVP words (S-A) : ALL at y=960, but each at a DIFFERENT time slice -> no overlap.
+       Headline (S-B)   : line1 y=852, line2 y=968, sub y=1120  (bands 116/152 apart).
+       Feature rows (S-C): rowA y=724, rowB y=904, rowC y=1084  (180 apart, no overlap).
+       CTA (S-D)        : pill y=968, label y=968(on pill), url y=1108.
+     Fonts: Poppins (all weights 100-900, verified in AM font_catalog.json). -->
+<scene title="Nimbus SaaS Reveal" width="1080" height="1920" exportWidth="1080" exportHeight="1920"
+       precompose="dynamicResolution" bgcolor="#ff05060b" totalTime="14000" fps="60"
+       am="com.alightcreative.motion/5.0.273" amplatform="android" retime="freeze">
+
+  <!-- ================= BACKDROP (bottom z) ================= -->
+  <shape id="300001" label="bg" startTime="0" endTime="14000" s=".rect" fillType="gradient">
+    <transform><location value="540,960,0"/><scale value="1,1"/></transform>
+    <gradient type="radial" startColor="#ff10132b" endColor="#ff05060b" start="0.5,0.4" end="1.0,1.1"/>
     <property name="size" type="vec2" value="540,960"/>
   </shape>
 
-  <!-- soft accent glow blob, slow parallax drift + breathe -->
-  <shape id="200002" label="accent-glow" startTime="0" endTime="12000" s=".ellipse" fillType="color">
+  <!-- accent aurora: drifts + breathes, heavy blur, low opacity. Layered transforms. -->
+  <shape id="300002" label="aurora" startTime="0" endTime="14000" s=".ellipse" fillType="color">
     <transform>
       <location>
-        <kf t="0.0" v="360,760,0" e="cubicBezier 0.16 1 0.3 1"/>
-        <kf t="1.0" v="720,1160,0"/>
+        <kf t="0.0" v="380,720,0" e="cubicBezier 0.45 0 0.55 1"/>
+        <kf t="0.5" v="720,1140,0" e="cubicBezier 0.45 0 0.55 1"/>
+        <kf t="1.0" v="380,720,0"/>
       </location>
       <scale>
-        <kf t="0.0" v="2.6,2.6" e="cubicBezier 0.37 0 0.63 1"/>
-        <kf t="0.5" v="3.2,3.2" e="cubicBezier 0.37 0 0.63 1"/>
-        <kf t="1.0" v="2.6,2.6"/>
+        <kf t="0.0" v="2.8,2.8" e="cubicBezier 0.37 0 0.63 1"/>
+        <kf t="0.5" v="3.5,3.5" e="cubicBezier 0.37 0 0.63 1"/>
+        <kf t="1.0" v="2.8,2.8"/>
       </scale>
-      <opacity value="0.55"/>
+      <rotation>
+        <kf t="0.0" v="0"/>
+        <kf t="1.0" v="40"/>
+      </rotation>
+      <opacity value="0.5"/>
     </transform>
     <fillColor value="#ff0a84ff"/>
     <property name="size" type="vec2" value="150,150"/>
@@ -37,183 +46,242 @@
       <property name="strength" type="float" value="2.0"/>
     </effect>
   </shape>
+  <!-- second warm glow for depth -->
+  <shape id="300003" label="aurora2" startTime="0" endTime="14000" s=".ellipse" fillType="color">
+    <transform>
+      <location>
+        <kf t="0.0" v="760,1300,0" e="cubicBezier 0.45 0 0.55 1"/>
+        <kf t="0.5" v="360,900,0" e="cubicBezier 0.45 0 0.55 1"/>
+        <kf t="1.0" v="760,1300,0"/>
+      </location>
+      <scale value="2.4,2.4"/>
+      <opacity value="0.28"/>
+    </transform>
+    <fillColor value="#ffb14cff"/>
+    <property name="size" type="vec2" value="150,150"/>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+      <property name="strength" type="float" value="2.0"/>
+    </effect>
+  </shape>
 
-  <!-- ============ SCENE A (0.0-3.6s): brand ============ -->
-  <text id="200010" startTime="0" endTime="3600" fillType="color" size="76"
-        font="googlefonts?name=Inter&amp;weight=800" wrapWidth="920" align="center">
+  <!-- ================= SCENE A (0.0-4.4s): RSVP word flashes ================= -->
+  <!-- Apple's core move: words appear ONE AT A TIME in the SAME spot (y=960). Each layer
+       occupies its own time slice, so despite same y they never coexist. Blur-in + scale settle. -->
+  <text id="300010" startTime="0" endTime="900" fillType="color" size="90"
+        font="googlefonts?name=Poppins&amp;weight=700" wrapWidth="960" align="center">
     <transform>
-      <location>
-        <kf t="0.0" v="540,916,0" e="cubicBezier 0.16 1 0.3 1"/>
-        <kf t="0.22" v="540,880,0"/>
-      </location>
-      <opacity>
-        <kf t="0.0" v="0"/>
-        <kf t="0.20" v="1" e="cubicBezier 0.16 1 0.3 1"/>
-        <kf t="0.82" v="1"/>
-        <kf t="1.0" v="0" e="cubicBezier 0.4 0 1 1"/>
-      </opacity>
+      <location value="540,960,0"/>
+      <scale><kf t="0.0" v="1.14,1.14" e="cubicBezier 0.16 1 0.3 1"/><kf t="0.5" v="1,1"/></scale>
+      <opacity><kf t="0.0" v="0"/><kf t="0.28" v="1" e="cubicBezier 0.16 1 0.3 1"/><kf t="0.82" v="1"/><kf t="1.0" v="0"/></opacity>
     </transform>
-    <fillColor value="#fff5f7ff"/>
-    <content>Nimbus</content>
+    <fillColor value="#fff6f8ff"/>
+    <content>Every idea</content>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+      <property name="strength" type="float"><kf t="0.0" v="1.4"/><kf t="0.3" v="0"/></property>
+    </effect>
   </text>
-  <text id="200011" startTime="180" endTime="3600" fillType="color" size="28"
-        font="googlefonts?name=Inter&amp;weight=500" wrapWidth="920" align="center">
+  <text id="300011" startTime="900" endTime="1800" fillType="color" size="90"
+        font="googlefonts?name=Poppins&amp;weight=700" wrapWidth="960" align="center">
+    <transform>
+      <location value="540,960,0"/>
+      <scale><kf t="0.0" v="1.14,1.14" e="cubicBezier 0.16 1 0.3 1"/><kf t="0.5" v="1,1"/></scale>
+      <opacity><kf t="0.0" v="0"/><kf t="0.28" v="1" e="cubicBezier 0.16 1 0.3 1"/><kf t="0.82" v="1"/><kf t="1.0" v="0"/></opacity>
+    </transform>
+    <fillColor value="#fff6f8ff"/>
+    <content>every task</content>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+      <property name="strength" type="float"><kf t="0.0" v="1.4"/><kf t="0.3" v="0"/></property>
+    </effect>
+  </text>
+  <text id="300012" startTime="1800" endTime="2900" fillType="color" size="90"
+        font="googlefonts?name=Poppins&amp;weight=700" wrapWidth="960" align="center">
+    <transform>
+      <location value="540,960,0"/>
+      <scale><kf t="0.0" v="1.14,1.14" e="cubicBezier 0.16 1 0.3 1"/><kf t="0.5" v="1,1"/></scale>
+      <opacity><kf t="0.0" v="0"/><kf t="0.24" v="1" e="cubicBezier 0.16 1 0.3 1"/><kf t="0.85" v="1"/><kf t="1.0" v="0"/></opacity>
+    </transform>
+    <fillColor value="#fff6f8ff"/>
+    <content>one flow.</content>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+      <property name="strength" type="float"><kf t="0.0" v="1.4"/><kf t="0.3" v="0"/></property>
+    </effect>
+  </text>
+  <!-- accent underline sweep under the last RSVP word -->
+  <shape id="300013" label="accent-line" startTime="2050" endTime="2900" s=".rect" fillType="color">
+    <transform>
+      <location value="540,1050,0"/>
+      <scale><kf t="0.0" v="0,1" e="cubicBezier 0.16 1 0.3 1"/><kf t="0.5" v="1,1"/></scale>
+      <opacity><kf t="0.0" v="0"/><kf t="0.3" v="1"/><kf t="0.85" v="1"/><kf t="1.0" v="0"/></opacity>
+    </transform>
+    <fillColor value="#ff0a84ff"/>
+    <property name="size" type="vec2" value="140,3"/>
+  </shape>
+
+  <!-- ================= SCENE B (3.0-6.6s): brand reveal ================= -->
+  <text id="300020" startTime="3000" endTime="6200" fillType="color" size="120"
+        font="googlefonts?name=Poppins&amp;weight=800" wrapWidth="980" align="center">
     <transform>
       <location>
-        <kf t="0.0" v="540,1010,0" e="cubicBezier 0.16 1 0.3 1"/>
-        <kf t="0.24" v="540,984,0"/>
+        <kf t="0.0" v="540,878,0" e="cubicBezier 0.16 1 0.3 1"/>
+        <kf t="0.22" v="540,830,0"/>
       </location>
-      <opacity>
-        <kf t="0.0" v="0"/>
-        <kf t="0.26" v="0.7" e="cubicBezier 0.16 1 0.3 1"/>
-        <kf t="0.82" v="0.7"/>
-        <kf t="1.0" v="0" e="cubicBezier 0.4 0 1 1"/>
-      </opacity>
+      <scale><kf t="0.0" v="1.18,1.18" e="cubicBezier 0.16 1 0.3 1"/><kf t="0.4" v="1,1"/></scale>
+      <opacity><kf t="0.0" v="0"/><kf t="0.2" v="1" e="cubicBezier 0.16 1 0.3 1"/><kf t="0.86" v="1"/><kf t="1.0" v="0" e="cubicBezier 0.4 0 1 1"/></opacity>
     </transform>
-    <fillColor value="#ff9aa3b8"/>
+    <fillColor value="#fff6f8ff"/>
+    <content>Nimbus</content>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+      <property name="strength" type="float"><kf t="0.0" v="1.2"/><kf t="0.22" v="0"/></property>
+    </effect>
+  </text>
+  <text id="300021" startTime="3220" endTime="6200" fillType="color" size="34"
+        font="googlefonts?name=Poppins&amp;weight=500" wrapWidth="900" align="center">
+    <transform>
+      <location>
+        <kf t="0.0" v="540,1038,0" e="cubicBezier 0.16 1 0.3 1"/>
+        <kf t="0.24" v="540,1000,0"/>
+      </location>
+      <opacity><kf t="0.0" v="0"/><kf t="0.28" v="0.72" e="cubicBezier 0.16 1 0.3 1"/><kf t="0.86" v="0.72"/><kf t="1.0" v="0" e="cubicBezier 0.4 0 1 1"/></opacity>
+    </transform>
+    <fillColor value="#ff9aa6bd"/>
     <content>the cloud workspace</content>
   </text>
+  <!-- brand divider -->
+  <shape id="300022" label="brand-line" startTime="3450" endTime="6200" s=".rect" fillType="color">
+    <transform>
+      <location value="540,1120,0"/>
+      <scale><kf t="0.0" v="0,1" e="cubicBezier 0.16 1 0.3 1"/><kf t="0.4" v="1,1"/><kf t="0.9" v="1,1"/><kf t="1.0" v="0,1"/></scale>
+      <opacity><kf t="0.0" v="0"/><kf t="0.35" v="0.9"/><kf t="0.9" v="0.9"/><kf t="1.0" v="0"/></opacity>
+    </transform>
+    <fillColor value="#ff0a84ff"/>
+    <property name="size" type="vec2" value="120,3"/>
+  </shape>
 
-  <!-- ============ SCENE B (3.4-7.0s): headline ============ -->
-  <text id="200020" startTime="3400" endTime="7000" fillType="color" size="72"
-        font="googlefonts?name=Inter&amp;weight=800" wrapWidth="900" align="center">
+  <!-- ================= SCENE C (6.2-10.4s): 3 feature rows, staged build ================= -->
+  <!-- one idea at a time: each row slides in staggered, bands 180px apart (no overlap). -->
+  <!-- row A -->
+  <shape id="300030" label="dotA" startTime="6200" endTime="10000" s=".ellipse" fillType="color">
+    <transform>
+      <location value="250,724,0"/>
+      <scale><kf t="0.0" v="0,0" e="cubicBezier 0.16 1 0.3 1"/><kf t="0.14" v="1,1"/></scale>
+      <opacity><kf t="0.0" v="0"/><kf t="0.1" v="1"/><kf t="0.92" v="1"/><kf t="1.0" v="0"/></opacity>
+    </transform>
+    <fillColor value="#ff0a84ff"/>
+    <property name="size" type="vec2" value="9,9"/>
+  </shape>
+  <text id="300031" startTime="6200" endTime="10000" fillType="color" size="44"
+        font="googlefonts?name=Poppins&amp;weight=600" wrapWidth="760" align="left">
     <transform>
       <location>
-        <kf t="0.0" v="540,928,0" e="cubicBezier 0.16 1 0.3 1"/>
-        <kf t="0.20" v="540,892,0"/>
+        <kf t="0.0" v="330,724,0" e="cubicBezier 0.16 1 0.3 1"/>
+        <kf t="0.14" v="300,724,0"/>
       </location>
-      <opacity>
-        <kf t="0.0" v="0"/>
-        <kf t="0.18" v="1" e="cubicBezier 0.16 1 0.3 1"/>
-        <kf t="0.84" v="1"/>
-        <kf t="1.0" v="0" e="cubicBezier 0.4 0 1 1"/>
-      </opacity>
+      <opacity><kf t="0.0" v="0"/><kf t="0.12" v="1" e="cubicBezier 0.16 1 0.3 1"/><kf t="0.92" v="1"/><kf t="1.0" v="0" e="cubicBezier 0.4 0 1 1"/></opacity>
     </transform>
-    <fillColor value="#fff5f7ff"/>
-    <content>Work, in sync.</content>
+    <fillColor value="#fff6f8ff"/>
+    <content>Realtime sync</content>
   </text>
-  <text id="200021" startTime="3560" endTime="7000" fillType="color" size="30"
-        font="googlefonts?name=Inter&amp;weight=500" wrapWidth="860" align="center">
+  <!-- row B (staggered later) -->
+  <shape id="300032" label="dotB" startTime="6440" endTime="10000" s=".ellipse" fillType="color">
+    <transform>
+      <location value="250,904,0"/>
+      <scale><kf t="0.0" v="0,0" e="cubicBezier 0.16 1 0.3 1"/><kf t="0.14" v="1,1"/></scale>
+      <opacity><kf t="0.0" v="0"/><kf t="0.1" v="1"/><kf t="0.92" v="1"/><kf t="1.0" v="0"/></opacity>
+    </transform>
+    <fillColor value="#ff0a84ff"/>
+    <property name="size" type="vec2" value="9,9"/>
+  </shape>
+  <text id="300033" startTime="6440" endTime="10000" fillType="color" size="44"
+        font="googlefonts?name=Poppins&amp;weight=600" wrapWidth="760" align="left">
     <transform>
       <location>
-        <kf t="0.0" v="540,1024,0" e="cubicBezier 0.16 1 0.3 1"/>
-        <kf t="0.22" v="540,998,0"/>
+        <kf t="0.0" v="330,904,0" e="cubicBezier 0.16 1 0.3 1"/>
+        <kf t="0.14" v="300,904,0"/>
       </location>
-      <opacity>
-        <kf t="0.0" v="0"/>
-        <kf t="0.24" v="0.72" e="cubicBezier 0.16 1 0.3 1"/>
-        <kf t="0.84" v="0.72"/>
-        <kf t="1.0" v="0" e="cubicBezier 0.4 0 1 1"/>
-      </opacity>
+      <opacity><kf t="0.0" v="0"/><kf t="0.12" v="1" e="cubicBezier 0.16 1 0.3 1"/><kf t="0.92" v="1"/><kf t="1.0" v="0" e="cubicBezier 0.4 0 1 1"/></opacity>
     </transform>
-    <fillColor value="#ff9aa3b8"/>
-    <content>Docs, tasks and chat in one calm place.</content>
-  </text>
-
-  <!-- ============ SCENE C (6.8-9.8s): 3 stacked feature pills ============ -->
-  <!-- pill 1 -->
-  <text id="200030" startTime="6800" endTime="9800" fillType="color" size="40"
-        font="googlefonts?name=Inter&amp;weight=600" wrapWidth="900" align="center">
-    <transform>
-      <location>
-        <kf t="0.0" v="540,806,0" e="cubicBezier 0.16 1 0.3 1"/>
-        <kf t="0.16" v="540,780,0"/>
-      </location>
-      <opacity>
-        <kf t="0.0" v="0"/>
-        <kf t="0.16" v="1" e="cubicBezier 0.16 1 0.3 1"/>
-        <kf t="0.86" v="1"/>
-        <kf t="1.0" v="0" e="cubicBezier 0.4 0 1 1"/>
-      </opacity>
-    </transform>
-    <fillColor value="#fff5f7ff"/>
-    <content>Realtime, always</content>
-  </text>
-  <!-- pill 2 (staggered start) -->
-  <text id="200031" startTime="6960" endTime="9800" fillType="color" size="40"
-        font="googlefonts?name=Inter&amp;weight=600" wrapWidth="900" align="center">
-    <transform>
-      <location>
-        <kf t="0.0" v="540,986,0" e="cubicBezier 0.16 1 0.3 1"/>
-        <kf t="0.16" v="540,960,0"/>
-      </location>
-      <opacity>
-        <kf t="0.0" v="0"/>
-        <kf t="0.18" v="1" e="cubicBezier 0.16 1 0.3 1"/>
-        <kf t="0.86" v="1"/>
-        <kf t="1.0" v="0" e="cubicBezier 0.4 0 1 1"/>
-      </opacity>
-    </transform>
-    <fillColor value="#fff5f7ff"/>
+    <fillColor value="#fff6f8ff"/>
     <content>Private by design</content>
   </text>
-  <!-- pill 3 (staggered start) -->
-  <text id="200032" startTime="7120" endTime="9800" fillType="color" size="40"
-        font="googlefonts?name=Inter&amp;weight=600" wrapWidth="900" align="center">
+  <!-- row C (staggered latest) -->
+  <shape id="300034" label="dotC" startTime="6680" endTime="10000" s=".ellipse" fillType="color">
+    <transform>
+      <location value="250,1084,0"/>
+      <scale><kf t="0.0" v="0,0" e="cubicBezier 0.16 1 0.3 1"/><kf t="0.14" v="1,1"/></scale>
+      <opacity><kf t="0.0" v="0"/><kf t="0.1" v="1"/><kf t="0.92" v="1"/><kf t="1.0" v="0"/></opacity>
+    </transform>
+    <fillColor value="#ff0a84ff"/>
+    <property name="size" type="vec2" value="9,9"/>
+  </shape>
+  <text id="300035" startTime="6680" endTime="10000" fillType="color" size="44"
+        font="googlefonts?name=Poppins&amp;weight=600" wrapWidth="760" align="left">
     <transform>
       <location>
-        <kf t="0.0" v="540,1166,0" e="cubicBezier 0.16 1 0.3 1"/>
-        <kf t="0.16" v="540,1140,0"/>
+        <kf t="0.0" v="330,1084,0" e="cubicBezier 0.16 1 0.3 1"/>
+        <kf t="0.14" v="300,1084,0"/>
       </location>
-      <opacity>
-        <kf t="0.0" v="0"/>
-        <kf t="0.20" v="1" e="cubicBezier 0.16 1 0.3 1"/>
-        <kf t="0.86" v="1"/>
-        <kf t="1.0" v="0" e="cubicBezier 0.4 0 1 1"/>
-      </opacity>
+      <opacity><kf t="0.0" v="0"/><kf t="0.12" v="1" e="cubicBezier 0.16 1 0.3 1"/><kf t="0.92" v="1"/><kf t="1.0" v="0" e="cubicBezier 0.4 0 1 1"/></opacity>
     </transform>
-    <fillColor value="#fff5f7ff"/>
+    <fillColor value="#fff6f8ff"/>
     <content>Works everywhere</content>
   </text>
 
-  <!-- ============ SCENE D (9.6-12.0s): CTA ============ -->
-  <!-- button pill behind CTA text -->
-  <shape id="200040" label="cta-pill" startTime="9600" endTime="12000" s=".rect" fillType="color">
+  <!-- ================= SCENE D (10.0-14.0s): payoff + CTA ================= -->
+  <text id="300040" startTime="10000" endTime="14000" fillType="color" size="76"
+        font="googlefonts?name=Poppins&amp;weight=800" wrapWidth="940" align="center">
     <transform>
       <location>
-        <kf t="0.0" v="540,996,0" e="cubicBezier 0.16 1 0.3 1"/>
-        <kf t="0.22" v="540,970,0"/>
+        <kf t="0.0" v="540,796,0" e="cubicBezier 0.16 1 0.3 1"/>
+        <kf t="0.2" v="540,760,0"/>
       </location>
-      <scale value="1,1"/>
-      <opacity>
-        <kf t="0.0" v="0"/>
-        <kf t="0.22" v="1" e="cubicBezier 0.16 1 0.3 1"/>
-        <kf t="1.0" v="1"/>
-      </opacity>
+      <scale><kf t="0.0" v="1.12,1.12" e="cubicBezier 0.16 1 0.3 1"/><kf t="0.4" v="1,1"/></scale>
+      <opacity><kf t="0.0" v="0"/><kf t="0.2" v="1" e="cubicBezier 0.16 1 0.3 1"/><kf t="1.0" v="1"/></opacity>
+    </transform>
+    <fillColor value="#fff6f8ff"/>
+    <content>Work, in sync.</content>
+    <effect id="com.alightcreative.effects.gaussianblur" locallyApplied="true">
+      <property name="strength" type="float"><kf t="0.0" v="1.2"/><kf t="0.22" v="0"/></property>
+    </effect>
+  </text>
+  <!-- CTA pill (behind label) -->
+  <shape id="300041" label="cta-pill" startTime="10500" endTime="14000" s=".rect" fillType="color">
+    <transform>
+      <location>
+        <kf t="0.0" v="540,1004,0" e="cubicBezier 0.16 1 0.3 1"/>
+        <kf t="0.24" v="540,968,0"/>
+      </location>
+      <scale>
+        <kf t="0.0" v="0.6,0.6" e="cubicBezier 0.16 1 0.3 1"/>
+        <kf t="0.3" v="1.05,1.05" e="cubicBezier 0.37 0 0.63 1"/>
+        <kf t="0.42" v="1,1"/>
+      </scale>
+      <opacity><kf t="0.0" v="0"/><kf t="0.2" v="1"/><kf t="1.0" v="1"/></opacity>
     </transform>
     <fillColor value="#ff0a84ff"/>
-    <property name="size" type="vec2" value="190,52"/>
+    <property name="size" type="vec2" value="210,58"/>
   </shape>
-  <text id="200041" startTime="9600" endTime="12000" fillType="color" size="34"
-        font="googlefonts?name=Inter&amp;weight=700" wrapWidth="900" align="center">
+  <text id="300042" startTime="10620" endTime="14000" fillType="color" size="36"
+        font="googlefonts?name=Poppins&amp;weight=700" wrapWidth="900" align="center">
     <transform>
       <location>
-        <kf t="0.0" v="540,986,0" e="cubicBezier 0.16 1 0.3 1"/>
-        <kf t="0.22" v="540,960,0"/>
+        <kf t="0.0" v="540,1004,0" e="cubicBezier 0.16 1 0.3 1"/>
+        <kf t="0.24" v="540,968,0"/>
       </location>
-      <opacity>
-        <kf t="0.0" v="0"/>
-        <kf t="0.24" v="1" e="cubicBezier 0.16 1 0.3 1"/>
-        <kf t="1.0" v="1"/>
-      </opacity>
+      <opacity><kf t="0.0" v="0"/><kf t="0.26" v="1"/><kf t="1.0" v="1"/></opacity>
     </transform>
     <fillColor value="#ffffffff"/>
     <content>Start free</content>
   </text>
-  <text id="200042" startTime="9780" endTime="12000" fillType="color" size="24"
-        font="googlefonts?name=Inter&amp;weight=500" wrapWidth="900" align="center">
+  <text id="300043" startTime="10800" endTime="14000" fillType="color" size="26"
+        font="googlefonts?name=Poppins&amp;weight=500" wrapWidth="900" align="center">
     <transform>
       <location>
-        <kf t="0.0" v="540,1092,0" e="cubicBezier 0.16 1 0.3 1"/>
-        <kf t="0.26" v="540,1066,0"/>
+        <kf t="0.0" v="540,1128,0" e="cubicBezier 0.16 1 0.3 1"/>
+        <kf t="0.3" v="540,1092,0"/>
       </location>
-      <opacity>
-        <kf t="0.0" v="0"/>
-        <kf t="0.30" v="0.6" e="cubicBezier 0.16 1 0.3 1"/>
-        <kf t="1.0" v="0.6"/>
-      </opacity>
+      <opacity><kf t="0.0" v="0"/><kf t="0.34" v="0.6"/><kf t="1.0" v="0.6"/></opacity>
     </transform>
-    <fillColor value="#ff9aa3b8"/>
+    <fillColor value="#ff9aa6bd"/>
     <content>nimbus.app  ·  no card needed</content>
   </text>
 
