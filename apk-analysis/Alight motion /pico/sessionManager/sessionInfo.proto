@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "com.bendingspoons.pico";
+option java_multiple_files = true;
+
+message SessionInfo {
+  optional string sessionId = 1;
+  optional double durationInSeconds = 2;
+  optional bool hasBeenLogged = 3;
+}

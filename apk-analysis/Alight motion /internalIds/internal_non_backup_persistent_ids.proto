@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option java_package = "com.bendingspoons.concierge";
+option java_multiple_files = true;
+
+message InternalNonBackupPersistentIds {
+  optional int32 migrationVersion = 1;
+  optional string nonBackupPersistentId = 2;
+}

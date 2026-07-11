@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "com.bendingspoons.spidersense";
+option java_multiple_files = true;
+
+message UserInfo {
+  optional string id = 1;
+}

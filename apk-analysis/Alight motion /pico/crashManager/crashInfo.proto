@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option java_package = "com.bendingspoons.pico";
+option java_multiple_files = true;
+
+message CrashInfo {
+  optional bool hasCrashed = 1;
+}
